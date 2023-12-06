@@ -26,7 +26,6 @@ for i in range(case_num - 1, case_num):
     X = get_NCCC_data(index=i)
     CO2_cap, shooter_message = run_model(X,
                                          run=i,
-                                         temp_dep=False,
                                          show_residuals=False,
                                          save_run_results=True)
     inputs_array.append(X)
@@ -39,4 +38,4 @@ columns = ['L', 'G', 'alpha', 'w_MEA', 'y_CO2', 'CO2 CAP%', 'Results']
 df = pd.DataFrame(data, columns=columns)
 df.index.name = 'Runs'
 df.index += 1
-df.to_csv(r'data/run_results_6.csv')
+df.to_csv(r'data/runs_result.csv')

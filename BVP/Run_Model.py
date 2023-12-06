@@ -10,7 +10,7 @@ from Parameters import Tl_0
 np.set_printoptions(suppress=True)
 
 
-def run_model(X, param_dict=None, run=0, show_info=True, plot_boolean=False, temp_dep=False, show_residuals=False, save_run_results=True, keys_to_plot=('Cv_CO2', 'Cv_H2O')):
+def run_model(X, param_dict=None, run=0, show_info=True, plot_boolean=False, show_residuals=False, save_run_results=True, keys_to_plot=('Cv_CO2', 'Cv_H2O')):
 
     if param_dict is None:
         df_param = pd.read_csv(r'data\Property_Parameters_OG.csv')
@@ -29,7 +29,8 @@ def run_model(X, param_dict=None, run=0, show_info=True, plot_boolean=False, tem
 
     Fl_0 = [1.317549044, 9.34431946, 70.00912143]
     Fv_z = [2.206250693, 1.656347029, 16.39711856, 1.391419079]
-    T_0 = [324.8, 333.5]
+    Tl_0 = 315.39
+    Tv_z = 319.22
 
     n_l = len(Fl_0)
 
@@ -41,9 +42,8 @@ def run_model(X, param_dict=None, run=0, show_info=True, plot_boolean=False, tem
     # Simulate the Absorption Column from start to finish given the inlet concentrations of the top liquid and bottom vapor streams
     # Also has a try and except statement to catch runs that ended with too many NaN's
 
-    Y, shooter_message = simulate_abs_column(Fl_0, Fv_z, T_0,
+    Y, shooter_message = simulate_abs_column(Fl_0, Fv_z, Tl_0, Tv_z,
                                              df_param,
-                                             temp_dep,
                                              show_residuals
                                              )
 
@@ -75,6 +75,6 @@ def run_model(X, param_dict=None, run=0, show_info=True, plot_boolean=False, tem
 
     # Stores output data into text files (concentrations, mole fractions, and temperatures) (can also plot)
     if save_run_results:
-        save_run_outputs(Y, Fl_0[1], Fv_z[2], Fv_z[3], temp_dep, df_param)
+        save_run_outputs(Y, Fl_0[1], Fv_z[2], Fv_z[3], df_param)
 
     return np.round(CO2_cap, 2), shooter_message

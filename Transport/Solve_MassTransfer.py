@@ -102,4 +102,4 @@ def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, 
 
     KH = E * kl_CO2 / kv_CO2 / (E * kl_CO2 / kv_CO2 + H_CO2_mix)
 
-    return kv_CO2, kv_H2O, kv_T, KH, [kl_CO2, kv_CO2, kv_H2O, KH, E], uv, Dv_T, a_e, [ul, uv, h_L, a_e]
+    return kv_CO2, kv_H2O, kv_T, KH, [kl_CO2, kv_CO2, kv_H2O, KH, E], uv, a_e, [ul, uv, h_L, a_e]

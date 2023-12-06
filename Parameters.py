@@ -28,7 +28,7 @@ Tl_0 = 315.39    # Temperature of Liquid into Abs (K)
 Tv_f = 319.15    # Temperature of Vapor into Abs (K)
 T_amb = Tv_f
 Tv_in = Tv_f
-CO2_cap_guess = 90.4
+CO2_cap_guess = 95
 
 # Packing Coefficients Mellapak 252Y
 # a_T = 250  # Packing Surface Area/Volume (m^2/m^3)
@@ -66,7 +66,7 @@ f_Tl = interp1d(z,  df['Tl'].to_numpy(), kind='cubic')
 f_Tv = interp1d(z,  df['Tv'].to_numpy(), kind='cubic')
 f_E = interp1d(z, df['E'].to_numpy(), kind='cubic')
 
-f_duvdz = interp1d(z, df['duvdz'].to_numpy(), kind='cubic')
+# f_duvdz = interp1d(z, df['duvdz'].to_numpy(), kind='cubic')
 # f_kl_CO2 = interp1d(z, df['kl_CO2'].to_numpy(), kind='cubic')
 # f_kv_CO2 = interp1d(z, df['kv_CO2'].to_numpy(), kind='cubic')
 # f_kv_H2O = interp1d(z, df['kv_H2O'].to_numpy(), kind='cubic')
@@ -89,10 +89,6 @@ f_UT = interp1d(z, df['UT'].to_numpy(), kind='cubic')
 
 def f_interp(name, zi):
     return interp1d(z, df[name].to_numpy(), kind='cubic')(zi)
-
-
-
-
 
 # z = arange(0, H+dz, dz)
 # n = len(z)
@@ -165,13 +161,13 @@ y_keys = ['y_CO2', 'y_H2O', 'y_N2', 'y_O2']
 x_keys = ['x_CO2', 'x_MEA', 'x_H2O']
 x_true_keys = ['x_CO2_i', 'x_MEA_i', 'x_H2O_i', 'x_MEAH_i', 'x_MEACOO_i', 'x_HCO3_i']
 flux_keys = ['N_CO2', 'N_H2O']
-ql_keys = ['ql_CO2', 'ql_H2O', 'q_trn', 'q_l', 'dTl_dz']
-qv_keys = ['qv_CO2', 'qv_H2O', 'q_trn', 'q_v', 'dTv_dz']
-hydr_keys = ['ul', 'uv', 'h_L', 'a_e', 'a_e*A']
+ql_keys = ['Tl', 'ql_CO2', 'ql_H2O', 'q_trn', 'q_l', 'dTl_dz']
+qv_keys = ['Tv', 'q_trn', 'q_v', 'dTv_dz']
+Prop_trn_keys = ['ul', 'uv', 'h_L', 'a_e', 'a_e*A', 'kEl', 'kEv', 'UT']
 
 PEQ_keys =  ['DF_CO2', 'DF_H2O', 'Pv_CO2', 'Pl_CO2', 'Pv_H2O', 'Pl_H2O', 'H_CO2_mix', 'Psat_H2O']
-k_mx_keys = ['kl_CO2', 'kv_CO2', 'kv_H2O', 'KH', 'E', 'k_El', 'k_Ev']
-T_keys = ['T_l', 'T_l2', 'T_v', 'T_v2']
+k_mx_keys = ['kl_CO2', 'kv_CO2', 'kv_H2O', 'KH', 'E']
+T_keys = ['T_l', 'T_v']
 liquid_prop_keys = ['rho_mol', 'rho_mass', 'mu', 'sigma', 'Dl_CO2']
 vapor_prop_keys = ['rho_mol', 'rho_mass', 'mu', 'Dv_CO2', 'Dv_H2O']
 Cpl_keys = ['Cpl_CO2', 'Cpl_MEA', 'Cpl_H2O']
@@ -185,9 +181,9 @@ keys_dict = {'Fl': Fl_keys + Fl_true_keys,
              'y': y_keys,
              'T': T_keys,
              'PEQ': PEQ_keys,
-             'hydr': hydr_keys,
              'k_mx': k_mx_keys,
              'N': flux_keys,
+             'Prop_trn': Prop_trn_keys,
              'Prop_l': liquid_prop_keys + Cpl_keys,
              'Prop_v': vapor_prop_keys + Cpv_keys,
              'ql': ql_keys,

@@ -8,11 +8,11 @@ import xlwings as xw
 # Put outputs into dictionary and dataframe
 
 
-def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, temp_dep, df_param):
+def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, df_param):
 
     run_type = 'saving'
 
-    outputs_0 = abs_column(z[0], Y.T[0], Fl_MEA, Fv_N2, Fv_O2, df_param, temp_dep, run_type)
+    outputs_0 = abs_column(z[0], Y.T[0], Fl_MEA, Fv_N2, Fv_O2, df_param, run_type)
 
     # Initializes each output array in the shape (n, m) where is the # of relevant properties in a group
     # and puts it into a list of output arrays
@@ -22,7 +22,7 @@ def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, temp_dep, df_param):
 
     # Updates each output array and the (i, j) height step (i) for relevant group (j)
     for i in range(n):
-        outputs = abs_column(z[i], Y.T[i], Fl_MEA, Fv_N2, Fv_O2, df_param, temp_dep, run_type)
+        outputs = abs_column(z[i], Y.T[i], Fl_MEA, Fv_N2, Fv_O2, df_param, run_type)
 
         for k in sheetnames:
             output_dict[k][i] = outputs[k]

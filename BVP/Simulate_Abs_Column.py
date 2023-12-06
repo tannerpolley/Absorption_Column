@@ -4,12 +4,11 @@ from Parameters import z
 from BVP.Solve_BCs import solve_bcs
 
 
-def simulate_abs_column(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
+def simulate_abs_column(Fl_0, Fv_z, Tl_0, Tv_z, df_param, show_residuals):
 
     n_l = len(Fl_0)
-    Y_0, shooter_message = solve_bcs(Fl_0, Fv_z, T_0,
+    Y_0, shooter_message = solve_bcs(Fl_0, Fv_z, Tl_0, Tv_z,
                                      df_param,
-                                     temp_dep,
                                      show_residuals)
 
     if shooter_message == 'This will break the model':
@@ -21,7 +20,7 @@ def simulate_abs_column(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
     obj = solve_ivp(abs_column,
                     [z[0], z[-1]],
                     Y_0,
-                    args=(Fl_0[1], Fv_z[2], Fv_z[3], df_param, temp_dep, run_type),
+                    args=(Fl_0[1], Fv_z[2], Fv_z[3], df_param, run_type),
                     method='Radau',
                     t_eval=z
                     )

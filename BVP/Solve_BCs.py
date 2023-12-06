@@ -6,24 +6,24 @@ from numpy import append, array
 import numpy as np
 
 
-def solve_bcs(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
+def solve_bcs(Fl_0, Fv_z, Tl_0, Tv_z, df_param, show_residuals):
 
-    solve_for_CO2 = True
-    solve_for_MEA = False
-    solve_for_H2O = True
-    solve_for_N2 = False
-    solve_for_O2 = False
-    solve_for_Tv = False
-    solve_for_uv = False
-
-    tests = [solve_for_CO2, solve_for_MEA, solve_for_H2O, solve_for_N2, solve_for_O2, solve_for_Tv, solve_for_uv]
+    solve_for_Tv = True
 
     CO2_cap_guess_dec = CO2_cap_guess*1e-2
+
+    # Top of column Boundary Condition guesses for Vapor Flow Rates and Vapor Temperature
     Fv_CO2_0_guess = Fv_z[0] * (1 - CO2_cap_guess_dec)
     Fv_H2O_0_guess = 3.918873559
+    Tv_0_guess = 333
 
-    Yv_0_guess = [Fv_CO2_0_guess, Fv_H2O_0_guess]
-    # Tv_0_guess = 334
+    if solve_for_Tv:
+
+        Yv_0_guess = [Fv_CO2_0_guess, Fv_H2O_0_guess, Tv_0_guess]
+
+    else:
+
+        Yv_0_guess = [Fv_CO2_0_guess, Fv_H2O_0_guess]
 
     CO2_cap_guess_print = (1 - Fv_CO2_0_guess / Fv_z[0]) * 100
     print(f'CO2 Cap Guess/Actual: {CO2_cap_guess_print:.2f}%/')
@@ -32,7 +32,7 @@ def solve_bcs(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
 
     if shoot:
 
-        method = 'df-sane'
+        method = 'Krylov'
         display = False
 
         if method == 'df-sane':
@@ -57,7 +57,7 @@ def solve_bcs(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
 
         root_output = root(shooter,
                            Yv_0_guess,
-                           args=(Fl_0, Fv_z, T_0, df_param, temp_dep),
+                           args=(Fl_0, Fv_z, Tl_0, Tv_z, solve_for_Tv, Tv_0_guess, df_param),
                            method=method,
                            options=options)
 
@@ -72,14 +72,19 @@ def solve_bcs(Fl_0, Fv_z, T_0, df_param, temp_dep, show_residuals):
 
         shooter_message = f'Solved? {solved}, with {n_eval:02d} obj function evaluations'
 
-        Fv_CO2_0, Fv_H2O_0 = solved_initials
+        if solve_for_Tv:
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0, Fv_H2O_0, T_0[0], T_0[1]]
+            Fv_CO2_0, Fv_H2O_0, Tv_0 = solved_initials
+        else:
+            Fv_CO2_0, Fv_H2O_0 = solved_initials
+            Tv_0 = Tv_0_guess
+
+        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0, Fv_H2O_0, Tl_0, Tv_0]
 
     else:
         shooter_message = 'No shooting'
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0_guess, Fv_H2O_0_guess, T_0[0], T_0[1]]
+        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0_guess, Fv_H2O_0_guess, Tl_0, Tv_0_guess]
 
     return Y_0, shooter_message
 
