@@ -1,10 +1,7 @@
 from numpy import sum
-from scipy.optimize import root
 from Transport.Solve_MassTransfer import solve_masstransfer
 from Thermodynamics.Solve_Driving_Force import solve_driving_force
-from Transport.Solve_Flux import solve_flux
 from Reactions.Solve_ChemEQ import solve_ChemEQ_log
-from Transport.Solve_Temperature_Change import solve_temperature_change
 from Properties.Henrys_Law import henrys_law
 from Properties.Density import liquid_density, vapor_density
 from Properties.Viscosity import viscosity
@@ -12,12 +9,12 @@ from Properties.Surface_Tension import surface_tension
 from Properties.Diffusivity import liquid_diffusivity, vapor_diffusivity
 from Properties.Heat_Capacity import heat_capacity
 from Properties.Thermal_Conductivity import thermal_conductivity
-from Parameters import A, P, MWs_l
+from Parameters import A, MWs_l
 from Parameters import f_Cl_CO2, f_Cl_MEA, f_Cl_H2O, f_Cl_MEAH, f_Cl_MEACOO, f_Cl_HCO3
 from Transport.Heat_Transfer import heat_transfer
 
 
-def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, df_param, run_type):
+def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type):
 
     Fl_CO2, Fl_H2O, Fv_CO2, Fv_H2O, Tl, Tv = Y
 
@@ -95,7 +92,7 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, df_param, run_type):
 
     # ------------------------------ Thermodynamics --------------------------------------
 
-    DF_CO2, DF_H2O, PEQ = solve_driving_force(Cl_true, x_true, y, Tl, Tv, KH, H_CO2_mix, zi)
+    DF_CO2, DF_H2O, PEQ = solve_driving_force(Cl_true, x_true, y, Tl, Tv, KH, H_CO2_mix, P, zi)
 
     # ------------------------------ Material and Energy Flux Setup --------------------------------------
 

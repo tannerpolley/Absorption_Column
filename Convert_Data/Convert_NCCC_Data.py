@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
-from Parameters import R, Tv_in, P, A, rho_l, Tl_0
+from Parameters import R, A
 from Properties.Density import liquid_density
 
 
 def convert_NCCC_data(X, df_param):
 
-    m_T_l, m_T_v, alpha, w_MEA, y_CO2 = X
+    m_T_l, m_T_v, alpha, w_MEA, y_CO2, Tl_0, Tv_z, P = X[:8]
 
     species = ['CO2', 'MEA', 'H2O', 'N2', 'O2', 'T']
     columns_l = ['w', 'm', 'MW', 'n', 'u', 'V', 'C', 'x']
@@ -26,7 +26,7 @@ def convert_NCCC_data(X, df_param):
 
     # Liquid Calculations
 
-    rho_l = liquid_density(Tl_0, w_MEA, alpha, df_param)
+    rho_l = liquid_density(Tl_0, w_MEA, alpha, df_param)[0]
 
     # Find Liquid Mass Flow Rates
     m_MEA_l = w_MEA * m_T_l  # kg/s
@@ -50,7 +50,6 @@ def convert_NCCC_data(X, df_param):
     x_N2 = n_N2_l / n_T_l
     x_O2 = n_O2_l / n_T_l
     x_T = x_CO2 + x_MEA + x_H2O + x_N2 + x_O2
-
 
     # Find Liquid Weight Fractions
     w_CO2_l = m_CO2_l / m_T_l
@@ -121,8 +120,6 @@ def convert_NCCC_data(X, df_param):
     m_N2_v = w_N2_v * m_T_v
     m_O2_v = w_O2_v * m_T_v
 
-
-
     # Find Vapor Molar Flow Rates
     n_CO2_v = m_CO2_v / MW_CO2  # mole/s
     n_MEA_v = m_MEA_v / MW_MEA  # mole/s
@@ -140,7 +137,7 @@ def convert_NCCC_data(X, df_param):
     w_T_v = w_CO2_v + w_MEA_v + w_H2O_v + w_N2_v + w_O2_v
 
     # Find Vapor Volumetric Flow Rate
-    V_v = n_T_v * R * Tv_in / P
+    V_v = n_T_v * R * Tv_z / P
 
     # Find Vapor Velocity
     u_v = V_v / A  # m/s

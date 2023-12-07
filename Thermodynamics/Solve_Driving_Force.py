@@ -1,10 +1,8 @@
 import numpy as np
-from Parameters import R, P, f_DF_H2O
-from Thermodynamics.Solve_VLE import solve_vle
-from Properties.Henrys_Law import henrys_law
+from Parameters import f_DF_H2O
 
 
-def solve_driving_force(Cl_true, x_true, y, Tl, Tv, KH, H_CO2_mix, zi):
+def solve_driving_force(Cl_true, x_true, y, Tl, Tv, KH, H_CO2_mix, P, zi):
 
     # Cli, Cvi, K, Z, Φ = solve_vle(Cl, Cv, Tl, Tv, df_param)
 

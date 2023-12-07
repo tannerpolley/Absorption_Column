@@ -51,7 +51,6 @@ Cvp = .357  # Packing Coefficient
 # ϵ = .979  # Packing Void Fraction
 
 # Absorption Column Parameters
-P = 109180  # (Pa) Pressure of the System
 H = 6  # Height of Column (m)
 D = .64  # Diameter of Column (m)
 A = ϵ * pi * D ** 2 / 4

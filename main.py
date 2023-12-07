@@ -8,21 +8,9 @@ CO2_cap_array = []
 results_array = []
 inputs_array = []
 
-# avg = np.array([1.88, .595, .167, .297, .099])
-# std = np.array([.9, .2, .1, .02, .015])
-# l_bounds = avg - std
-# u_bounds = avg + std
-# sampler = qmc.LatinHypercube(d=5)
-# sample = sampler.random(n=500)
-# sample = qmc.scale(sample, l_bounds, u_bounds)
-# data = sample
-
-# df = pd.read_csv('data/test_for_failures_outputv2[8].csv')
-
 case_num = 18
 for i in range(case_num - 1, case_num):
 
-    # m_T_l, m_T_v, alpha, w_MEA, y_CO2
     X = get_NCCC_data(index=i)
     CO2_cap, shooter_message = run_model(X,
                                          run=i,
@@ -34,7 +22,7 @@ for i in range(case_num - 1, case_num):
 
 data = np.column_stack([inputs_array, CO2_cap_array, results_array])
 
-columns = ['L', 'G', 'alpha', 'w_MEA', 'y_CO2', 'CO2 CAP%', 'Results']
+columns = ['L', 'G', 'alpha', 'w_MEA', 'y_CO2', 'Tl', 'Tv', 'P', 'Beds', 'CO2 CAP%', 'Results']
 df = pd.DataFrame(data, columns=columns)
 df.index.name = 'Runs'
 df.index += 1

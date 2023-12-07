@@ -1,18 +1,12 @@
-import numpy as np
 from scipy.integrate import solve_ivp
 from BVP.ABS_Column import abs_column
-from Parameters import z
 
 
-def shooter(X, Fl_0, Fv_z, Tl_0, Tv_z, solve_for_Tv, Tv_0_guess, df_param):
+def shooter(X, inputs, df_param):
 
-    if solve_for_Tv:
+    Fv_CO2_0, Fv_H2O_0, Tv_0 = X
 
-        Fv_CO2_0, Fv_H2O_0, Tv_0 = X
-
-    else:
-        Tv_0 = Tv_0_guess
-        Fv_CO2_0, Fv_H2O_0 = X
+    Fl_0, Fv_z, Tl_0, Tv_z, z, P = inputs
 
     Fl_CO2_0, Fl_MEA_0, Fl_H2O_0 = Fl_0
     Fv_CO2_z, Fv_H2O_z, Fv_N2_z, Fv_O2_z = Fv_z
@@ -24,26 +18,15 @@ def shooter(X, Fl_0, Fv_z, Tl_0, Tv_z, solve_for_Tv, Tv_0_guess, df_param):
     Y = solve_ivp(abs_column,
                   [z[0], z[-1]],
                   Y_0,
-                  args=(Fl_MEA_0, Fv_N2_z, Fv_O2_z, df_param, run_type),
+                  args=(Fl_MEA_0, Fv_N2_z, Fv_O2_z, P, df_param, run_type),
                   method='Radau').y
 
-    if solve_for_Tv:
+    Fv_CO2_z_sim, Fv_H2O_z_sim, Tv_z_sim = Y[2, -1], Y[3, -1], Y[-1, -1]
 
-        Fv_CO2_z_sim, Fv_H2O_z_sim = Y[2:4, -1]
-        Tv_z_sim = Y[-1, -1]
+    eq1 = Fv_CO2_z_sim - Fv_CO2_z
+    eq2 = Fv_H2O_z_sim - Fv_H2O_z
+    eq3 = Tv_z_sim - Tv_z
 
-        eq1 = Fv_CO2_z_sim - Fv_CO2_z
-        eq2 = Fv_H2O_z_sim - Fv_H2O_z
-        eq3 = Tv_z_sim - Tv_z
-
-        eqs = [eq1, eq2, eq3]
-
-    else:
-        Fv_CO2_z_sim, Fv_H2O_z_sim = Y[2:4, -1]
-
-        eq1 = Fv_CO2_z_sim - Fv_CO2_z
-        eq2 = Fv_H2O_z_sim - Fv_H2O_z
-
-        eqs = [eq1, eq2]
+    eqs = [eq1, eq2, eq3]
 
     return eqs
