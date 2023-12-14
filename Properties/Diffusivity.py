@@ -1,5 +1,4 @@
 import numpy as np
-from Parameters import vapor_species
 
 
 def liquid_diffusivity(Tl, C_MEA, df_param):
@@ -16,14 +15,11 @@ def liquid_diffusivity(Tl, C_MEA, df_param):
 
 def vapor_diffusivity(Tv, y, P,  df_param):
 
-
     coefficients = df_param['Vapor Diffusivity'].dropna().to_numpy()
 
     Dv = (coefficients * Tv ** 1.75) / P
 
-    Dv_T = 0
-    for i in range(len(vapor_species)):
-        Dv_T += y[i] * Dv[i]
+    Dv_T = np.sum([y[i] * Dv[i] for i in range(len(y))])
 
     Dv_CO2, Dv_H2O, Dv_N2, Dv_O2 = Dv
 

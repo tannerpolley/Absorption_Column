@@ -1,26 +1,25 @@
 from scipy.optimize import root
 from BVP.Shooter import shooter
-from Parameters import CO2_cap_guess
 
 
 def solve_bcs(inputs, df_param, show_residuals):
 
-    Fl_0, Fv_z, Tl_0, Tv_z, z = inputs[:-1]
+    Fl_z, Fv_0, Tl_z, Tv_0, z = inputs[:-1]
 
-    CO2_cap_guess_dec = CO2_cap_guess*1e-2
+    Fv_CO2_0, Fv_H2O_0, Fv_N2_0, Fv_O2_0 = Fv_0
 
-    # Top of column Boundary Condition guesses for Vapor Flow Rates and Vapor Temperature
-    Fv_CO2_0_guess = Fv_z[0] * (1 - CO2_cap_guess_dec)
-    Fv_H2O_0_guess = 3.918873559
-    Tv_0_guess = 333
+    Fl_CO2_0_guess = 3.31034
+    Fl_H2O_0_guess = 67.6699
 
-    Yv_0_guess = [Fv_CO2_0_guess, Fv_H2O_0_guess, Tv_0_guess]
+    # with .875 of kv_H2O
+    # 323.99596467109725494993
+    # 323.99596467109725494992
 
-    # Prints out the CO2% Captured Guess Value before each run
-    CO2_cap_guess_print = (1 - Fv_CO2_0_guess / Fv_z[0]) * 100
-    print(f'CO2 Cap Guess/Actual: {CO2_cap_guess_print:.2f}%/')
+    Tl_0_guess = 323.99596467109725494993
 
-    shoot = True
+    Yv_0_guess = [Fl_CO2_0_guess, Fl_H2O_0_guess, Tl_0_guess]
+
+    shoot = False
 
     if shoot:
 
@@ -57,14 +56,14 @@ def solve_bcs(inputs, df_param, show_residuals):
 
         shooter_message = f'Solved? {solved}, with {n_eval:02d} obj function evaluations'
 
-        Fv_CO2_0, Fv_H2O_0, Tv_0 = solved_initials
+        Fl_CO2_0, Fl_H2O_0, Tl_0 = solved_initials
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0, Fv_H2O_0, Tl_0, Tv_0]
+        Y_0 = [Fl_CO2_0, Fl_H2O_0, Fv_CO2_0, Fv_H2O_0, Tl_0, Tv_0]
 
     else:
         shooter_message = 'No shooting'
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0_guess, Fv_H2O_0_guess, Tl_0, Tv_0_guess]
+        Y_0 = [Fl_CO2_0_guess, Fl_H2O_0_guess, Fv_CO2_0, Fv_H2O_0, Tl_0_guess, Tv_0]
 
     return Y_0, shooter_message
 

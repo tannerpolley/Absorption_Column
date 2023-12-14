@@ -11,7 +11,8 @@ inputs_array = []
 case_num = 18
 for i in range(case_num - 1, case_num):
 
-    X = get_NCCC_data(index=i)
+    # X = get_NCCC_data(index=i)
+    X = [1.89,	0.6308,	0.141,	0.302,	0.1019,	315.39,	319.22,	109180,	1]
     CO2_cap, shooter_message = run_model(X,
                                          run=i,
                                          show_residuals=False,

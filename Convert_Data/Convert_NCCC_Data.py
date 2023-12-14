@@ -26,7 +26,7 @@ def convert_NCCC_data(X, df_param):
 
     # Liquid Calculations
 
-    rho_l = liquid_density(Tl_0, w_MEA, alpha, df_param)[0]
+
 
     # Find Liquid Mass Flow Rates
     m_MEA_l = w_MEA * m_T_l  # kg/s
@@ -64,6 +64,8 @@ def convert_NCCC_data(X, df_param):
     MW_l = 0
     for i in range(len(x_ls)):
         MW_l += x_ls[i] * MWs_2[:-1][i]  # kg/mol
+
+    rho_l = liquid_density(Tl_0, x_ls, df_param)[0]
 
     V_l = MW_l/rho_l
 

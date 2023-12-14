@@ -28,17 +28,19 @@ def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, s
     vapor, liquid = convert_NCCC_data(X, df_param)
 
     # Collect input data from dataframes
-    Fl_0 = liquid['n']['CO2'], liquid['n']['MEA'], liquid['n']['H2O']
-    Fv_z = vapor['n']['CO2'], vapor['n']['H2O'], vapor['n']['N2'], vapor['n']['O2']
+    Fl_z = liquid['n']['CO2'], liquid['n']['MEA'], liquid['n']['H2O']
+    Fv_0 = vapor['n']['CO2'], vapor['n']['H2O'], vapor['n']['N2'], vapor['n']['O2']
 
-    Tl_0 = X[5]
-    Tv_z = X[6]
+    Tl_z = X[5]
+    Tv_0 = X[6]
     P = X[7]
-
     n_beds = X[8]
     z = np.linspace(0, H*n_beds, n)
 
-    inputs = [Fl_0, Fv_z, Tl_0, Tv_z, z, P]
+    stages = np.linspace(0, H, n)
+    # print(stages)
+
+    inputs = [Fl_z, Fv_0, Tl_z, Tv_0, z, P]
 
     print(f'Run #{run + 1:03d} --- ', end='')
 
@@ -64,20 +66,22 @@ def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, s
 
     # Collects data from the final integration output
 
-    Fv_CO2_0, Fv_CO2_z, Fv_H2O_z = Y[2, 0], Y[2, -1], Y[3, -1]
-    CO2_cap = abs(Fv_CO2_z - Fv_CO2_0) / Fv_CO2_z * 100
+    Fv_CO2_z, Fv_H2O_z = Y[2, -1], Y[3, -1]
+    CO2_cap = abs(Fv_0[0] - Fv_CO2_z) / Fv_0[0] * 100
 
-    # Computes the relative error between the solution that the shooter found to the actual inlet concentration for the relevant vapor species
-    CO2_rel_err = abs(Fv_z[0] - Fv_CO2_z) / Fv_z[0] * 100
-    H2O_rel_err = abs(Fv_z[1] - Fv_H2O_z) / Fv_z[1] * 100
+    Fl_CO2_z, Fl_H2O_z, Tl_z_sim = Y[0, -1], Y[1, -1], Y[4, -1]
 
+    # Computes the relative error between the solution that the shooter found to the actual inlet concentration for the relevant liquid species
+    CO2_rel_err = abs(Fl_z[0] - Fl_CO2_z) / Fl_z[0] * 100
+    H2O_rel_err = abs(Fl_z[2] - Fl_H2O_z) / Fl_z[2] * 100
+    Tl_rel_err = abs(Tl_z - Tl_z_sim) / Tl_z * 100
 
     # Prints out relevant info such as simulation time, relative errors, CO2% captured, if max iterations were reached, and number of Nan's counted
     if show_info:
-        print(f'{CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}%, H2O = {H2O_rel_err:0>{5}.2f}% - {shooter_message}')
+        print(f'{CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}%, H2O = {H2O_rel_err:0>{5}.2f}%, Tl = {Tl_rel_err:0>{5}.2f}% - {shooter_message}')
 
     # Stores output data into text files (concentrations, mole fractions, and temperatures) (can also plot)
     if save_run_results:
-        save_run_outputs(Y, Fl_0[1], Fv_z[2], Fv_z[3], P, df_param)
+        save_run_outputs(Y, Fl_z[1], Fv_0[2], Fv_0[3], P, df_param, z, stages)
 
     return np.round(CO2_cap, 2), shooter_message

@@ -1,10 +1,10 @@
-from Parameters import a_p, Clp, Chp, Cvp, ϵ, g, R, f_E, A
+from Parameters import a_p, Clp, Chp, Cvp, ϵ, g, R, f_interp, A
 import numpy as np
 log = np.log
 exp = np.exp
 
 
-def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, Dv_CO2, Dv_H2O, Dv_T, Tv, ul, uv, H_CO2_mix, zi):
+def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, Dv_CO2, Dv_H2O, Dv_T, Tl, Tv, ul, uv, H_CO2_mix, Cl_MEA_true, zi):
 
     # Compute wetted hydraulic specific transfer area
     Re = (ul * rho_mass_l) / (a_p * mul_mix)
@@ -86,20 +86,19 @@ def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, 
         # print(log(Cvp), log(R), log(Tv), log(h_V), log(a_p), log(d_h), log(Dv), log(muv_mix), log(rho_mass_v), log(uv))
         return kv
 
-    kv_CO2, kv_H2O = f_kv(Dv_CO2), f_kv(Dv_H2O)
+    kv_CO2, kv_H2O = f_kv(Dv_CO2), f_kv(Dv_H2O)*.875
     kv_T = f_kv(Dv_T)*(R*Tv)
 
     kl_CO2 = f_kl(Dl_CO2)
 
-    E = f_E(zi)
+    E = f_interp('E', zi)
+    # kl_CO2 = f_interp('kl_CO2', zi)
+    # kv_CO2 = f_interp('kv_CO2', zi)
+    # kv_H2O = f_interp('kv_H2O', zi)
+    k2 = 3.1732e9*exp(-4936.6/Tl)*Cl_MEA_true*1e-6
+    Ha = (k2*Cl_MEA_true*Dl_CO2)**.5/kl_CO2
 
-    # Rl = H_CO2_mix / (E * kl_CO2)
-    # Rv = 1 / kv_CO2
+    # KH = E * kl_CO2 / kv_CO2 / (E * kl_CO2 / kv_CO2 + H_CO2_mix)
+    KH = Ha * kl_CO2 / kv_CO2 / (Ha * kl_CO2 / kv_CO2 + H_CO2_mix)
 
-    # kl_CO2 = f_kl_CO2(zi)
-    # kv_CO2 = f_kv_CO2(zi)
-    # kv_H2O = f_kv_H2O(zi)
-
-    KH = E * kl_CO2 / kv_CO2 / (E * kl_CO2 / kv_CO2 + H_CO2_mix)
-
-    return kv_CO2, kv_H2O, kv_T, KH, [kl_CO2, kv_CO2, kv_H2O, KH, E], uv, a_e, [ul, uv, h_L, a_e]
+    return kv_CO2, kv_H2O, kv_T, KH, [kl_CO2, kv_CO2, kv_H2O, KH, E, Ha], uv, a_e, [ul, uv, h_L, a_e]
