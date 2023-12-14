@@ -18,12 +18,15 @@ from Transport.Heat_Transfer import heat_transfer
 def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type):
 
     Fl_CO2, Fl_H2O, Fv_CO2, Fv_H2O, Tl, Tv = Y
+
     #
-    # print(Tl, Tv)
-    if Tl >= 360:
-        Tl = 360
-    if Tv >= 360:
-        Tv = 360
+    # if zi == 6.0:
+    #     print(f'Tl: {Tl - Tl_z:.3f}, CO2: {Fl_CO2 - Fl_CO2_z:.3f}, H2O: {Fl_H2O - Fl_H2O_z:.3f}')
+
+    if Tl >= 370:
+        Tl = 370
+    if Tv >= 370:
+        Tv = 369.99
 
     a0 = Fl_MEA/(Fl_MEA + Fl_H2O)
 
@@ -177,6 +180,7 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type):
         Cpv_CO2, Cpv_H2O, Cpv_N2, Cpv_O2 = Cpv
         dTl_dz = -ql * kE_l
         dTv_dz = -qv * kE_v
+        T_diff = Tl - Tv
 
         output_dict = {'Fl': [Fl_CO2, Fl_MEA, Fl_H2O, dFl_CO2_dz, dFl_H2O_dz],
                        'Fv': [Fv_CO2, Fv_H2O, Fv_N2, Fv_O2],
@@ -184,7 +188,7 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type):
                        'Cv': [Cv_CO2, Cv_H2O, Cv_N2, Cv_O2],
                        'x': [x_CO2, x_MEA, x_H2O],
                        'y': [y_CO2, y_H2O, y_N2, y_O2],
-                       'T': [Tl, Tl_2, Tv, Tv_2],
+                       'T': [Tl, Tv, T_diff],
                        'CO2': [N_CO2, KH, DF_CO2, Pv_CO2, Pl_CO2, H_CO2_mix],
                        'H2O': [N_H2O, kv_H2O, DF_H2O, Pv_H2O, Pl_H2O, Psat_H2O, N_H2O_IDAES, DF_H2O_IDAES, Pv_H2O_IDAES, Pl_H2O_IDAES, Psat_H2O_IDAES],
                        'k_mx': [kl_CO2, kv_CO2, kv_H2O, KH, E, Ha],

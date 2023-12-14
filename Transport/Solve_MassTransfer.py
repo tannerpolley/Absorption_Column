@@ -86,7 +86,7 @@ def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, 
         # print(log(Cvp), log(R), log(Tv), log(h_V), log(a_p), log(d_h), log(Dv), log(muv_mix), log(rho_mass_v), log(uv))
         return kv
 
-    kv_CO2, kv_H2O = f_kv(Dv_CO2), f_kv(Dv_H2O)*.875
+    kv_CO2, kv_H2O = f_kv(Dv_CO2), f_kv(Dv_H2O)
     kv_T = f_kv(Dv_T)*(R*Tv)
 
     kl_CO2 = f_kl(Dl_CO2)

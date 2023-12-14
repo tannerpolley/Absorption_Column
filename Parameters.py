@@ -16,7 +16,10 @@ Cvp = .357  # Packing Coefficient
 # Absorption Column Parameters
 # 2.008862 Not Clean
 # 2.008861 Clean
-H = 2.008862  # Height of Column (m)
+# with .875 kv_H2O and # 323.99596467109725494993 323.99596467109725494992 as T max and min
+
+
+H = 6  # Height of Column (m)
 D = .64  # Diameter of Column (m)
 A = ϵ * np.pi * D ** 2 / 4
 
@@ -28,7 +31,7 @@ df_surr = pd.read_csv(r'data\T_surrogate.csv')
 
 def f_interp(name, zi):
     n_int = len(df_surr[name].to_numpy())
-    return np.float64(interp1d(np.linspace(0, 6.0, n_int), df_surr[name].to_numpy()[::-1], kind='cubic')(zi))
+    return np.float64(interp1d(np.linspace(0, H, n_int), df_surr[name].to_numpy()[::-1], kind='cubic')(zi))
 
 
 # Other Constants

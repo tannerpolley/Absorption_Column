@@ -3,16 +3,16 @@ from BVP.ABS_Column import abs_column
 from BVP.Solve_BCs import solve_bcs
 
 
-def simulate_abs_column(inputs, df_param, show_residuals):
+def simulate_abs_column(inputs, Tl_0_guess, df_param, show_residuals):
 
-    Y_0, shooter_message = solve_bcs(inputs, df_param, show_residuals)
+    Y_0, shooter_message = solve_bcs(inputs, Tl_0_guess, df_param, show_residuals)
 
     if shooter_message == 'This will break the model':
         return -1000, shooter_message
 
     run_type = 'simulating'
 
-    Fl_z, Fv_0, Tl_0, Tv_z, z, P = inputs
+    Fl_z, Fv_0, Tl_z, Tv_0, z, P = inputs
 
     obj = solve_ivp(abs_column,
                     [z[0], z[-1]],

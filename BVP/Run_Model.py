@@ -10,7 +10,7 @@ from misc.Save_Run_Outputs import save_run_outputs
 np.set_printoptions(suppress=True)
 
 
-def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, save_run_results=True):
+def run_model(X, Tl_0_guess, param_dict=None, run=0, show_info=True, show_residuals=False, save_run_results=True):
 
     if param_dict is None:
         df_param = pd.read_csv(r'data\Property_Parameters_OG.csv')
@@ -42,7 +42,8 @@ def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, s
 
     inputs = [Fl_z, Fv_0, Tl_z, Tv_0, z, P]
 
-    print(f'Run #{run + 1:03d} --- ', end='')
+    if show_info:
+        print(f'Run #{run + 1:03d} --- ', end='')
 
     # Starts the time tracker for the total computation time for one simulation run
     start = time.time()
@@ -50,7 +51,7 @@ def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, s
     # Simulate the Absorption Column from start to finish given the inlet concentrations of the top liquid and bottom vapor streams
     # Also has a try and except statement to catch runs that ended with too many NaN's
 
-    Y, shooter_message = simulate_abs_column(inputs, df_param, show_residuals)
+    Y, shooter_message = simulate_abs_column(inputs, Tl_0_guess, df_param, show_residuals)
 
     # Ends the time tracker for the total computation time for one simulation run
     end = time.time()
@@ -84,4 +85,17 @@ def run_model(X, param_dict=None, run=0, show_info=True, show_residuals=False, s
     if save_run_results:
         save_run_outputs(Y, Fl_z[1], Fv_0[2], Fv_0[3], P, df_param, z, stages)
 
-    return np.round(CO2_cap, 2), shooter_message
+    Tl_sim, Tv_sim = Y[4], Y[5]
+    T_diff = Tl_sim - Tv_sim
+    i_inters = list(T_diff).index(min(T_diff))
+    z_int = z[i_inters]
+
+    if Tl_sim[-1] > Tv_sim[-1]:
+        if Tl_sim[-1] > 360:
+            message = 'Diverges Up'
+        else:
+            message = 'Doesnt Collide'
+    elif Tl_sim[-1] < Tv_sim[-1]:
+        message = f'Collides at {z_int:.2f}'
+
+    return message
