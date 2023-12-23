@@ -2,45 +2,42 @@ import numpy as np
 import pandas as pd
 import time
 import math
-from Parameters import H, n
+from Parameters import n
 from BVP.Simulate_Abs_Column import simulate_abs_column
 from Convert_Data.Convert_NCCC_Data import convert_NCCC_data
+from Convert_Data.Convert_SRP_Data import convert_SRP_data
 from misc.Save_Run_Outputs import save_run_outputs
+from collections import defaultdict
 
 np.set_printoptions(suppress=True)
 
 
-def run_model(X, Tl_0_guess, param_dict=None, run=0, show_info=True, show_residuals=False, save_run_results=True):
+def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=True):
 
-    if param_dict is None:
-        df_param = pd.read_csv(r'data\Property_Parameters_OG.csv')
-        df_param.to_csv(r'data\Property_Parameters.csv')
+    X = df.iloc[run, :8].to_numpy()
 
-    else:
-        df_param = pd.read_csv(r'data/Property_Parameters_OG.csv')
-        for k, v in param_dict.items():
-            for i in range(len(df_param[k].to_numpy())):
-                if not math.isnan(df_param[k][i]):
-                    df_param[k][i] = v[i]
-        df_param.to_csv(r'data\Property_Parameters.csv')
+    # Grab the parameters for each run
+    parameters = df.iloc[run, 8:].to_dict()
 
-    # Converts the NCCC data to dataframes containing all inlet information, especially inlet concentrations
-    vapor, liquid = convert_NCCC_data(X, df_param)
+    # Convert the parameters to a nested dictionary based on type (VLE, Surface Tension, Viscosity)
+    df_param = defaultdict(dict)
+    for k, v in parameters.items():
+        k1, k2 = k.split('-')
+        df_param[k1][k2] = v
+    df_param = dict(df_param)
 
-    # Collect input data from dataframes
-    Fl_z = liquid['n']['CO2'], liquid['n']['MEA'], liquid['n']['H2O']
-    Fv_0 = vapor['n']['CO2'], vapor['n']['H2O'], vapor['n']['N2'], vapor['n']['O2']
+    # ---- SRP Data Runs ---
+    # Tl_z, Tv_0, L, G, alpha, y_CO2, y_H2O, H
+    # X2 = [314, 320, 29.0, 3.52, 0.279,	0.013,	0.177, 6]
+    # Create an input list for the values that are used in the simulation
+    inputs = convert_SRP_data(X, n)
 
-    Tl_z = X[5]
-    Tv_0 = X[6]
-    P = X[7]
-    n_beds = X[8]
-    z = np.linspace(0, H*n_beds, n)
+    # Determine Scaling values
+    Fl_CO2_0_scaling = 1.5
+    Fl_H2O_0_scaling = 26
+    Tl_0_scaling = 350
 
-    stages = np.linspace(0, H, n)
-    # print(stages)
-
-    inputs = [Fl_z, Fv_0, Tl_z, Tv_0, z, P]
+    scales = [Fl_CO2_0_scaling, Fl_H2O_0_scaling, Tl_0_scaling]
 
     if show_info:
         print(f'Run #{run + 1:03d} --- ', end='')
@@ -49,28 +46,23 @@ def run_model(X, Tl_0_guess, param_dict=None, run=0, show_info=True, show_residu
     start = time.time()
 
     # Simulate the Absorption Column from start to finish given the inlet concentrations of the top liquid and bottom vapor streams
-    # Also has a try and except statement to catch runs that ended with too many NaN's
-
-    Y, shooter_message = simulate_abs_column(inputs, Tl_0_guess, df_param, show_residuals)
+    # This function simulates either with solving for BC's or assuming them
+    Y, shooter_message = simulate_abs_column(inputs, df_param, scales, show_residuals)
 
     # Ends the time tracker for the total computation time for one simulation run
     end = time.time()
     total_time = end - start
 
-    Reset_Counter = int(np.loadtxt(r'counters/Run_Counter.txt'))
-    Reset_Counter += 1
-    np.savetxt(r'counters/Reset_Counter.txt', np.array([Reset_Counter]))
-
-    if shooter_message == 'This will break the model':
-        print(f'Time: {total_time} sec - Run Failed due to convergence issues')
-        return 0, 'Run Failed due to convergence issues'
-
     # Collects data from the final integration output
+
+    Fl_z, Fv_0, Tl_z, Tv_0, z, A, P = inputs
 
     Fv_CO2_z, Fv_H2O_z = Y[2, -1], Y[3, -1]
     CO2_cap = abs(Fv_0[0] - Fv_CO2_z) / Fv_0[0] * 100
 
     Fl_CO2_z, Fl_H2O_z, Tl_z_sim = Y[0, -1], Y[1, -1], Y[4, -1]
+
+    print(f'Real: {Fl_z[0]:.3f}, Sim: {Fl_CO2_z:.3f}')
 
     # Computes the relative error between the solution that the shooter found to the actual inlet concentration for the relevant liquid species
     CO2_rel_err = abs(Fl_z[0] - Fl_CO2_z) / Fl_z[0] * 100
@@ -83,19 +75,6 @@ def run_model(X, Tl_0_guess, param_dict=None, run=0, show_info=True, show_residu
 
     # Stores output data into text files (concentrations, mole fractions, and temperatures) (can also plot)
     if save_run_results:
-        save_run_outputs(Y, Fl_z[1], Fv_0[2], Fv_0[3], P, df_param, z, stages)
+        save_run_outputs(Y, Fl_z[1], Fv_0[2], Fv_0[3], z, A, P, df_param, n)
 
-    Tl_sim, Tv_sim = Y[4], Y[5]
-    T_diff = Tl_sim - Tv_sim
-    i_inters = list(T_diff).index(min(T_diff))
-    z_int = z[i_inters]
-
-    if Tl_sim[-1] > Tv_sim[-1]:
-        if Tl_sim[-1] > 360:
-            message = 'Diverges Up'
-        else:
-            message = 'Doesnt Collide'
-    elif Tl_sim[-1] < Tv_sim[-1]:
-        message = f'Collides at {z_int:.2f}'
-
-    return message
+    return CO2_cap, shooter_message

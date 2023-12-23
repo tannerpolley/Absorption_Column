@@ -1,4 +1,5 @@
 from Parameters import MWs_l
+import numpy as np
 
 
 def surface_tension(Tl, x, w_MEA, alpha, df_param):
@@ -12,11 +13,23 @@ def surface_tension(Tl, x, w_MEA, alpha, df_param):
 
     r =  wt_MEA/( wt_MEA + wt_H2O)
 
-    S1, S2, S3, S4, S5, S6 = df_param['CO2 Surface Tension'].dropna().to_numpy()
-    c1_MEA, c2_MEA, c3_MEA, c4_MEA, Tc_MEA = df_param['MEA Surface Tension'].dropna().to_numpy()
-    c1_H2O, c2_H2O, c3_H2O, c4_H2O, Tc_H2O = df_param['H2O Surface Tension'].dropna().to_numpy()
-    a, b, c, d, e = df_param['CO2-H2O Surface Tension'].dropna().to_numpy()
-    f, g, h, i, j = df_param['MEA-H2O Surface Tension'].dropna().to_numpy()
+    # S1 = df_param['surface_tension']['surf_tens_CO2_coeff_1']
+    # S2 = df_param['surface_tension']['surf_tens_CO2_coeff_2']
+    # S3 = df_param['surface_tension']['surf_tens_CO2_coeff_3']
+    # S4 = df_param['surface_tension']['surf_tens_CO2_coeff_4']
+    # S5 = df_param['surface_tension']['surf_tens_CO2_coeff_5']
+    # S6 = df_param['surface_tension']['surf_tens_CO2_coeff_6']
+    #
+
+    S1, S2, S3, S4, S5, S6 = list(df_param['surface_tension'].values())[:6]
+
+    c1_MEA, c2_MEA, c3_MEA, c4_MEA, Tc_MEA = 0.09945, 1.067, 0, 0, 614.45
+    c1_H2O, c2_H2O, c3_H2O, c4_H2O, Tc_H2O = 0.18548, 2.717, -3.554, 2.047, 647.13
+
+    # a, b, c, d, e = df_param['surface_tension']['surf_tens_F_coeff_a']
+    # f, g, h, i, j = df_param['surface_tension']['surf_tens_F_coeff_b']
+    #
+    a, b, c, d, e, f, g, h, i, j = list(df_param['surface_tension'].values())[6:]
 
     sigma_CO2 = S1 * r**2 + S2 * r + S3 + Tl*(S4 * r**2 + S5 * r + S6)
     sigma_MEA = c1_MEA*(1 - Tl/Tc_MEA)**(c2_MEA + c3_MEA*(Tl/Tc_MEA) + c4_MEA*(Tl/Tc_MEA)**2)

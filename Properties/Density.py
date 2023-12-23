@@ -7,17 +7,13 @@ def liquid_density(Tl, x, df_param):
 
     MWT_l = sum([x[i] * MWs_l[i] for i in range(len(x))])
 
-    # a1, b1, c1 = df_param['MEA Molar Volume'].dropna().to_numpy()
-    # a2, b2, c2 = df_param['H2O Molar Volume'].dropna().to_numpy()
-
     a1, b1, c1 = [-5.35162e-7, -4.51417e-4, 1.19451]
     a2, b2, c2 = [-3.2484e-6, 0.00165, 0.793]
 
     V_MEA = MWs_l[1]*1000 / (a1 * Tl ** 2 + b1 * Tl + c1)  # mL/mol
     V_H2O = MWs_l[2]*1000 / (a2 * Tl ** 2 + b2 * Tl + c2)   # mL/mol
 
-    # a, b, c, d, e = df_param['Liquid Mixture Molar Volume'].dropna().to_numpy()
-    a, b, c, d, e = [10.5792012186177, -2.02049415703576, 3.1506793296904, 192.012600751473, -695.384861676286]
+    a, b, c, d, e = df_param['molar_volume'].values()
 
     V_CO2 = a + (b + c * x_MEA) * x_MEA * x_H2O + (d + e * x_MEA) * x_MEA * x_CO2
 

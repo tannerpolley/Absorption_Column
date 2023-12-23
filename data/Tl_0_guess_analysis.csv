@@ -1,102 +1,1544 @@
-Runs,Tl_0_guess,message
-1,323.75400801,Collides at 2.28
-2,323.7540080104,Collides at 2.28
-3,323.7540080108,Collides at 2.28
-4,323.7540080112,Collides at 2.28
-5,323.7540080116,Collides at 2.28
-6,323.754008012,Collides at 2.28
-7,323.7540080124,Collides at 2.28
-8,323.7540080128,Collides at 2.28
-9,323.7540080132,Collides at 2.28
-10,323.7540080136,Collides at 2.28
-11,323.754008014,Collides at 2.28
-12,323.75400801440003,Collides at 2.28
-13,323.7540080148,Collides at 2.34
-14,323.7540080152,Collides at 2.34
-15,323.7540080156,Collides at 2.34
-16,323.754008016,Collides at 2.34
-17,323.7540080164,Collides at 2.34
-18,323.7540080168,Collides at 2.34
-19,323.7540080172,Collides at 2.34
-20,323.75400801760003,Collides at 2.34
-21,323.754008018,Collides at 2.34
-22,323.7540080184,Collides at 2.40
-23,323.7540080188,Collides at 2.40
-24,323.7540080192,Collides at 2.40
-25,323.7540080196,Doesnt Collide
-26,323.75400802,Doesnt Collide
-27,323.7540080204,Doesnt Collide
-28,323.7540080208,Doesnt Collide
-29,323.7540080212,Doesnt Collide
-30,323.7540080216,Doesnt Collide
-31,323.754008022,Doesnt Collide
-32,323.7540080224,Collides at 2.58
-33,323.7540080228,Doesnt Collide
-34,323.7540080232,Doesnt Collide
-35,323.7540080236,Doesnt Collide
-36,323.754008024,Doesnt Collide
-37,323.7540080244,Doesnt Collide
-38,323.7540080248,Doesnt Collide
-39,323.7540080252,Doesnt Collide
-40,323.7540080256,Doesnt Collide
-41,323.754008026,Doesnt Collide
-42,323.7540080264,Doesnt Collide
-43,323.7540080268,Doesnt Collide
-44,323.7540080272,Doesnt Collide
-45,323.7540080276,Doesnt Collide
-46,323.754008028,Doesnt Collide
-47,323.7540080284,Doesnt Collide
-48,323.7540080288,Doesnt Collide
-49,323.7540080292,Doesnt Collide
-50,323.7540080296,Doesnt Collide
-51,323.75400803,Doesnt Collide
-52,323.7540080304,Collides at 2.46
-53,323.7540080308,Doesnt Collide
-54,323.7540080312,Doesnt Collide
-55,323.7540080316,Doesnt Collide
-56,323.754008032,Doesnt Collide
-57,323.7540080324,Doesnt Collide
-58,323.7540080328,Doesnt Collide
-59,323.75400803319997,Doesnt Collide
-60,323.7540080336,Doesnt Collide
-61,323.754008034,Doesnt Collide
-62,323.7540080344,Doesnt Collide
-63,323.7540080348,Doesnt Collide
-64,323.7540080352,Doesnt Collide
-65,323.7540080356,Doesnt Collide
-66,323.754008036,Doesnt Collide
-67,323.75400803639997,Doesnt Collide
-68,323.7540080368,Collides at 2.52
-69,323.7540080372,Collides at 2.46
-70,323.7540080376,Collides at 2.52
-71,323.754008038,Doesnt Collide
-72,323.7540080384,Doesnt Collide
-73,323.7540080388,Doesnt Collide
-74,323.7540080392,Doesnt Collide
-75,323.75400803959997,Doesnt Collide
-76,323.75400804,Doesnt Collide
-77,323.7540080404,Doesnt Collide
-78,323.7540080408,Doesnt Collide
-79,323.7540080412,Doesnt Collide
-80,323.7540080416,Doesnt Collide
-81,323.754008042,Doesnt Collide
-82,323.75400804239996,Doesnt Collide
-83,323.75400804279997,Doesnt Collide
-84,323.7540080432,Doesnt Collide
-85,323.7540080436,Doesnt Collide
-86,323.754008044,Doesnt Collide
-87,323.7540080444,Doesnt Collide
-88,323.7540080448,Doesnt Collide
-89,323.7540080452,Doesnt Collide
-90,323.75400804559996,Doesnt Collide
-91,323.75400804599997,Doesnt Collide
-92,323.7540080464,Doesnt Collide
-93,323.7540080468,Doesnt Collide
-94,323.7540080472,Doesnt Collide
-95,323.7540080476,Doesnt Collide
-96,323.754008048,Doesnt Collide
-97,323.7540080484,Doesnt Collide
-98,323.75400804879996,Doesnt Collide
-99,323.75400804919997,Doesnt Collide
-100,323.7540080496,Doesnt Collide
-101,323.75400805,Doesnt Collide
+Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message,Runs,Message
+1,Collides at 2.28,1165,Diverges Up,1217,Collides at 2.88,1247,Doesnt Collide,1491,Collides at 6.00,1590,Diverges Up,2545,Collides at 2.52,2572,Diverges Up,3313,Collides at 2.46,3459,Diverges Up
+2,Collides at 2.28,1166,Diverges Up,1218,Collides at 2.88,1248,Doesnt Collide,1492,Doesnt Collide,1591,Diverges Up,2546,Collides at 2.52,2573,Diverges Up,3314,Diverges Up,3460,Diverges Up
+3,Collides at 2.28,1167,Collides at 2.40,1219,Collides at 2.88,1249,Doesnt Collide,1493,Doesnt Collide,1592,Diverges Up,2547,Collides at 2.52,2574,Diverges Up,3315,Diverges Up,3461,Diverges Up
+4,Collides at 2.28,1168,Diverges Up,1220,Collides at 2.88,1250,Doesnt Collide,1494,Collides at 4.44,1593,Diverges Up,2548,Collides at 2.52,2575,Diverges Up,3316,Collides at 2.46,3462,Diverges Up
+5,Collides at 2.28,1169,Diverges Up,1221,Collides at 2.88,1251,Doesnt Collide,1495,Collides at 3.48,1594,Diverges Up,2549,Collides at 2.52,2576,Diverges Up,3317,Collides at 2.46,3463,Diverges Up
+6,Collides at 2.28,1170,Diverges Up,1222,Collides at 2.88,1252,Doesnt Collide,1496,Collides at 3.54,1595,Diverges Up,2550,Collides at 2.52,2577,Diverges Up,3318,Collides at 2.46,3464,Diverges Up
+7,Collides at 2.28,1171,Diverges Up,1223,Collides at 2.88,1253,Doesnt Collide,1497,Collides at 3.42,1596,Diverges Up,2551,Collides at 2.46,2578,Diverges Up,3319,Collides at 2.46,3465,Diverges Up
+8,Collides at 2.28,1172,Diverges Up,1224,Collides at 2.88,1254,Doesnt Collide,1498,Collides at 3.42,1597,Diverges Up,2552,Collides at 2.52,2579,Diverges Up,3320,Collides at 2.46,3466,Diverges Up
+9,Collides at 2.28,1173,Diverges Up,1225,Collides at 2.88,1255,Doesnt Collide,1499,Collides at 3.42,1598,Diverges Up,2553,Collides at 2.46,2580,Diverges Up,3321,Collides at 2.46,3467,Diverges Up
+10,Collides at 2.28,1174,Diverges Up,1226,Collides at 2.88,1256,Doesnt Collide,1500,Diverges Up,1599,Diverges Up,2554,Collides at 2.46,2581,Diverges Up,3322,Collides at 2.46,3468,Diverges Up
+11,Collides at 2.28,1175,Diverges Up,1227,Collides at 2.88,1257,Doesnt Collide,1501,Diverges Up,1600,Diverges Up,2555,Collides at 2.46,2582,Diverges Up,3323,Collides at 2.46,3469,Diverges Up
+12,Collides at 2.28,1176,Diverges Up,1228,Collides at 2.88,1258,Doesnt Collide,1502,Diverges Up,1601,Diverges Up,2556,Collides at 2.46,2583,Diverges Up,3324,Collides at 2.46,3470,Diverges Up
+13,Collides at 2.28,1177,Diverges Up,1229,Collides at 2.88,1259,Doesnt Collide,1503,Diverges Up,1602,Diverges Up,2557,Collides at 2.46,2584,Diverges Up,3325,Collides at 2.46,3471,Diverges Up
+14,Collides at 2.28,1178,Diverges Up,1230,Collides at 2.88,1260,Doesnt Collide,1504,Diverges Up,1603,Diverges Up,2558,Collides at 2.46,2585,Diverges Up,3326,Collides at 2.46,3472,Diverges Up
+15,Collides at 2.28,1179,Diverges Up,1231,Collides at 2.88,1261,Doesnt Collide,1505,Diverges Up,1604,Diverges Up,2559,Collides at 2.46,2586,Diverges Up,3327,Collides at 2.46,3473,Diverges Up
+16,Collides at 2.28,1180,Diverges Up,1232,Collides at 2.88,1262,Doesnt Collide,1506,Diverges Up,1605,Diverges Up,2560,Collides at 2.46,2587,Diverges Up,3328,Collides at 2.46,3474,Diverges Up
+17,Collides at 2.28,1181,Diverges Up,1233,Collides at 2.88,1263,Doesnt Collide,1507,Diverges Up,1606,Diverges Up,2561,Collides at 2.46,2588,Diverges Up,3329,Collides at 2.46,3475,Diverges Up
+18,Collides at 2.28,1182,Diverges Up,1234,Collides at 2.94,1264,Doesnt Collide,1508,Diverges Up,1607,Diverges Up,2562,Collides at 2.46,2589,Diverges Up,3330,Collides at 2.46,3476,Diverges Up
+19,Collides at 2.28,1183,Diverges Up,1235,Collides at 2.88,1265,Doesnt Collide,1509,Diverges Up,1608,Diverges Up,2563,Collides at 2.46,2590,Diverges Up,3331,Collides at 2.46,3477,Diverges Up
+20,Collides at 2.28,1184,Diverges Up,1236,Collides at 2.94,1266,Doesnt Collide,1510,Diverges Up,1609,Diverges Up,2564,Collides at 2.46,2591,Diverges Up,3332,Collides at 2.46,3478,Diverges Up
+21,Collides at 2.28,1185,Diverges Up,1237,Collides at 2.94,1267,Doesnt Collide,1511,Diverges Up,1610,Diverges Up,2565,Collides at 2.46,2592,Diverges Up,3333,Collides at 2.46,3479,Diverges Up
+22,Collides at 2.28,1186,Diverges Up,1238,Collides at 2.94,1268,Doesnt Collide,1512,Diverges Up,1611,Diverges Up,2566,Collides at 2.46,2593,Diverges Up,3334,Collides at 2.46,3480,Diverges Up
+23,Collides at 2.28,1187,Diverges Up,1239,Collides at 2.94,1269,Doesnt Collide,1513,Diverges Up,1612,Diverges Up,2567,Collides at 2.46,2594,Diverges Up,3335,Collides at 2.46,3481,Diverges Up
+24,Collides at 2.28,1188,Diverges Up,1240,Collides at 2.94,1270,Doesnt Collide,1514,Diverges Up,1613,Diverges Up,2568,Collides at 2.46,2595,Diverges Up,3336,Collides at 2.46,3482,Diverges Up
+25,Collides at 2.28,1189,Diverges Up,1241,Collides at 2.94,1271,Doesnt Collide,1515,Diverges Up,1614,Diverges Up,2569,Collides at 2.46,2596,Diverges Up,3337,Collides at 2.46,3483,Diverges Up
+26,Collides at 2.28,1190,Diverges Up,1242,Collides at 2.94,1272,Doesnt Collide,1516,Diverges Up,1615,Diverges Up,2570,Collides at 2.46,2597,Diverges Up,3338,Collides at 2.46,3484,Diverges Up
+27,Collides at 2.28,1191,Diverges Up,1243,Collides at 2.94,1273,Doesnt Collide,1517,Diverges Up,1616,Diverges Up,2571,Collides at 2.46,2598,Diverges Up,3339,Collides at 2.46,3485,Diverges Up
+28,Collides at 2.28,1192,Diverges Up,1244,Collides at 2.94,1274,Doesnt Collide,1518,Diverges Up,1617,Diverges Up,,,2599,Diverges Up,3340,Collides at 2.46,3486,Diverges Up
+29,Collides at 2.28,1193,Diverges Up,1245,Collides at 2.94,1275,Doesnt Collide,1519,Collides at 2.64,1618,Diverges Up,,,2600,Diverges Up,3341,Collides at 2.46,3487,Diverges Up
+30,Collides at 2.28,1194,Diverges Up,1246,Collides at 2.94,1276,Doesnt Collide,1520,Collides at 2.64,1619,Diverges Up,,,2601,Diverges Up,3342,Collides at 2.46,3488,Diverges Up
+31,Collides at 2.28,1195,Diverges Up,,,1277,Doesnt Collide,1521,Collides at 2.64,1620,Diverges Up,,,2602,Diverges Up,3343,Collides at 2.46,3489,Diverges Up
+32,Collides at 2.28,1196,Diverges Up,,,1278,Doesnt Collide,1522,Collides at 2.64,1621,Diverges Up,,,2603,Diverges Up,3344,Collides at 2.46,3490,Diverges Up
+33,Collides at 2.28,1197,Diverges Up,,,1279,Doesnt Collide,1523,Collides at 2.64,1622,Diverges Up,,,2604,Diverges Up,3345,Collides at 2.46,3491,Diverges Up
+34,Collides at 2.28,1198,Diverges Up,,,1280,Doesnt Collide,1524,Collides at 2.64,1623,Diverges Up,,,2605,Diverges Up,3346,Collides at 2.46,3492,Diverges Up
+35,Collides at 2.28,1199,Diverges Up,,,1281,Doesnt Collide,1525,Collides at 2.64,1624,Diverges Up,,,2606,Diverges Up,3347,Collides at 2.46,3493,Diverges Up
+36,Collides at 2.28,1200,Diverges Up,,,1282,Doesnt Collide,1526,Collides at 2.64,1625,Diverges Up,,,2607,Diverges Up,3348,Collides at 2.46,3494,Diverges Up
+37,Collides at 2.28,1201,Diverges Up,,,1283,Doesnt Collide,1527,Collides at 2.64,1626,Diverges Up,,,2608,Diverges Up,3349,Collides at 2.46,3495,Diverges Up
+38,Collides at 2.28,1202,Diverges Up,,,1284,Doesnt Collide,1528,Collides at 2.64,1627,Diverges Up,,,2609,Diverges Up,3350,Collides at 2.46,3496,Diverges Up
+39,Collides at 2.28,1203,Diverges Up,,,1285,Doesnt Collide,1529,Collides at 2.64,1628,Diverges Up,,,2610,Diverges Up,3351,Collides at 2.52,3497,Diverges Up
+40,Collides at 2.28,1204,Diverges Up,,,1286,Doesnt Collide,1530,Collides at 2.64,1629,Diverges Up,,,2611,Diverges Up,3352,Collides at 2.46,3498,Diverges Up
+41,Collides at 2.28,1205,Diverges Up,,,1287,Doesnt Collide,1531,Collides at 2.64,1630,Diverges Up,,,2612,Diverges Up,3353,Collides at 2.46,3499,Diverges Up
+42,Collides at 2.28,1206,Diverges Up,,,1288,Doesnt Collide,1532,Collides at 2.64,1631,Diverges Up,,,2613,Diverges Up,3354,Collides at 2.52,3500,Diverges Up
+43,Collides at 2.28,1207,Diverges Up,,,1289,Doesnt Collide,1533,Collides at 2.64,1632,Diverges Up,,,2614,Diverges Up,3355,Collides at 2.52,3501,Diverges Up
+44,Collides at 2.28,1208,Diverges Up,,,1290,Doesnt Collide,1534,Collides at 2.64,1633,Diverges Up,,,2615,Diverges Up,3356,Collides at 2.52,3502,Diverges Up
+45,Collides at 2.28,1209,Diverges Up,,,1291,Doesnt Collide,1535,Collides at 2.64,1634,Diverges Up,,,2616,Diverges Up,3357,Collides at 2.52,3503,Diverges Up
+46,Collides at 2.28,1210,Diverges Up,,,1292,Doesnt Collide,1536,Collides at 2.64,1635,Diverges Up,,,2617,Diverges Up,3358,Collides at 2.52,3504,Diverges Up
+47,Collides at 2.28,1211,Diverges Up,,,1293,Doesnt Collide,1537,Collides at 2.64,1636,Diverges Up,,,2618,Diverges Up,3359,Collides at 2.52,3505,Diverges Up
+48,Collides at 2.28,1212,Diverges Up,,,1294,Doesnt Collide,1538,Collides at 2.64,1637,Diverges Up,,,2619,Diverges Up,3360,Collides at 2.52,3506,Diverges Up
+49,Collides at 2.28,1213,Diverges Up,,,1295,Doesnt Collide,1539,Collides at 2.58,1638,Diverges Up,,,2620,Diverges Up,3361,Collides at 2.52,3507,Diverges Up
+50,Collides at 2.28,1214,Diverges Up,,,1296,Doesnt Collide,1540,Collides at 2.64,1639,Diverges Up,,,2621,Diverges Up,3362,Collides at 2.52,3508,Diverges Up
+51,Collides at 2.28,1215,Diverges Up,,,1297,Doesnt Collide,1541,Collides at 2.64,1640,Diverges Up,,,2622,Diverges Up,3363,Collides at 2.52,3509,Diverges Up
+52,Collides at 2.28,1216,Diverges Up,,,1298,Doesnt Collide,1542,Collides at 2.58,1641,Diverges Up,,,2623,Diverges Up,3364,Collides at 2.52,3510,Diverges Up
+53,Collides at 2.28,,,,,1299,Doesnt Collide,1543,Collides at 2.58,1642,Diverges Up,,,2624,Diverges Up,3365,Collides at 2.52,3511,Diverges Up
+54,Collides at 2.28,,,,,1300,Doesnt Collide,1544,Collides at 2.58,1643,Diverges Up,,,2625,Diverges Up,3366,Collides at 2.52,3512,Diverges Up
+55,Collides at 2.28,,,,,1301,Doesnt Collide,1545,Collides at 2.58,1644,Diverges Up,,,2626,Diverges Up,3367,Collides at 2.52,3513,Diverges Up
+56,Collides at 2.28,,,,,1302,Doesnt Collide,1546,Collides at 2.58,1645,Diverges Up,,,2627,Diverges Up,3368,Collides at 2.52,3514,Diverges Up
+57,Collides at 2.28,,,,,1303,Doesnt Collide,1547,Collides at 2.58,1646,Diverges Up,,,2628,Diverges Up,3369,Collides at 2.52,3515,Diverges Up
+58,Collides at 2.28,,,,,1304,Doesnt Collide,1548,Collides at 2.58,1647,Diverges Up,,,2629,Diverges Up,3370,Collides at 2.52,3516,Diverges Up
+59,Collides at 2.28,,,,,1305,Doesnt Collide,1549,Collides at 2.58,1648,Diverges Up,,,2630,Diverges Up,3371,Collides at 2.52,3517,Diverges Up
+60,Collides at 2.28,,,,,1306,Doesnt Collide,1550,Collides at 2.58,1649,Diverges Up,,,2631,Diverges Up,3372,Collides at 2.52,3518,Diverges Up
+61,Collides at 2.28,,,,,1307,Doesnt Collide,1551,Collides at 2.58,1650,Diverges Up,,,2632,Diverges Up,3373,Collides at 2.52,3519,Diverges Up
+62,Collides at 2.28,,,,,1308,Doesnt Collide,1552,Collides at 2.58,1651,Diverges Up,,,2633,Diverges Up,3374,Collides at 2.52,3520,Diverges Up
+63,Collides at 2.28,,,,,1309,Doesnt Collide,1553,Collides at 2.58,1652,Diverges Up,,,2634,Diverges Up,3375,Collides at 2.52,3521,Diverges Up
+64,Collides at 2.28,,,,,1310,Doesnt Collide,1554,Collides at 2.58,1653,Diverges Up,,,2635,Diverges Up,3376,Collides at 2.52,3522,Diverges Up
+65,Collides at 2.28,,,,,1311,Doesnt Collide,1555,Collides at 2.58,1654,Diverges Up,,,2636,Diverges Up,3377,Collides at 2.52,3523,Diverges Up
+66,Collides at 2.28,,,,,1312,Doesnt Collide,1556,Collides at 2.58,1655,Diverges Up,,,2637,Diverges Up,3378,Collides at 2.52,3524,Diverges Up
+67,Collides at 2.28,,,,,1313,Doesnt Collide,1557,Collides at 2.58,1656,Diverges Up,,,2638,Diverges Up,3379,Collides at 2.52,3525,Diverges Up
+68,Collides at 2.28,,,,,1314,Doesnt Collide,1558,Collides at 2.58,1657,Diverges Up,,,2639,Diverges Up,3380,Collides at 2.52,3526,Diverges Up
+69,Collides at 2.28,,,,,1315,Doesnt Collide,1559,Collides at 2.58,1658,Diverges Up,,,2640,Diverges Up,3381,Collides at 2.52,3527,Diverges Up
+70,Collides at 2.28,,,,,1316,Doesnt Collide,1560,Collides at 2.58,1659,Diverges Up,,,2641,Diverges Up,3382,Collides at 2.52,3528,Diverges Up
+71,Collides at 2.28,,,,,1317,Doesnt Collide,1561,Collides at 2.58,1660,Diverges Up,,,2642,Diverges Up,3383,Collides at 2.52,3529,Diverges Up
+72,Collides at 2.28,,,,,1318,Doesnt Collide,1562,Collides at 2.52,1661,Diverges Up,,,2643,Diverges Up,3384,Collides at 2.52,3530,Diverges Up
+73,Collides at 2.28,,,,,1319,Doesnt Collide,1563,Collides at 2.52,1662,Diverges Up,,,2644,Diverges Up,3385,Collides at 2.52,3531,Diverges Up
+74,Collides at 2.28,,,,,1320,Doesnt Collide,1564,Collides at 2.58,1663,Diverges Up,,,2645,Diverges Up,3386,Collides at 2.52,3532,Diverges Up
+75,Collides at 2.28,,,,,1321,Doesnt Collide,1565,Collides at 2.52,1664,Diverges Up,,,2646,Diverges Up,3387,Collides at 2.52,3533,Diverges Up
+76,Collides at 2.28,,,,,1322,Doesnt Collide,1566,Collides at 2.52,1665,Diverges Up,,,2647,Diverges Up,3388,Collides at 2.52,3534,Diverges Up
+77,Collides at 2.28,,,,,1323,Doesnt Collide,1567,Collides at 2.52,1666,Diverges Up,,,2648,Diverges Up,3389,Collides at 2.52,3535,Diverges Up
+78,Collides at 2.28,,,,,1324,Doesnt Collide,1568,Collides at 2.52,1667,Diverges Up,,,2649,Diverges Up,3390,Collides at 2.52,3536,Diverges Up
+79,Collides at 2.28,,,,,1325,Doesnt Collide,1569,Collides at 2.52,1668,Diverges Up,,,2650,Diverges Up,3391,Collides at 2.52,3537,Diverges Up
+80,Collides at 2.28,,,,,1326,Doesnt Collide,1570,Collides at 2.52,1669,Diverges Up,,,2651,Diverges Up,3392,Collides at 2.52,3538,Diverges Up
+81,Collides at 2.28,,,,,1327,Doesnt Collide,1571,Collides at 2.52,1670,Diverges Up,,,2652,Diverges Up,3393,Collides at 2.52,3539,Diverges Up
+82,Collides at 2.28,,,,,1328,Doesnt Collide,1572,Collides at 2.52,1671,Diverges Up,,,2653,Diverges Up,3394,Collides at 2.52,3540,Diverges Up
+83,Collides at 2.28,,,,,1329,Doesnt Collide,1573,Collides at 2.52,1672,Diverges Up,,,2654,Diverges Up,3395,Collides at 2.52,3541,Diverges Up
+84,Collides at 2.28,,,,,1330,Doesnt Collide,1574,Collides at 2.52,1673,Diverges Up,,,2655,Diverges Up,3396,Collides at 2.52,3542,Diverges Up
+85,Collides at 2.28,,,,,1331,Doesnt Collide,1575,Collides at 2.52,1674,Diverges Up,,,2656,Diverges Up,3397,Collides at 2.52,3543,Diverges Up
+86,Collides at 2.28,,,,,1332,Doesnt Collide,1576,Collides at 2.52,1675,Diverges Up,,,2657,Diverges Up,3398,Collides at 2.52,3544,Diverges Up
+87,Collides at 2.28,,,,,1333,Doesnt Collide,1577,Collides at 2.52,1676,Diverges Up,,,2658,Diverges Up,3399,Collides at 2.46,3545,Diverges Up
+88,Collides at 2.28,,,,,1334,Doesnt Collide,1578,Collides at 2.52,1677,Diverges Up,,,2659,Diverges Up,3400,Collides at 2.52,3546,Diverges Up
+89,Collides at 2.28,,,,,1335,Doesnt Collide,1579,Collides at 2.52,1678,Diverges Up,,,2660,Diverges Up,3401,Collides at 2.46,3547,Diverges Up
+90,Collides at 2.28,,,,,1336,Doesnt Collide,1580,Collides at 2.52,1679,Diverges Up,,,2661,Diverges Up,3402,Collides at 2.46,3548,Diverges Up
+91,Collides at 2.28,,,,,1337,Doesnt Collide,1581,Collides at 2.52,1680,Diverges Up,,,2662,Diverges Up,3403,Collides at 2.46,3549,Diverges Up
+92,Collides at 2.28,,,,,1338,Doesnt Collide,1582,Collides at 2.52,1681,Diverges Up,,,2663,Diverges Up,3404,Collides at 2.46,3550,Diverges Up
+93,Collides at 2.28,,,,,1339,Doesnt Collide,1583,Collides at 2.52,1682,Diverges Up,,,2664,Diverges Up,3405,Collides at 2.52,3551,Diverges Up
+94,Collides at 2.28,,,,,1340,Doesnt Collide,1584,Collides at 2.52,1683,Diverges Up,,,2665,Diverges Up,3406,Collides at 2.46,3552,Diverges Up
+95,Collides at 2.28,,,,,1341,Doesnt Collide,1585,Collides at 2.52,1684,Diverges Up,,,2666,Diverges Up,3407,Collides at 2.46,3553,Diverges Up
+96,Collides at 2.28,,,,,1342,Doesnt Collide,1586,Collides at 2.52,1685,Diverges Up,,,2667,Diverges Up,3408,Collides at 2.52,3554,Diverges Up
+97,Collides at 2.28,,,,,1343,Doesnt Collide,1587,Diverges Up,1686,Diverges Up,,,2668,Diverges Up,3409,Collides at 2.52,3555,Diverges Up
+98,Collides at 2.28,,,,,1344,Doesnt Collide,1588,Collides at 2.52,1687,Diverges Up,,,2669,Diverges Up,3410,Collides at 2.52,3556,Diverges Up
+99,Collides at 2.28,,,,,1345,Doesnt Collide,1589,Collides at 2.52,1688,Diverges Up,,,2670,Diverges Up,3411,Collides at 2.52,3557,Diverges Up
+100,Collides at 2.28,,,,,1346,Doesnt Collide,,,1689,Diverges Up,,,2671,Diverges Up,3412,Collides at 2.52,3558,Diverges Up
+101,Collides at 2.28,,,,,1347,Doesnt Collide,,,1690,Diverges Up,,,2672,Diverges Up,3413,Collides at 2.52,3559,Diverges Up
+102,Collides at 2.28,,,,,1348,Doesnt Collide,,,1691,Diverges Up,,,2673,Diverges Up,3414,Collides at 2.52,3560,Diverges Up
+103,Collides at 2.28,,,,,1349,Doesnt Collide,,,1692,Diverges Up,,,2674,Diverges Up,3415,Collides at 2.52,3561,Diverges Up
+104,Collides at 2.28,,,,,1350,Doesnt Collide,,,1693,Diverges Up,,,2675,Diverges Up,3416,Collides at 2.52,3562,Diverges Up
+105,Collides at 2.28,,,,,1351,Doesnt Collide,,,1694,Diverges Up,,,2676,Diverges Up,3417,Collides at 2.52,3563,Diverges Up
+106,Collides at 2.28,,,,,1352,Doesnt Collide,,,1695,Diverges Up,,,2677,Diverges Up,3418,Collides at 2.52,3564,Diverges Up
+107,Collides at 2.28,,,,,1353,Doesnt Collide,,,1696,Diverges Up,,,2678,Diverges Up,3419,Collides at 2.52,3565,Diverges Up
+108,Collides at 2.28,,,,,1354,Doesnt Collide,,,1697,Diverges Up,,,2679,Diverges Up,3420,Collides at 2.52,3566,Diverges Up
+109,Collides at 2.28,,,,,1355,Doesnt Collide,,,1698,Diverges Up,,,2680,Diverges Up,3421,Collides at 2.52,3567,Diverges Up
+110,Collides at 2.28,,,,,1356,Doesnt Collide,,,1699,Diverges Up,,,2681,Diverges Up,3422,Collides at 2.52,3568,Diverges Up
+111,Collides at 2.28,,,,,1357,Doesnt Collide,,,1700,Diverges Up,,,2682,Diverges Up,3423,Collides at 2.52,3569,Diverges Up
+112,Collides at 2.28,,,,,1358,Doesnt Collide,,,1701,Diverges Up,,,2683,Diverges Up,3424,Collides at 2.52,3570,Diverges Up
+113,Collides at 2.28,,,,,1359,Doesnt Collide,,,1702,Diverges Up,,,2684,Diverges Up,3425,Collides at 2.52,3571,Diverges Up
+114,Collides at 2.28,,,,,1360,Doesnt Collide,,,1703,Diverges Up,,,2685,Diverges Up,3426,Collides at 2.52,3572,Diverges Up
+115,Collides at 2.28,,,,,1361,Doesnt Collide,,,1704,Diverges Up,,,2686,Diverges Up,3427,Collides at 2.52,3573,Diverges Up
+116,Collides at 2.28,,,,,1362,Doesnt Collide,,,1705,Diverges Up,,,2687,Diverges Up,3428,Collides at 2.52,3574,Diverges Up
+117,Collides at 2.28,,,,,1363,Doesnt Collide,,,1706,Diverges Up,,,2688,Diverges Up,3429,Collides at 2.52,3575,Diverges Up
+118,Collides at 2.28,,,,,1364,Doesnt Collide,,,1707,Diverges Up,,,2689,Diverges Up,3430,Collides at 2.52,3576,Diverges Up
+119,Collides at 2.28,,,,,1365,Doesnt Collide,,,1708,Diverges Up,,,2690,Diverges Up,3431,Collides at 2.52,3577,Diverges Up
+120,Collides at 2.28,,,,,1366,Doesnt Collide,,,1709,Diverges Up,,,2691,Diverges Up,3432,Collides at 2.52,3578,Diverges Up
+121,Collides at 2.28,,,,,1367,Doesnt Collide,,,1710,Diverges Up,,,2692,Diverges Up,3433,Collides at 2.52,3579,Diverges Up
+122,Collides at 2.28,,,,,1368,Doesnt Collide,,,1711,Diverges Up,,,2693,Diverges Up,3434,Collides at 2.52,3580,Diverges Up
+123,Collides at 2.28,,,,,1369,Doesnt Collide,,,1712,Diverges Up,,,2694,Diverges Up,3435,Collides at 2.52,3581,Diverges Up
+124,Collides at 2.28,,,,,1370,Doesnt Collide,,,1713,Diverges Up,,,2695,Diverges Up,3436,Collides at 2.52,3582,Diverges Up
+125,Collides at 2.28,,,,,1371,Doesnt Collide,,,1714,Diverges Up,,,2696,Diverges Up,3437,Collides at 2.52,3583,Diverges Up
+126,Collides at 2.28,,,,,1372,Doesnt Collide,,,1715,Diverges Up,,,2697,Diverges Up,3438,Collides at 2.52,3584,Diverges Up
+127,Collides at 2.28,,,,,1373,Doesnt Collide,,,1716,Diverges Up,,,2698,Diverges Up,3439,Collides at 2.52,3585,Diverges Up
+128,Collides at 2.28,,,,,1374,Doesnt Collide,,,1717,Diverges Up,,,2699,Diverges Up,3440,Collides at 2.52,3586,Diverges Up
+129,Collides at 2.28,,,,,1375,Doesnt Collide,,,1718,Diverges Up,,,2700,Diverges Up,3441,Collides at 2.52,3587,Diverges Up
+130,Collides at 2.28,,,,,1376,Doesnt Collide,,,1719,Diverges Up,,,2701,Diverges Up,3442,Collides at 2.52,3588,Diverges Up
+131,Collides at 2.28,,,,,1377,Doesnt Collide,,,1720,Diverges Up,,,2702,Diverges Up,3443,Collides at 2.52,3589,Diverges Up
+132,Collides at 2.28,,,,,1378,Doesnt Collide,,,1721,Diverges Up,,,2703,Diverges Up,3444,Collides at 2.52,3590,Diverges Up
+133,Collides at 2.28,,,,,1379,Doesnt Collide,,,1722,Diverges Up,,,2704,Diverges Up,3445,Collides at 2.52,3591,Diverges Up
+134,Collides at 2.28,,,,,1380,Doesnt Collide,,,1723,Diverges Up,,,2705,Diverges Up,3446,Collides at 2.52,3592,Diverges Up
+135,Collides at 2.28,,,,,1381,Doesnt Collide,,,1724,Diverges Up,,,2706,Diverges Up,3447,Collides at 2.52,3593,Diverges Up
+136,Collides at 2.28,,,,,1382,Doesnt Collide,,,1725,Diverges Up,,,2707,Diverges Up,3448,Collides at 2.52,3594,Diverges Up
+137,Collides at 2.28,,,,,1383,Doesnt Collide,,,1726,Diverges Up,,,2708,Diverges Up,3449,Collides at 2.52,3595,Diverges Up
+138,Collides at 2.28,,,,,1384,Doesnt Collide,,,1727,Diverges Up,,,2709,Diverges Up,3450,Collides at 2.52,3596,Diverges Up
+139,Collides at 2.28,,,,,1385,Doesnt Collide,,,1728,Diverges Up,,,2710,Diverges Up,3451,Collides at 2.52,3597,Diverges Up
+140,Collides at 2.28,,,,,1386,Doesnt Collide,,,1729,Diverges Up,,,2711,Diverges Up,3452,Collides at 2.52,3598,Diverges Up
+141,Collides at 2.28,,,,,1387,Doesnt Collide,,,1730,Diverges Up,,,2712,Diverges Up,3453,Collides at 2.52,3599,Diverges Up
+142,Collides at 2.28,,,,,1388,Doesnt Collide,,,1731,Diverges Up,,,2713,Diverges Up,3454,Collides at 2.52,3600,Diverges Up
+143,Collides at 2.28,,,,,1389,Doesnt Collide,,,1732,Diverges Up,,,2714,Diverges Up,3455,Collides at 2.52,3601,Diverges Up
+144,Collides at 2.28,,,,,1390,Doesnt Collide,,,1733,Diverges Up,,,2715,Diverges Up,3456,Collides at 2.52,3602,Diverges Up
+145,Collides at 2.28,,,,,1391,Doesnt Collide,,,1734,Diverges Up,,,2716,Diverges Up,3457,Collides at 2.52,3603,Diverges Up
+146,Collides at 2.28,,,,,1392,Doesnt Collide,,,1735,Diverges Up,,,2717,Diverges Up,3458,Collides at 2.52,3604,Diverges Up
+147,Collides at 2.28,,,,,1393,Doesnt Collide,,,1736,Diverges Up,,,2718,Diverges Up,,,3605,Diverges Up
+148,Collides at 2.28,,,,,1394,Doesnt Collide,,,1737,Diverges Up,,,2719,Diverges Up,,,3606,Diverges Up
+149,Collides at 2.28,,,,,1395,Doesnt Collide,,,1738,Diverges Up,,,2720,Diverges Up,,,3607,Diverges Up
+150,Collides at 2.28,,,,,1396,Doesnt Collide,,,1739,Diverges Up,,,2721,Diverges Up,,,3608,Diverges Up
+151,Collides at 2.28,,,,,1397,Doesnt Collide,,,1740,Diverges Up,,,2722,Diverges Up,,,3609,Diverges Up
+152,Collides at 2.28,,,,,1398,Doesnt Collide,,,1741,Diverges Up,,,2723,Diverges Up,,,3610,Diverges Up
+153,Collides at 2.28,,,,,1399,Doesnt Collide,,,1742,Diverges Up,,,2724,Diverges Up,,,3611,Diverges Up
+154,Collides at 2.28,,,,,1400,Doesnt Collide,,,1743,Diverges Up,,,2725,Diverges Up,,,3612,Diverges Up
+155,Collides at 2.28,,,,,1401,Doesnt Collide,,,1744,Diverges Up,,,2726,Diverges Up,,,3613,Diverges Up
+156,Collides at 2.28,,,,,1402,Doesnt Collide,,,1745,Diverges Up,,,2727,Diverges Up,,,3614,Diverges Up
+157,Collides at 2.28,,,,,1403,Doesnt Collide,,,1746,Diverges Up,,,2728,Diverges Up,,,3615,Diverges Up
+158,Collides at 2.28,,,,,1404,Doesnt Collide,,,1747,Diverges Up,,,2729,Diverges Up,,,3616,Diverges Up
+159,Collides at 2.28,,,,,1405,Doesnt Collide,,,1748,Diverges Up,,,2730,Diverges Up,,,3617,Diverges Up
+160,Collides at 2.28,,,,,1406,Doesnt Collide,,,1749,Diverges Up,,,2731,Diverges Up,,,3618,Diverges Up
+161,Collides at 2.28,,,,,1407,Doesnt Collide,,,1750,Diverges Up,,,2732,Diverges Up,,,3619,Diverges Up
+162,Collides at 2.28,,,,,1408,Doesnt Collide,,,1751,Diverges Up,,,2733,Diverges Up,,,3620,Diverges Up
+163,Collides at 2.28,,,,,1409,Doesnt Collide,,,1752,Diverges Up,,,2734,Diverges Up,,,3621,Diverges Up
+164,Collides at 2.28,,,,,1410,Doesnt Collide,,,1753,Diverges Up,,,2735,Diverges Up,,,3622,Diverges Up
+165,Collides at 2.28,,,,,1411,Doesnt Collide,,,1754,Diverges Up,,,2736,Diverges Up,,,3623,Diverges Up
+166,Collides at 2.28,,,,,1412,Doesnt Collide,,,1755,Diverges Up,,,2737,Diverges Up,,,3624,Diverges Up
+167,Collides at 2.28,,,,,1413,Doesnt Collide,,,1756,Diverges Up,,,2738,Diverges Up,,,3625,Diverges Up
+168,Collides at 2.28,,,,,1414,Doesnt Collide,,,1757,Diverges Up,,,2739,Diverges Up,,,3626,Diverges Up
+169,Collides at 2.28,,,,,1415,Doesnt Collide,,,1758,Diverges Up,,,2740,Diverges Up,,,3627,Diverges Up
+170,Collides at 2.28,,,,,1416,Doesnt Collide,,,1759,Diverges Up,,,2741,Diverges Up,,,3628,Diverges Up
+171,Collides at 2.28,,,,,1417,Doesnt Collide,,,1760,Diverges Up,,,2742,Diverges Up,,,3629,Diverges Up
+172,Collides at 2.28,,,,,1418,Doesnt Collide,,,1761,Diverges Up,,,2743,Diverges Up,,,3630,Diverges Up
+173,Collides at 2.28,,,,,1419,Doesnt Collide,,,1762,Diverges Up,,,2744,Diverges Up,,,3631,Diverges Up
+174,Collides at 2.28,,,,,1420,Doesnt Collide,,,1763,Diverges Up,,,2745,Diverges Up,,,3632,Diverges Up
+175,Collides at 2.28,,,,,1421,Doesnt Collide,,,1764,Diverges Up,,,2746,Diverges Up,,,3633,Diverges Up
+176,Collides at 2.28,,,,,1422,Doesnt Collide,,,1765,Diverges Up,,,2747,Diverges Up,,,3634,Diverges Up
+177,Collides at 2.28,,,,,1423,Doesnt Collide,,,1766,Diverges Up,,,2748,Diverges Up,,,3635,Diverges Up
+178,Collides at 2.28,,,,,1424,Doesnt Collide,,,1767,Diverges Up,,,2749,Diverges Up,,,3636,Diverges Up
+179,Collides at 2.28,,,,,1425,Doesnt Collide,,,1768,Diverges Up,,,2750,Diverges Up,,,3637,Diverges Up
+180,Collides at 2.28,,,,,1426,Doesnt Collide,,,1769,Diverges Up,,,2751,Diverges Up,,,3638,Diverges Up
+181,Collides at 2.28,,,,,1427,Doesnt Collide,,,1770,Diverges Up,,,2752,Diverges Up,,,3639,Diverges Up
+182,Collides at 2.28,,,,,1428,Doesnt Collide,,,1771,Diverges Up,,,2753,Diverges Up,,,3640,Diverges Up
+183,Collides at 2.28,,,,,1429,Doesnt Collide,,,1772,Diverges Up,,,2754,Diverges Up,,,3641,Diverges Up
+184,Collides at 2.28,,,,,1430,Doesnt Collide,,,1773,Diverges Up,,,2755,Diverges Up,,,3642,Diverges Up
+185,Collides at 2.28,,,,,1431,Doesnt Collide,,,1774,Diverges Up,,,2756,Diverges Up,,,3643,Diverges Up
+186,Collides at 2.28,,,,,1432,Doesnt Collide,,,1775,Diverges Up,,,2757,Diverges Up,,,3644,Diverges Up
+187,Collides at 2.28,,,,,1433,Doesnt Collide,,,1776,Diverges Up,,,2758,Diverges Up,,,3645,Diverges Up
+188,Collides at 2.28,,,,,1434,Doesnt Collide,,,1777,Diverges Up,,,2759,Diverges Up,,,3646,Diverges Up
+189,Collides at 2.28,,,,,1435,Doesnt Collide,,,1778,Diverges Up,,,2760,Diverges Up,,,3647,Diverges Up
+190,Collides at 2.28,,,,,1436,Doesnt Collide,,,1779,Diverges Up,,,2761,Diverges Up,,,3648,Diverges Up
+191,Collides at 2.28,,,,,1437,Doesnt Collide,,,1780,Diverges Up,,,2762,Diverges Up,,,3649,Diverges Up
+192,Collides at 2.28,,,,,1438,Doesnt Collide,,,1781,Diverges Up,,,2763,Diverges Up,,,3650,Diverges Up
+193,Collides at 2.28,,,,,1439,Doesnt Collide,,,1782,Diverges Up,,,2764,Diverges Up,,,3651,Diverges Up
+194,Collides at 2.28,,,,,1440,Doesnt Collide,,,1783,Diverges Up,,,2765,Diverges Up,,,3652,Diverges Up
+195,Collides at 2.28,,,,,1441,Doesnt Collide,,,1784,Diverges Up,,,2766,Diverges Up,,,3653,Diverges Up
+196,Collides at 2.28,,,,,1442,Doesnt Collide,,,1785,Diverges Up,,,2767,Diverges Up,,,3654,Diverges Up
+197,Collides at 2.28,,,,,1443,Doesnt Collide,,,1786,Diverges Up,,,2768,Diverges Up,,,3655,Diverges Up
+198,Collides at 2.28,,,,,1444,Doesnt Collide,,,1787,Diverges Up,,,2769,Diverges Up,,,3656,Diverges Up
+199,Collides at 2.28,,,,,1445,Doesnt Collide,,,1788,Diverges Up,,,2770,Diverges Up,,,3657,Diverges Up
+200,Collides at 2.28,,,,,1446,Doesnt Collide,,,1789,Diverges Up,,,2771,Diverges Up,,,3658,Diverges Up
+201,Collides at 2.28,,,,,1447,Doesnt Collide,,,1790,Diverges Up,,,2772,Diverges Up,,,3659,Diverges Up
+202,Collides at 2.28,,,,,1448,Doesnt Collide,,,1791,Diverges Up,,,2773,Diverges Up,,,3660,Diverges Up
+203,Collides at 2.28,,,,,1449,Doesnt Collide,,,1792,Diverges Up,,,2774,Diverges Up,,,3661,Diverges Up
+204,Collides at 2.28,,,,,1450,Doesnt Collide,,,1793,Diverges Up,,,2775,Diverges Up,,,3662,Diverges Up
+205,Collides at 2.28,,,,,1451,Doesnt Collide,,,1794,Diverges Up,,,2776,Diverges Up,,,3663,Diverges Up
+206,Collides at 2.28,,,,,1452,Doesnt Collide,,,1795,Diverges Up,,,2777,Diverges Up,,,3664,Diverges Up
+207,Collides at 2.28,,,,,1453,Doesnt Collide,,,1796,Diverges Up,,,2778,Diverges Up,,,3665,Diverges Up
+208,Collides at 2.28,,,,,1454,Doesnt Collide,,,1797,Diverges Up,,,2779,Diverges Up,,,3666,Diverges Up
+209,Collides at 2.28,,,,,1455,Doesnt Collide,,,1798,Diverges Up,,,2780,Diverges Up,,,3667,Diverges Up
+210,Collides at 2.28,,,,,1456,Doesnt Collide,,,1799,Diverges Up,,,2781,Diverges Up,,,3668,Diverges Up
+211,Collides at 2.28,,,,,1457,Doesnt Collide,,,1800,Diverges Up,,,2782,Diverges Up,,,3669,Diverges Up
+212,Collides at 2.28,,,,,1458,Doesnt Collide,,,1801,Diverges Up,,,2783,Diverges Up,,,3670,Diverges Up
+213,Collides at 2.28,,,,,1459,Doesnt Collide,,,1802,Diverges Up,,,2784,Diverges Up,,,3671,Diverges Up
+214,Collides at 2.28,,,,,1460,Doesnt Collide,,,1803,Diverges Up,,,2785,Diverges Up,,,3672,Diverges Up
+215,Collides at 2.28,,,,,1461,Doesnt Collide,,,1804,Diverges Up,,,2786,Diverges Up,,,3673,Diverges Up
+216,Collides at 2.28,,,,,1462,Doesnt Collide,,,1805,Diverges Up,,,2787,Diverges Up,,,3674,Diverges Up
+217,Collides at 2.28,,,,,1463,Doesnt Collide,,,1806,Diverges Up,,,2788,Diverges Up,,,3675,Diverges Up
+218,Collides at 2.28,,,,,1464,Doesnt Collide,,,1807,Diverges Up,,,2789,Diverges Up,,,3676,Diverges Up
+219,Collides at 2.28,,,,,1465,Doesnt Collide,,,1808,Diverges Up,,,2790,Diverges Up,,,3677,Diverges Up
+220,Collides at 2.28,,,,,1466,Doesnt Collide,,,1809,Diverges Up,,,2791,Diverges Up,,,3678,Diverges Up
+221,Collides at 2.28,,,,,1467,Doesnt Collide,,,1810,Diverges Up,,,2792,Diverges Up,,,3679,Diverges Up
+222,Collides at 2.28,,,,,1468,Doesnt Collide,,,1811,Diverges Up,,,2793,Diverges Up,,,3680,Diverges Up
+223,Collides at 2.28,,,,,1469,Doesnt Collide,,,1812,Diverges Up,,,2794,Diverges Up,,,3681,Diverges Up
+224,Collides at 2.28,,,,,1470,Doesnt Collide,,,1813,Diverges Up,,,2795,Diverges Up,,,3682,Diverges Up
+225,Collides at 2.28,,,,,1471,Doesnt Collide,,,1814,Diverges Up,,,2796,Diverges Up,,,3683,Diverges Up
+226,Collides at 2.28,,,,,1472,Doesnt Collide,,,1815,Diverges Up,,,2797,Diverges Up,,,3684,Diverges Up
+227,Collides at 2.28,,,,,1473,Doesnt Collide,,,1816,Diverges Up,,,2798,Diverges Up,,,3685,Diverges Up
+228,Collides at 2.28,,,,,1474,Doesnt Collide,,,1817,Diverges Up,,,2799,Diverges Up,,,3686,Diverges Up
+229,Collides at 2.28,,,,,1475,Doesnt Collide,,,1818,Diverges Up,,,2800,Diverges Up,,,3687,Diverges Up
+230,Collides at 2.28,,,,,1476,Doesnt Collide,,,1819,Diverges Up,,,2801,Diverges Up,,,3688,Diverges Up
+231,Collides at 2.28,,,,,1477,Doesnt Collide,,,1820,Diverges Up,,,2802,Diverges Up,,,3689,Diverges Up
+232,Collides at 2.28,,,,,1478,Doesnt Collide,,,1821,Diverges Up,,,2803,Diverges Up,,,3690,Diverges Up
+233,Collides at 2.28,,,,,1479,Doesnt Collide,,,1822,Diverges Up,,,2804,Diverges Up,,,3691,Diverges Up
+234,Collides at 2.28,,,,,1480,Doesnt Collide,,,1823,Diverges Up,,,2805,Diverges Up,,,3692,Diverges Up
+235,Collides at 2.28,,,,,1481,Doesnt Collide,,,1824,Diverges Up,,,2806,Diverges Up,,,3693,Diverges Up
+236,Collides at 2.28,,,,,1482,Doesnt Collide,,,1825,Diverges Up,,,2807,Diverges Up,,,3694,Diverges Up
+237,Collides at 2.28,,,,,1483,Doesnt Collide,,,1826,Diverges Up,,,2808,Diverges Up,,,3695,Diverges Up
+238,Collides at 2.28,,,,,1484,Doesnt Collide,,,1827,Diverges Up,,,2809,Diverges Up,,,3696,Diverges Up
+239,Collides at 2.28,,,,,1485,Doesnt Collide,,,1828,Diverges Up,,,2810,Diverges Up,,,3697,Diverges Up
+240,Collides at 2.28,,,,,1486,Doesnt Collide,,,1829,Diverges Up,,,2811,Diverges Up,,,3698,Diverges Up
+241,Collides at 2.28,,,,,1487,Doesnt Collide,,,1830,Diverges Up,,,2812,Diverges Up,,,3699,Diverges Up
+242,Collides at 2.28,,,,,1488,Doesnt Collide,,,1831,Diverges Up,,,2813,Diverges Up,,,3700,Diverges Up
+243,Collides at 2.28,,,,,1489,Doesnt Collide,,,1832,Diverges Up,,,2814,Diverges Up,,,3701,Diverges Up
+244,Collides at 2.28,,,,,1490,Doesnt Collide,,,1833,Diverges Up,,,2815,Diverges Up,,,3702,Diverges Up
+245,Collides at 2.28,,,,,,,,,1834,Diverges Up,,,2816,Diverges Up,,,3703,Diverges Up
+246,Collides at 2.28,,,,,,,,,1835,Diverges Up,,,2817,Diverges Up,,,3704,Diverges Up
+247,Collides at 2.28,,,,,,,,,1836,Diverges Up,,,2818,Diverges Up,,,3705,Diverges Up
+248,Collides at 2.28,,,,,,,,,1837,Diverges Up,,,2819,Diverges Up,,,3706,Diverges Up
+249,Collides at 2.28,,,,,,,,,1838,Diverges Up,,,2820,Diverges Up,,,3707,Diverges Up
+250,Collides at 2.28,,,,,,,,,1839,Diverges Up,,,2821,Diverges Up,,,3708,Diverges Up
+251,Collides at 2.28,,,,,,,,,1840,Diverges Up,,,2822,Diverges Up,,,3709,Diverges Up
+252,Collides at 2.28,,,,,,,,,1841,Diverges Up,,,2823,Diverges Up,,,3710,Diverges Up
+253,Collides at 2.28,,,,,,,,,1842,Diverges Up,,,2824,Diverges Up,,,3711,Diverges Up
+254,Collides at 2.28,,,,,,,,,1843,Diverges Up,,,2825,Diverges Up,,,3712,Diverges Up
+255,Collides at 2.28,,,,,,,,,1844,Diverges Up,,,2826,Diverges Up,,,3713,Diverges Up
+256,Collides at 2.28,,,,,,,,,1845,Diverges Up,,,2827,Diverges Up,,,3714,Diverges Up
+257,Collides at 2.28,,,,,,,,,1846,Diverges Up,,,2828,Diverges Up,,,3715,Diverges Up
+258,Collides at 2.28,,,,,,,,,1847,Diverges Up,,,2829,Diverges Up,,,3716,Diverges Up
+259,Collides at 2.28,,,,,,,,,1848,Diverges Up,,,2830,Diverges Up,,,3717,Diverges Up
+260,Collides at 2.28,,,,,,,,,1849,Diverges Up,,,2831,Diverges Up,,,3718,Diverges Up
+261,Collides at 2.28,,,,,,,,,1850,Diverges Up,,,2832,Diverges Up,,,3719,Diverges Up
+262,Collides at 2.28,,,,,,,,,1851,Diverges Up,,,2833,Diverges Up,,,3720,Diverges Up
+263,Collides at 2.28,,,,,,,,,1852,Diverges Up,,,2834,Diverges Up,,,3721,Diverges Up
+264,Collides at 2.28,,,,,,,,,1853,Diverges Up,,,2835,Diverges Up,,,3722,Diverges Up
+265,Collides at 2.28,,,,,,,,,1854,Diverges Up,,,2836,Diverges Up,,,3723,Diverges Up
+266,Collides at 2.28,,,,,,,,,1855,Diverges Up,,,2837,Diverges Up,,,3724,Diverges Up
+267,Collides at 2.28,,,,,,,,,1856,Diverges Up,,,2838,Diverges Up,,,3725,Diverges Up
+268,Collides at 2.28,,,,,,,,,1857,Diverges Up,,,2839,Diverges Up,,,3726,Diverges Up
+269,Collides at 2.28,,,,,,,,,1858,Diverges Up,,,2840,Diverges Up,,,3727,Diverges Up
+270,Collides at 2.28,,,,,,,,,1859,Diverges Up,,,2841,Diverges Up,,,3728,Diverges Up
+271,Collides at 2.28,,,,,,,,,1860,Diverges Up,,,2842,Diverges Up,,,3729,Diverges Up
+272,Collides at 2.28,,,,,,,,,1861,Diverges Up,,,2843,Diverges Up,,,3730,Diverges Up
+273,Collides at 2.28,,,,,,,,,1862,Diverges Up,,,2844,Diverges Up,,,3731,Diverges Up
+274,Collides at 2.28,,,,,,,,,1863,Diverges Up,,,2845,Diverges Up,,,3732,Diverges Up
+275,Collides at 2.28,,,,,,,,,1864,Diverges Up,,,2846,Diverges Up,,,3733,Diverges Up
+276,Collides at 2.28,,,,,,,,,1865,Diverges Up,,,2847,Diverges Up,,,3734,Diverges Up
+277,Collides at 2.28,,,,,,,,,1866,Diverges Up,,,2848,Diverges Up,,,3735,Diverges Up
+278,Collides at 2.28,,,,,,,,,1867,Diverges Up,,,2849,Diverges Up,,,3736,Diverges Up
+279,Collides at 2.28,,,,,,,,,1868,Diverges Up,,,2850,Diverges Up,,,3737,Diverges Up
+280,Collides at 2.28,,,,,,,,,1869,Diverges Up,,,2851,Diverges Up,,,3738,Diverges Up
+281,Collides at 2.28,,,,,,,,,1870,Diverges Up,,,2852,Diverges Up,,,3739,Diverges Up
+282,Collides at 2.28,,,,,,,,,1871,Diverges Up,,,2853,Diverges Up,,,3740,Diverges Up
+283,Collides at 2.28,,,,,,,,,1872,Diverges Up,,,2854,Diverges Up,,,3741,Diverges Up
+284,Collides at 2.28,,,,,,,,,1873,Diverges Up,,,2855,Diverges Up,,,3742,Diverges Up
+285,Collides at 2.28,,,,,,,,,1874,Diverges Up,,,2856,Diverges Up,,,3743,Diverges Up
+286,Collides at 2.28,,,,,,,,,1875,Diverges Up,,,2857,Diverges Up,,,3744,Diverges Up
+287,Collides at 2.28,,,,,,,,,1876,Diverges Up,,,2858,Diverges Up,,,3745,Diverges Up
+288,Collides at 2.28,,,,,,,,,1877,Diverges Up,,,2859,Diverges Up,,,3746,Diverges Up
+289,Collides at 2.28,,,,,,,,,1878,Diverges Up,,,2860,Diverges Up,,,3747,Diverges Up
+290,Collides at 2.28,,,,,,,,,1879,Diverges Up,,,2861,Diverges Up,,,3748,Diverges Up
+291,Collides at 2.28,,,,,,,,,1880,Diverges Up,,,2862,Diverges Up,,,3749,Diverges Up
+292,Collides at 2.28,,,,,,,,,1881,Diverges Up,,,2863,Diverges Up,,,3750,Diverges Up
+293,Collides at 2.28,,,,,,,,,1882,Diverges Up,,,2864,Diverges Up,,,3751,Diverges Up
+294,Collides at 2.28,,,,,,,,,1883,Diverges Up,,,2865,Diverges Up,,,3752,Diverges Up
+295,Collides at 2.28,,,,,,,,,1884,Diverges Up,,,2866,Diverges Up,,,3753,Diverges Up
+296,Collides at 2.28,,,,,,,,,1885,Diverges Up,,,2867,Diverges Up,,,3754,Diverges Up
+297,Collides at 2.28,,,,,,,,,1886,Diverges Up,,,2868,Diverges Up,,,3755,Diverges Up
+298,Collides at 2.28,,,,,,,,,1887,Diverges Up,,,2869,Diverges Up,,,3756,Diverges Up
+299,Collides at 2.28,,,,,,,,,1888,Diverges Up,,,2870,Diverges Up,,,3757,Diverges Up
+300,Collides at 2.28,,,,,,,,,1889,Diverges Up,,,2871,Diverges Up,,,3758,Diverges Up
+301,Collides at 2.28,,,,,,,,,1890,Diverges Up,,,2872,Diverges Up,,,3759,Diverges Up
+302,Collides at 2.28,,,,,,,,,1891,Diverges Up,,,2873,Diverges Up,,,3760,Diverges Up
+303,Collides at 2.28,,,,,,,,,1892,Diverges Up,,,2874,Diverges Up,,,3761,Diverges Up
+304,Collides at 2.28,,,,,,,,,1893,Diverges Up,,,2875,Diverges Up,,,3762,Diverges Up
+305,Collides at 2.28,,,,,,,,,1894,Diverges Up,,,2876,Diverges Up,,,3763,Diverges Up
+306,Collides at 2.28,,,,,,,,,1895,Diverges Up,,,2877,Diverges Up,,,3764,Diverges Up
+307,Collides at 2.28,,,,,,,,,1896,Diverges Up,,,2878,Diverges Up,,,3765,Diverges Up
+308,Collides at 2.28,,,,,,,,,1897,Diverges Up,,,2879,Diverges Up,,,3766,Diverges Up
+309,Collides at 2.28,,,,,,,,,1898,Diverges Up,,,2880,Diverges Up,,,3767,Diverges Up
+310,Collides at 2.28,,,,,,,,,1899,Diverges Up,,,2881,Diverges Up,,,3768,Diverges Up
+311,Collides at 2.28,,,,,,,,,1900,Diverges Up,,,2882,Diverges Up,,,3769,Diverges Up
+312,Collides at 2.28,,,,,,,,,1901,Diverges Up,,,2883,Diverges Up,,,3770,Diverges Up
+313,Collides at 2.28,,,,,,,,,1902,Diverges Up,,,2884,Diverges Up,,,3771,Diverges Up
+314,Collides at 2.28,,,,,,,,,1903,Diverges Up,,,2885,Diverges Up,,,3772,Diverges Up
+315,Collides at 2.28,,,,,,,,,1904,Diverges Up,,,2886,Diverges Up,,,3773,Diverges Up
+316,Collides at 2.28,,,,,,,,,1905,Diverges Up,,,2887,Diverges Up,,,3774,Diverges Up
+317,Collides at 2.28,,,,,,,,,1906,Diverges Up,,,2888,Diverges Up,,,3775,Diverges Up
+318,Collides at 2.28,,,,,,,,,1907,Diverges Up,,,2889,Diverges Up,,,3776,Diverges Up
+319,Collides at 2.28,,,,,,,,,1908,Diverges Up,,,2890,Diverges Up,,,3777,Diverges Up
+320,Collides at 2.28,,,,,,,,,1909,Diverges Up,,,2891,Diverges Up,,,3778,Diverges Up
+321,Collides at 2.28,,,,,,,,,1910,Diverges Up,,,2892,Diverges Up,,,3779,Diverges Up
+322,Collides at 2.28,,,,,,,,,1911,Diverges Up,,,2893,Diverges Up,,,3780,Diverges Up
+323,Collides at 2.28,,,,,,,,,1912,Diverges Up,,,2894,Diverges Up,,,3781,Diverges Up
+324,Collides at 2.28,,,,,,,,,1913,Diverges Up,,,2895,Diverges Up,,,3782,Diverges Up
+325,Collides at 2.28,,,,,,,,,1914,Diverges Up,,,2896,Diverges Up,,,3783,Diverges Up
+326,Collides at 2.28,,,,,,,,,1915,Diverges Up,,,2897,Diverges Up,,,3784,Diverges Up
+327,Collides at 2.28,,,,,,,,,1916,Diverges Up,,,2898,Diverges Up,,,3785,Diverges Up
+328,Collides at 2.28,,,,,,,,,1917,Diverges Up,,,2899,Diverges Up,,,3786,Diverges Up
+329,Collides at 2.28,,,,,,,,,1918,Diverges Up,,,2900,Diverges Up,,,3787,Diverges Up
+330,Collides at 2.28,,,,,,,,,1919,Diverges Up,,,2901,Diverges Up,,,3788,Diverges Up
+331,Collides at 2.28,,,,,,,,,1920,Diverges Up,,,2902,Diverges Up,,,3789,Diverges Up
+332,Collides at 2.28,,,,,,,,,1921,Diverges Up,,,2903,Diverges Up,,,3790,Diverges Up
+333,Collides at 2.28,,,,,,,,,1922,Diverges Up,,,2904,Diverges Up,,,3791,Diverges Up
+334,Collides at 2.28,,,,,,,,,1923,Diverges Up,,,2905,Diverges Up,,,3792,Diverges Up
+335,Collides at 2.28,,,,,,,,,1924,Diverges Up,,,2906,Diverges Up,,,3793,Diverges Up
+336,Collides at 2.28,,,,,,,,,1925,Diverges Up,,,2907,Diverges Up,,,3794,Diverges Up
+337,Collides at 2.28,,,,,,,,,1926,Diverges Up,,,2908,Diverges Up,,,3795,Diverges Up
+338,Collides at 2.28,,,,,,,,,1927,Diverges Up,,,2909,Diverges Up,,,3796,Diverges Up
+339,Collides at 2.28,,,,,,,,,1928,Diverges Up,,,2910,Diverges Up,,,3797,Diverges Up
+340,Collides at 2.28,,,,,,,,,1929,Diverges Up,,,2911,Diverges Up,,,3798,Diverges Up
+341,Collides at 2.28,,,,,,,,,1930,Diverges Up,,,2912,Diverges Up,,,3799,Diverges Up
+342,Collides at 2.28,,,,,,,,,1931,Diverges Up,,,2913,Diverges Up,,,3800,Diverges Up
+343,Collides at 2.28,,,,,,,,,1932,Diverges Up,,,2914,Diverges Up,,,3801,Diverges Up
+344,Collides at 2.28,,,,,,,,,1933,Diverges Up,,,2915,Diverges Up,,,3802,Diverges Up
+345,Collides at 2.28,,,,,,,,,1934,Diverges Up,,,2916,Diverges Up,,,3803,Diverges Up
+346,Collides at 2.28,,,,,,,,,1935,Diverges Up,,,2917,Diverges Up,,,3804,Diverges Up
+347,Collides at 2.28,,,,,,,,,1936,Diverges Up,,,2918,Diverges Up,,,3805,Diverges Up
+348,Collides at 2.28,,,,,,,,,1937,Diverges Up,,,2919,Diverges Up,,,3806,Diverges Up
+349,Collides at 2.28,,,,,,,,,1938,Diverges Up,,,2920,Diverges Up,,,3807,Diverges Up
+350,Collides at 2.28,,,,,,,,,1939,Diverges Up,,,2921,Diverges Up,,,3808,Diverges Up
+351,Collides at 2.28,,,,,,,,,1940,Diverges Up,,,2922,Diverges Up,,,3809,Diverges Up
+352,Collides at 2.28,,,,,,,,,1941,Diverges Up,,,2923,Diverges Up,,,3810,Diverges Up
+353,Collides at 2.28,,,,,,,,,1942,Diverges Up,,,2924,Diverges Up,,,3811,Diverges Up
+354,Collides at 2.28,,,,,,,,,1943,Diverges Up,,,2925,Diverges Up,,,3812,Diverges Up
+355,Collides at 2.28,,,,,,,,,1944,Diverges Up,,,2926,Diverges Up,,,3813,Diverges Up
+356,Collides at 2.28,,,,,,,,,1945,Diverges Up,,,2927,Diverges Up,,,3814,Diverges Up
+357,Collides at 2.28,,,,,,,,,1946,Diverges Up,,,2928,Diverges Up,,,3815,Diverges Up
+358,Collides at 2.28,,,,,,,,,1947,Diverges Up,,,2929,Diverges Up,,,3816,Diverges Up
+359,Collides at 2.28,,,,,,,,,1948,Diverges Up,,,2930,Diverges Up,,,3817,Diverges Up
+360,Collides at 2.28,,,,,,,,,1949,Diverges Up,,,2931,Diverges Up,,,3818,Diverges Up
+361,Collides at 2.28,,,,,,,,,1950,Diverges Up,,,2932,Diverges Up,,,3819,Diverges Up
+362,Collides at 2.28,,,,,,,,,1951,Diverges Up,,,2933,Diverges Up,,,3820,Diverges Up
+363,Collides at 2.28,,,,,,,,,1952,Diverges Up,,,2934,Diverges Up,,,3821,Diverges Up
+364,Collides at 2.28,,,,,,,,,1953,Diverges Up,,,2935,Diverges Up,,,3822,Diverges Up
+365,Collides at 2.28,,,,,,,,,1954,Diverges Up,,,2936,Diverges Up,,,3823,Diverges Up
+366,Collides at 2.28,,,,,,,,,1955,Diverges Up,,,2937,Diverges Up,,,3824,Diverges Up
+367,Collides at 2.28,,,,,,,,,1956,Diverges Up,,,2938,Diverges Up,,,3825,Diverges Up
+368,Collides at 2.28,,,,,,,,,1957,Diverges Up,,,2939,Diverges Up,,,3826,Diverges Up
+369,Collides at 2.28,,,,,,,,,1958,Diverges Up,,,2940,Diverges Up,,,3827,Diverges Up
+370,Collides at 2.28,,,,,,,,,1959,Diverges Up,,,2941,Diverges Up,,,3828,Diverges Up
+371,Collides at 2.28,,,,,,,,,1960,Diverges Up,,,2942,Diverges Up,,,3829,Diverges Up
+372,Collides at 2.28,,,,,,,,,1961,Diverges Up,,,2943,Diverges Up,,,3830,Diverges Up
+373,Collides at 2.28,,,,,,,,,1962,Diverges Up,,,2944,Diverges Up,,,3831,Diverges Up
+374,Collides at 2.28,,,,,,,,,1963,Diverges Up,,,2945,Diverges Up,,,3832,Diverges Up
+375,Collides at 2.28,,,,,,,,,1964,Diverges Up,,,2946,Diverges Up,,,3833,Diverges Up
+376,Collides at 2.28,,,,,,,,,1965,Diverges Up,,,2947,Diverges Up,,,3834,Diverges Up
+377,Collides at 2.28,,,,,,,,,1966,Diverges Up,,,2948,Diverges Up,,,3835,Diverges Up
+378,Collides at 2.28,,,,,,,,,1967,Diverges Up,,,2949,Diverges Up,,,3836,Diverges Up
+379,Collides at 2.28,,,,,,,,,1968,Diverges Up,,,2950,Diverges Up,,,3837,Diverges Up
+380,Collides at 2.28,,,,,,,,,1969,Diverges Up,,,2951,Diverges Up,,,3838,Diverges Up
+381,Collides at 2.28,,,,,,,,,1970,Diverges Up,,,2952,Diverges Up,,,3839,Diverges Up
+382,Collides at 2.28,,,,,,,,,1971,Diverges Up,,,2953,Diverges Up,,,3840,Diverges Up
+383,Collides at 2.28,,,,,,,,,1972,Diverges Up,,,2954,Diverges Up,,,3841,Diverges Up
+384,Collides at 2.28,,,,,,,,,1973,Diverges Up,,,2955,Diverges Up,,,3842,Diverges Up
+385,Collides at 2.28,,,,,,,,,1974,Diverges Up,,,2956,Diverges Up,,,3843,Diverges Up
+386,Collides at 2.28,,,,,,,,,1975,Diverges Up,,,2957,Diverges Up,,,3844,Diverges Up
+387,Collides at 2.28,,,,,,,,,1976,Diverges Up,,,2958,Diverges Up,,,3845,Diverges Up
+388,Collides at 2.28,,,,,,,,,1977,Diverges Up,,,2959,Diverges Up,,,3846,Diverges Up
+389,Collides at 2.28,,,,,,,,,1978,Diverges Up,,,2960,Diverges Up,,,3847,Diverges Up
+390,Collides at 2.28,,,,,,,,,1979,Diverges Up,,,2961,Diverges Up,,,3848,Diverges Up
+391,Collides at 2.28,,,,,,,,,1980,Diverges Up,,,2962,Diverges Up,,,3849,Diverges Up
+392,Collides at 2.28,,,,,,,,,1981,Diverges Up,,,2963,Diverges Up,,,3850,Diverges Up
+393,Collides at 2.28,,,,,,,,,1982,Diverges Up,,,2964,Diverges Up,,,3851,Diverges Up
+394,Collides at 2.28,,,,,,,,,1983,Diverges Up,,,2965,Diverges Up,,,3852,Diverges Up
+395,Collides at 2.28,,,,,,,,,1984,Diverges Up,,,2966,Diverges Up,,,3853,Diverges Up
+396,Collides at 2.28,,,,,,,,,1985,Diverges Up,,,2967,Diverges Up,,,3854,Diverges Up
+397,Collides at 2.28,,,,,,,,,1986,Diverges Up,,,2968,Diverges Up,,,3855,Diverges Up
+398,Collides at 2.28,,,,,,,,,1987,Diverges Up,,,2969,Diverges Up,,,3856,Diverges Up
+399,Collides at 2.28,,,,,,,,,1988,Diverges Up,,,2970,Diverges Up,,,3857,Diverges Up
+400,Collides at 2.28,,,,,,,,,1989,Diverges Up,,,2971,Diverges Up,,,3858,Diverges Up
+401,Collides at 2.28,,,,,,,,,1990,Diverges Up,,,2972,Diverges Up,,,3859,Diverges Up
+402,Collides at 2.28,,,,,,,,,1991,Diverges Up,,,2973,Diverges Up,,,3860,Diverges Up
+403,Collides at 2.28,,,,,,,,,1992,Diverges Up,,,2974,Diverges Up,,,3861,Diverges Up
+404,Collides at 2.28,,,,,,,,,1993,Diverges Up,,,2975,Diverges Up,,,3862,Diverges Up
+405,Collides at 2.28,,,,,,,,,1994,Diverges Up,,,2976,Diverges Up,,,3863,Diverges Up
+406,Collides at 2.28,,,,,,,,,1995,Diverges Up,,,2977,Diverges Up,,,3864,Diverges Up
+407,Collides at 2.28,,,,,,,,,1996,Diverges Up,,,2978,Diverges Up,,,3865,Diverges Up
+408,Collides at 2.28,,,,,,,,,1997,Diverges Up,,,2979,Diverges Up,,,3866,Diverges Up
+409,Collides at 2.28,,,,,,,,,1998,Diverges Up,,,2980,Diverges Up,,,3867,Diverges Up
+410,Collides at 2.28,,,,,,,,,1999,Diverges Up,,,2981,Diverges Up,,,3868,Diverges Up
+411,Collides at 2.28,,,,,,,,,2000,Diverges Up,,,2982,Diverges Up,,,3869,Diverges Up
+412,Collides at 2.28,,,,,,,,,2001,Diverges Up,,,2983,Diverges Up,,,3870,Diverges Up
+413,Collides at 2.28,,,,,,,,,2002,Diverges Up,,,2984,Diverges Up,,,3871,Diverges Up
+414,Collides at 2.28,,,,,,,,,2003,Diverges Up,,,2985,Diverges Up,,,3872,Diverges Up
+415,Collides at 2.28,,,,,,,,,2004,Diverges Up,,,2986,Diverges Up,,,3873,Diverges Up
+416,Collides at 2.28,,,,,,,,,2005,Diverges Up,,,2987,Diverges Up,,,3874,Diverges Up
+417,Collides at 2.28,,,,,,,,,2006,Diverges Up,,,2988,Diverges Up,,,3875,Diverges Up
+418,Collides at 2.28,,,,,,,,,2007,Diverges Up,,,2989,Diverges Up,,,3876,Diverges Up
+419,Collides at 2.28,,,,,,,,,2008,Diverges Up,,,2990,Diverges Up,,,3877,Diverges Up
+420,Collides at 2.28,,,,,,,,,2009,Diverges Up,,,2991,Diverges Up,,,3878,Diverges Up
+421,Collides at 2.28,,,,,,,,,2010,Diverges Up,,,2992,Diverges Up,,,3879,Diverges Up
+422,Collides at 2.28,,,,,,,,,2011,Diverges Up,,,2993,Diverges Up,,,3880,Diverges Up
+423,Collides at 2.28,,,,,,,,,2012,Diverges Up,,,2994,Diverges Up,,,3881,Diverges Up
+424,Collides at 2.28,,,,,,,,,2013,Diverges Up,,,2995,Diverges Up,,,3882,Diverges Up
+425,Collides at 2.28,,,,,,,,,2014,Diverges Up,,,2996,Diverges Up,,,3883,Diverges Up
+426,Collides at 2.28,,,,,,,,,2015,Diverges Up,,,2997,Diverges Up,,,3884,Diverges Up
+427,Collides at 2.28,,,,,,,,,2016,Diverges Up,,,2998,Diverges Up,,,3885,Diverges Up
+428,Collides at 2.28,,,,,,,,,2017,Diverges Up,,,2999,Diverges Up,,,3886,Diverges Up
+429,Collides at 2.28,,,,,,,,,2018,Diverges Up,,,3000,Diverges Up,,,3887,Diverges Up
+430,Collides at 2.28,,,,,,,,,2019,Diverges Up,,,3001,Diverges Up,,,3888,Diverges Up
+431,Collides at 2.28,,,,,,,,,2020,Diverges Up,,,3002,Diverges Up,,,3889,Diverges Up
+432,Collides at 2.28,,,,,,,,,2021,Diverges Up,,,3003,Diverges Up,,,3890,Diverges Up
+433,Collides at 2.28,,,,,,,,,2022,Diverges Up,,,3004,Diverges Up,,,3891,Diverges Up
+434,Collides at 2.28,,,,,,,,,2023,Diverges Up,,,3005,Diverges Up,,,3892,Diverges Up
+435,Collides at 2.28,,,,,,,,,2024,Diverges Up,,,3006,Diverges Up,,,3893,Diverges Up
+436,Collides at 2.28,,,,,,,,,2025,Diverges Up,,,3007,Diverges Up,,,3894,Diverges Up
+437,Collides at 2.28,,,,,,,,,2026,Diverges Up,,,3008,Diverges Up,,,3895,Diverges Up
+438,Collides at 2.28,,,,,,,,,2027,Diverges Up,,,3009,Diverges Up,,,3896,Diverges Up
+439,Collides at 2.28,,,,,,,,,2028,Diverges Up,,,3010,Diverges Up,,,3897,Diverges Up
+440,Collides at 2.28,,,,,,,,,2029,Diverges Up,,,3011,Diverges Up,,,3898,Diverges Up
+441,Collides at 2.28,,,,,,,,,2030,Diverges Up,,,3012,Diverges Up,,,3899,Diverges Up
+442,Collides at 2.28,,,,,,,,,2031,Diverges Up,,,3013,Diverges Up,,,3900,Diverges Up
+443,Collides at 2.28,,,,,,,,,2032,Diverges Up,,,3014,Diverges Up,,,3901,Diverges Up
+444,Collides at 2.28,,,,,,,,,2033,Diverges Up,,,3015,Diverges Up,,,3902,Diverges Up
+445,Collides at 2.28,,,,,,,,,2034,Diverges Up,,,3016,Diverges Up,,,3903,Diverges Up
+446,Collides at 2.28,,,,,,,,,2035,Diverges Up,,,3017,Diverges Up,,,3904,Diverges Up
+447,Collides at 2.28,,,,,,,,,2036,Diverges Up,,,3018,Diverges Up,,,3905,Diverges Up
+448,Collides at 2.28,,,,,,,,,2037,Diverges Up,,,3019,Diverges Up,,,3906,Diverges Up
+449,Collides at 2.28,,,,,,,,,2038,Diverges Up,,,3020,Diverges Up,,,3907,Diverges Up
+450,Collides at 2.28,,,,,,,,,2039,Diverges Up,,,3021,Diverges Up,,,3908,Diverges Up
+451,Collides at 2.28,,,,,,,,,2040,Diverges Up,,,3022,Diverges Up,,,3909,Diverges Up
+452,Collides at 2.28,,,,,,,,,2041,Diverges Up,,,3023,Diverges Up,,,3910,Diverges Up
+453,Collides at 2.28,,,,,,,,,2042,Diverges Up,,,3024,Diverges Up,,,3911,Diverges Up
+454,Collides at 2.28,,,,,,,,,2043,Diverges Up,,,3025,Diverges Up,,,3912,Diverges Up
+455,Collides at 2.28,,,,,,,,,2044,Diverges Up,,,3026,Diverges Up,,,3913,Diverges Up
+456,Collides at 2.28,,,,,,,,,2045,Diverges Up,,,3027,Diverges Up,,,3914,Diverges Up
+457,Collides at 2.28,,,,,,,,,2046,Diverges Up,,,3028,Diverges Up,,,3915,Diverges Up
+458,Collides at 2.28,,,,,,,,,2047,Diverges Up,,,3029,Diverges Up,,,3916,Diverges Up
+459,Collides at 2.28,,,,,,,,,2048,Diverges Up,,,3030,Diverges Up,,,3917,Diverges Up
+460,Collides at 2.28,,,,,,,,,2049,Diverges Up,,,3031,Diverges Up,,,3918,Diverges Up
+461,Collides at 2.28,,,,,,,,,2050,Diverges Up,,,3032,Diverges Up,,,3919,Diverges Up
+462,Collides at 2.28,,,,,,,,,2051,Diverges Up,,,3033,Diverges Up,,,3920,Diverges Up
+463,Collides at 2.28,,,,,,,,,2052,Diverges Up,,,3034,Diverges Up,,,3921,Diverges Up
+464,Collides at 2.28,,,,,,,,,2053,Diverges Up,,,3035,Diverges Up,,,3922,Diverges Up
+465,Collides at 2.28,,,,,,,,,2054,Diverges Up,,,3036,Diverges Up,,,3923,Diverges Up
+466,Collides at 2.28,,,,,,,,,2055,Diverges Up,,,3037,Diverges Up,,,3924,Diverges Up
+467,Collides at 2.28,,,,,,,,,2056,Diverges Up,,,3038,Diverges Up,,,3925,Diverges Up
+468,Collides at 2.28,,,,,,,,,2057,Diverges Up,,,3039,Diverges Up,,,3926,Diverges Up
+469,Collides at 2.28,,,,,,,,,2058,Diverges Up,,,3040,Diverges Up,,,3927,Diverges Up
+470,Collides at 2.28,,,,,,,,,2059,Diverges Up,,,3041,Diverges Up,,,3928,Diverges Up
+471,Collides at 2.28,,,,,,,,,2060,Diverges Up,,,3042,Diverges Up,,,3929,Diverges Up
+472,Collides at 2.28,,,,,,,,,2061,Diverges Up,,,3043,Diverges Up,,,3930,Diverges Up
+473,Collides at 2.28,,,,,,,,,2062,Diverges Up,,,3044,Diverges Up,,,3931,Diverges Up
+474,Collides at 2.28,,,,,,,,,2063,Diverges Up,,,3045,Diverges Up,,,3932,Diverges Up
+475,Collides at 2.28,,,,,,,,,2064,Diverges Up,,,3046,Diverges Up,,,3933,Diverges Up
+476,Collides at 2.28,,,,,,,,,2065,Diverges Up,,,3047,Diverges Up,,,3934,Diverges Up
+477,Collides at 2.28,,,,,,,,,2066,Diverges Up,,,3048,Diverges Up,,,3935,Diverges Up
+478,Collides at 2.28,,,,,,,,,2067,Diverges Up,,,3049,Diverges Up,,,3936,Diverges Up
+479,Collides at 2.28,,,,,,,,,2068,Diverges Up,,,3050,Diverges Up,,,3937,Diverges Up
+480,Collides at 2.28,,,,,,,,,2069,Diverges Up,,,3051,Diverges Up,,,3938,Diverges Up
+481,Collides at 2.28,,,,,,,,,2070,Diverges Up,,,3052,Diverges Up,,,3939,Diverges Up
+482,Collides at 2.28,,,,,,,,,2071,Diverges Up,,,3053,Diverges Up,,,3940,Diverges Up
+483,Collides at 2.28,,,,,,,,,2072,Diverges Up,,,3054,Diverges Up,,,3941,Diverges Up
+484,Collides at 2.28,,,,,,,,,2073,Diverges Up,,,3055,Diverges Up,,,3942,Diverges Up
+485,Collides at 2.28,,,,,,,,,2074,Diverges Up,,,3056,Diverges Up,,,3943,Diverges Up
+486,Collides at 2.28,,,,,,,,,2075,Diverges Up,,,3057,Diverges Up,,,3944,Diverges Up
+487,Collides at 2.28,,,,,,,,,2076,Diverges Up,,,3058,Diverges Up,,,3945,Diverges Up
+488,Collides at 2.28,,,,,,,,,2077,Diverges Up,,,3059,Diverges Up,,,3946,Diverges Up
+489,Collides at 2.28,,,,,,,,,2078,Diverges Up,,,3060,Diverges Up,,,3947,Diverges Up
+490,Collides at 2.28,,,,,,,,,2079,Diverges Up,,,3061,Diverges Up,,,3948,Diverges Up
+491,Collides at 2.28,,,,,,,,,2080,Diverges Up,,,3062,Diverges Up,,,3949,Diverges Up
+492,Collides at 2.28,,,,,,,,,2081,Diverges Up,,,3063,Diverges Up,,,3950,Diverges Up
+493,Collides at 2.28,,,,,,,,,2082,Diverges Up,,,3064,Diverges Up,,,3951,Diverges Up
+494,Collides at 2.28,,,,,,,,,2083,Diverges Up,,,3065,Diverges Up,,,3952,Diverges Up
+495,Collides at 2.28,,,,,,,,,2084,Diverges Up,,,3066,Diverges Up,,,3953,Diverges Up
+496,Collides at 2.28,,,,,,,,,2085,Diverges Up,,,3067,Diverges Up,,,3954,Diverges Up
+497,Collides at 2.28,,,,,,,,,2086,Diverges Up,,,3068,Diverges Up,,,3955,Diverges Up
+498,Collides at 2.28,,,,,,,,,2087,Diverges Up,,,3069,Diverges Up,,,3956,Diverges Up
+499,Collides at 2.28,,,,,,,,,2088,Diverges Up,,,3070,Diverges Up,,,3957,Diverges Up
+500,Collides at 2.28,,,,,,,,,2089,Diverges Up,,,3071,Diverges Up,,,3958,Diverges Up
+501,Collides at 2.28,,,,,,,,,2090,Diverges Up,,,3072,Diverges Up,,,3959,Diverges Up
+502,Collides at 2.28,,,,,,,,,2091,Diverges Up,,,3073,Diverges Up,,,3960,Diverges Up
+503,Collides at 2.28,,,,,,,,,2092,Diverges Up,,,3074,Diverges Up,,,3961,Collides at 6.00
+504,Collides at 2.28,,,,,,,,,2093,Diverges Up,,,3075,Diverges Up,,,3962,Diverges Up
+505,Collides at 2.28,,,,,,,,,2094,Diverges Up,,,3076,Diverges Up,,,3963,Diverges Up
+506,Collides at 2.28,,,,,,,,,2095,Diverges Up,,,3077,Diverges Up,,,3964,Diverges Up
+507,Collides at 2.28,,,,,,,,,2096,Diverges Up,,,3078,Diverges Up,,,3965,Collides at 6.00
+508,Collides at 2.28,,,,,,,,,2097,Diverges Up,,,3079,Diverges Up,,,3966,Diverges Up
+509,Collides at 2.28,,,,,,,,,2098,Diverges Up,,,3080,Diverges Up,,,3967,Diverges Up
+510,Collides at 2.28,,,,,,,,,2099,Diverges Up,,,3081,Diverges Up,,,3968,Diverges Up
+511,Collides at 2.28,,,,,,,,,2100,Diverges Up,,,3082,Diverges Up,,,3969,Diverges Up
+512,Collides at 2.28,,,,,,,,,2101,Diverges Up,,,3083,Diverges Up,,,3970,Diverges Up
+513,Collides at 2.28,,,,,,,,,2102,Diverges Up,,,3084,Diverges Up,,,3971,Diverges Up
+514,Collides at 2.28,,,,,,,,,2103,Diverges Up,,,3085,Diverges Up,,,3972,Diverges Up
+515,Collides at 2.28,,,,,,,,,2104,Diverges Up,,,3086,Diverges Up,,,3973,Diverges Up
+516,Collides at 2.28,,,,,,,,,2105,Diverges Up,,,3087,Diverges Up,,,3974,Diverges Up
+517,Collides at 2.28,,,,,,,,,2106,Diverges Up,,,3088,Diverges Up,,,3975,Diverges Up
+518,Collides at 2.28,,,,,,,,,2107,Diverges Up,,,3089,Diverges Up,,,3976,Diverges Up
+519,Collides at 2.28,,,,,,,,,2108,Diverges Up,,,3090,Diverges Up,,,3977,Diverges Up
+520,Collides at 2.28,,,,,,,,,2109,Diverges Up,,,3091,Diverges Up,,,3978,Diverges Up
+521,Collides at 2.28,,,,,,,,,2110,Diverges Up,,,3092,Diverges Up,,,3979,Diverges Up
+522,Collides at 2.28,,,,,,,,,2111,Diverges Up,,,3093,Diverges Up,,,3980,Diverges Up
+523,Collides at 2.28,,,,,,,,,2112,Diverges Up,,,3094,Diverges Up,,,3981,Diverges Up
+524,Collides at 2.28,,,,,,,,,2113,Diverges Up,,,3095,Diverges Up,,,3982,Diverges Up
+525,Collides at 2.28,,,,,,,,,2114,Diverges Up,,,3096,Diverges Up,,,3983,Diverges Up
+526,Collides at 2.28,,,,,,,,,2115,Diverges Up,,,3097,Diverges Up,,,3984,Diverges Up
+527,Collides at 2.28,,,,,,,,,2116,Diverges Up,,,3098,Diverges Up,,,3985,Diverges Up
+528,Collides at 2.28,,,,,,,,,2117,Diverges Up,,,3099,Diverges Up,,,3986,Diverges Up
+529,Collides at 2.28,,,,,,,,,2118,Diverges Up,,,3100,Diverges Up,,,3987,Diverges Up
+530,Collides at 2.28,,,,,,,,,2119,Diverges Up,,,3101,Diverges Up,,,3988,Diverges Up
+531,Collides at 2.28,,,,,,,,,2120,Diverges Up,,,3102,Diverges Up,,,3989,Diverges Up
+532,Collides at 2.28,,,,,,,,,2121,Diverges Up,,,3103,Diverges Up,,,3990,Diverges Up
+533,Collides at 2.28,,,,,,,,,2122,Diverges Up,,,3104,Diverges Up,,,3991,Diverges Up
+534,Collides at 2.28,,,,,,,,,2123,Diverges Up,,,3105,Diverges Up,,,3992,Diverges Up
+535,Collides at 2.28,,,,,,,,,2124,Diverges Up,,,3106,Diverges Up,,,3993,Diverges Up
+536,Collides at 2.28,,,,,,,,,2125,Diverges Up,,,3107,Diverges Up,,,3994,Diverges Up
+537,Collides at 2.28,,,,,,,,,2126,Diverges Up,,,3108,Diverges Up,,,3995,Diverges Up
+538,Collides at 2.28,,,,,,,,,2127,Diverges Up,,,3109,Diverges Up,,,3996,Diverges Up
+539,Collides at 2.28,,,,,,,,,2128,Diverges Up,,,3110,Diverges Up,,,3997,Diverges Up
+540,Collides at 2.28,,,,,,,,,2129,Diverges Up,,,3111,Diverges Up,,,3998,Diverges Up
+541,Collides at 2.28,,,,,,,,,2130,Diverges Up,,,3112,Diverges Up,,,3999,Diverges Up
+542,Collides at 2.28,,,,,,,,,2131,Diverges Up,,,3113,Diverges Up,,,4000,Diverges Up
+543,Collides at 2.28,,,,,,,,,2132,Diverges Up,,,3114,Diverges Up,,,4001,Diverges Up
+544,Collides at 2.28,,,,,,,,,2133,Diverges Up,,,3115,Diverges Up,,,4002,Diverges Up
+545,Collides at 2.28,,,,,,,,,2134,Diverges Up,,,3116,Diverges Up,,,4003,Diverges Up
+546,Collides at 2.28,,,,,,,,,2135,Diverges Up,,,3117,Diverges Up,,,4004,Diverges Up
+547,Collides at 2.28,,,,,,,,,2136,Diverges Up,,,3118,Diverges Up,,,4005,Diverges Up
+548,Collides at 2.28,,,,,,,,,2137,Diverges Up,,,3119,Diverges Up,,,4006,Diverges Up
+549,Collides at 2.28,,,,,,,,,2138,Diverges Up,,,3120,Diverges Up,,,4007,Diverges Up
+550,Collides at 2.28,,,,,,,,,2139,Diverges Up,,,3121,Diverges Up,,,4008,Diverges Up
+551,Collides at 2.28,,,,,,,,,2140,Diverges Up,,,3122,Diverges Up,,,4009,Diverges Up
+552,Collides at 2.28,,,,,,,,,2141,Diverges Up,,,3123,Diverges Up,,,4010,Diverges Up
+553,Collides at 2.28,,,,,,,,,2142,Diverges Up,,,3124,Diverges Up,,,4011,Diverges Up
+554,Collides at 2.28,,,,,,,,,2143,Diverges Up,,,3125,Diverges Up,,,4012,Diverges Up
+555,Collides at 2.28,,,,,,,,,2144,Diverges Up,,,3126,Diverges Up,,,4013,Diverges Up
+556,Collides at 2.28,,,,,,,,,2145,Diverges Up,,,3127,Diverges Up,,,4014,Diverges Up
+557,Collides at 2.28,,,,,,,,,2146,Diverges Up,,,3128,Diverges Up,,,4015,Diverges Up
+558,Collides at 2.28,,,,,,,,,2147,Diverges Up,,,3129,Diverges Up,,,4016,Diverges Up
+559,Collides at 2.28,,,,,,,,,2148,Diverges Up,,,3130,Diverges Up,,,4017,Diverges Up
+560,Collides at 2.28,,,,,,,,,2149,Diverges Up,,,3131,Diverges Up,,,4018,Diverges Up
+561,Collides at 2.28,,,,,,,,,2150,Diverges Up,,,3132,Diverges Up,,,4019,Diverges Up
+562,Collides at 2.28,,,,,,,,,2151,Diverges Up,,,3133,Diverges Up,,,4020,Diverges Up
+563,Collides at 2.34,,,,,,,,,2152,Diverges Up,,,3134,Diverges Up,,,4021,Diverges Up
+564,Collides at 2.28,,,,,,,,,2153,Diverges Up,,,3135,Diverges Up,,,4022,Diverges Up
+565,Collides at 2.28,,,,,,,,,2154,Diverges Up,,,3136,Diverges Up,,,4023,Diverges Up
+566,Collides at 2.28,,,,,,,,,2155,Diverges Up,,,3137,Diverges Up,,,4024,Diverges Up
+567,Collides at 2.34,,,,,,,,,2156,Diverges Up,,,3138,Diverges Up,,,4025,Diverges Up
+568,Collides at 2.34,,,,,,,,,2157,Diverges Up,,,3139,Diverges Up,,,4026,Diverges Up
+569,Collides at 2.34,,,,,,,,,2158,Diverges Up,,,3140,Diverges Up,,,4027,Diverges Up
+570,Collides at 2.34,,,,,,,,,2159,Diverges Up,,,3141,Diverges Up,,,4028,Diverges Up
+571,Collides at 2.34,,,,,,,,,2160,Diverges Up,,,3142,Diverges Up,,,4029,Diverges Up
+572,Collides at 2.34,,,,,,,,,2161,Diverges Up,,,3143,Diverges Up,,,4030,Diverges Up
+573,Collides at 2.34,,,,,,,,,2162,Diverges Up,,,3144,Diverges Up,,,4031,Diverges Up
+574,Collides at 2.34,,,,,,,,,2163,Diverges Up,,,3145,Diverges Up,,,4032,Diverges Up
+575,Collides at 2.34,,,,,,,,,2164,Diverges Up,,,3146,Diverges Up,,,4033,Diverges Up
+576,Collides at 2.34,,,,,,,,,2165,Diverges Up,,,3147,Diverges Up,,,4034,Diverges Up
+577,Collides at 2.34,,,,,,,,,2166,Diverges Up,,,3148,Diverges Up,,,4035,Diverges Up
+578,Collides at 2.34,,,,,,,,,2167,Diverges Up,,,3149,Diverges Up,,,4036,Diverges Up
+579,Collides at 2.34,,,,,,,,,2168,Diverges Up,,,3150,Diverges Up,,,4037,Diverges Up
+580,Collides at 2.34,,,,,,,,,2169,Diverges Up,,,3151,Diverges Up,,,4038,Diverges Up
+581,Collides at 2.34,,,,,,,,,2170,Diverges Up,,,3152,Diverges Up,,,4039,Diverges Up
+582,Collides at 2.34,,,,,,,,,2171,Diverges Up,,,3153,Diverges Up,,,4040,Diverges Up
+583,Collides at 2.34,,,,,,,,,2172,Diverges Up,,,3154,Diverges Up,,,4041,Diverges Up
+584,Collides at 2.34,,,,,,,,,2173,Diverges Up,,,3155,Diverges Up,,,4042,Diverges Up
+585,Collides at 2.34,,,,,,,,,2174,Diverges Up,,,3156,Diverges Up,,,4043,Diverges Up
+586,Collides at 2.34,,,,,,,,,2175,Diverges Up,,,3157,Diverges Up,,,4044,Diverges Up
+587,Collides at 2.34,,,,,,,,,2176,Diverges Up,,,3158,Diverges Up,,,4045,Diverges Up
+588,Collides at 2.34,,,,,,,,,2177,Diverges Up,,,3159,Diverges Up,,,4046,Diverges Up
+589,Collides at 2.34,,,,,,,,,2178,Diverges Up,,,3160,Diverges Up,,,4047,Diverges Up
+590,Collides at 2.34,,,,,,,,,2179,Diverges Up,,,3161,Diverges Up,,,4048,Diverges Up
+591,Collides at 2.34,,,,,,,,,2180,Diverges Up,,,3162,Diverges Up,,,4049,Diverges Up
+592,Collides at 2.34,,,,,,,,,2181,Diverges Up,,,3163,Diverges Up,,,4050,Diverges Up
+593,Collides at 2.34,,,,,,,,,2182,Diverges Up,,,3164,Diverges Up,,,4051,Diverges Up
+594,Collides at 2.34,,,,,,,,,2183,Diverges Up,,,3165,Diverges Up,,,4052,Diverges Up
+595,Collides at 2.34,,,,,,,,,2184,Diverges Up,,,3166,Diverges Up,,,4053,Diverges Up
+596,Collides at 2.34,,,,,,,,,2185,Diverges Up,,,3167,Diverges Up,,,4054,Diverges Up
+597,Collides at 2.34,,,,,,,,,2186,Diverges Up,,,3168,Diverges Up,,,4055,Diverges Up
+598,Collides at 2.34,,,,,,,,,2187,Diverges Up,,,3169,Diverges Up,,,4056,Diverges Up
+599,Collides at 2.34,,,,,,,,,2188,Diverges Up,,,3170,Diverges Up,,,4057,Diverges Up
+600,Collides at 2.34,,,,,,,,,2189,Diverges Up,,,3171,Diverges Up,,,4058,Diverges Up
+601,Collides at 2.34,,,,,,,,,2190,Diverges Up,,,3172,Diverges Up,,,4059,Diverges Up
+602,Collides at 2.34,,,,,,,,,2191,Diverges Up,,,3173,Diverges Up,,,4060,Diverges Up
+603,Collides at 2.34,,,,,,,,,2192,Diverges Up,,,3174,Diverges Up,,,4061,Diverges Up
+604,Collides at 2.34,,,,,,,,,2193,Diverges Up,,,3175,Diverges Up,,,4062,Diverges Up
+605,Collides at 2.34,,,,,,,,,2194,Diverges Up,,,3176,Diverges Up,,,4063,Diverges Up
+606,Collides at 2.34,,,,,,,,,2195,Diverges Up,,,3177,Diverges Up,,,4064,Diverges Up
+607,Collides at 2.34,,,,,,,,,2196,Diverges Up,,,3178,Diverges Up,,,4065,Diverges Up
+608,Collides at 2.34,,,,,,,,,2197,Diverges Up,,,3179,Diverges Up,,,4066,Diverges Up
+609,Collides at 2.34,,,,,,,,,2198,Diverges Up,,,3180,Diverges Up,,,4067,Diverges Up
+610,Collides at 2.34,,,,,,,,,2199,Diverges Up,,,3181,Diverges Up,,,4068,Diverges Up
+611,Collides at 2.34,,,,,,,,,2200,Diverges Up,,,3182,Diverges Up,,,4069,Diverges Up
+612,Collides at 2.34,,,,,,,,,2201,Diverges Up,,,3183,Diverges Up,,,4070,Diverges Up
+613,Collides at 2.34,,,,,,,,,2202,Diverges Up,,,3184,Diverges Up,,,4071,Diverges Up
+614,Collides at 2.34,,,,,,,,,2203,Diverges Up,,,3185,Diverges Up,,,4072,Diverges Up
+615,Collides at 2.34,,,,,,,,,2204,Diverges Up,,,3186,Diverges Up,,,4073,Diverges Up
+616,Collides at 2.34,,,,,,,,,2205,Diverges Up,,,3187,Diverges Up,,,4074,Diverges Up
+617,Collides at 2.34,,,,,,,,,2206,Diverges Up,,,3188,Diverges Up,,,4075,Diverges Up
+618,Collides at 2.34,,,,,,,,,2207,Diverges Up,,,3189,Diverges Up,,,4076,Diverges Up
+619,Collides at 2.34,,,,,,,,,2208,Diverges Up,,,3190,Diverges Up,,,4077,Diverges Up
+620,Collides at 2.34,,,,,,,,,2209,Diverges Up,,,3191,Diverges Up,,,4078,Diverges Up
+621,Collides at 2.34,,,,,,,,,2210,Diverges Up,,,3192,Diverges Up,,,4079,Diverges Up
+622,Collides at 2.34,,,,,,,,,2211,Diverges Up,,,3193,Diverges Up,,,4080,Diverges Up
+623,Collides at 2.34,,,,,,,,,2212,Diverges Up,,,3194,Diverges Up,,,4081,Diverges Up
+624,Collides at 2.34,,,,,,,,,2213,Diverges Up,,,3195,Diverges Up,,,4082,Diverges Up
+625,Collides at 2.34,,,,,,,,,2214,Diverges Up,,,3196,Diverges Up,,,4083,Diverges Up
+626,Collides at 2.34,,,,,,,,,2215,Diverges Up,,,3197,Diverges Up,,,4084,Diverges Up
+627,Collides at 2.34,,,,,,,,,2216,Diverges Up,,,3198,Diverges Up,,,4085,Diverges Up
+628,Collides at 2.34,,,,,,,,,2217,Diverges Up,,,3199,Diverges Up,,,4086,Diverges Up
+629,Collides at 2.34,,,,,,,,,2218,Diverges Up,,,3200,Diverges Up,,,4087,Diverges Up
+630,Collides at 2.34,,,,,,,,,2219,Diverges Up,,,3201,Diverges Up,,,4088,Diverges Up
+631,Collides at 2.34,,,,,,,,,2220,Diverges Up,,,3202,Diverges Up,,,4089,Diverges Up
+632,Collides at 2.34,,,,,,,,,2221,Diverges Up,,,3203,Diverges Up,,,4090,Diverges Up
+633,Collides at 2.34,,,,,,,,,2222,Diverges Up,,,3204,Diverges Up,,,4091,Diverges Up
+634,Collides at 2.34,,,,,,,,,2223,Diverges Up,,,3205,Diverges Up,,,4092,Diverges Up
+635,Collides at 2.34,,,,,,,,,2224,Diverges Up,,,3206,Diverges Up,,,4093,Diverges Up
+636,Collides at 2.34,,,,,,,,,2225,Diverges Up,,,3207,Diverges Up,,,4094,Diverges Up
+637,Collides at 2.34,,,,,,,,,2226,Diverges Up,,,3208,Diverges Up,,,4095,Diverges Up
+638,Collides at 2.34,,,,,,,,,2227,Diverges Up,,,3209,Diverges Up,,,4096,Diverges Up
+639,Collides at 2.34,,,,,,,,,2228,Diverges Up,,,3210,Diverges Up,,,4097,Diverges Up
+640,Collides at 2.34,,,,,,,,,2229,Diverges Up,,,3211,Diverges Up,,,4098,Diverges Up
+641,Collides at 2.34,,,,,,,,,2230,Diverges Up,,,3212,Diverges Up,,,4099,Diverges Up
+642,Collides at 2.34,,,,,,,,,2231,Diverges Up,,,3213,Diverges Up,,,4100,Diverges Up
+643,Collides at 2.34,,,,,,,,,2232,Diverges Up,,,3214,Diverges Up,,,4101,Diverges Up
+644,Collides at 2.34,,,,,,,,,2233,Diverges Up,,,3215,Diverges Up,,,4102,Diverges Up
+645,Collides at 2.34,,,,,,,,,2234,Diverges Up,,,3216,Diverges Up,,,4103,Diverges Up
+646,Collides at 2.34,,,,,,,,,2235,Diverges Up,,,3217,Diverges Up,,,4104,Diverges Up
+647,Collides at 2.34,,,,,,,,,2236,Diverges Up,,,3218,Diverges Up,,,4105,Diverges Up
+648,Collides at 2.34,,,,,,,,,2237,Diverges Up,,,3219,Diverges Up,,,4106,Diverges Up
+649,Collides at 2.34,,,,,,,,,2238,Diverges Up,,,3220,Diverges Up,,,4107,Diverges Up
+650,Collides at 2.34,,,,,,,,,2239,Diverges Up,,,3221,Diverges Up,,,4108,Diverges Up
+651,Collides at 2.34,,,,,,,,,2240,Diverges Up,,,3222,Diverges Up,,,4109,Diverges Up
+652,Collides at 2.34,,,,,,,,,2241,Diverges Up,,,3223,Diverges Up,,,4110,Diverges Up
+653,Collides at 2.34,,,,,,,,,2242,Diverges Up,,,3224,Diverges Up,,,4111,Diverges Up
+654,Collides at 2.34,,,,,,,,,2243,Diverges Up,,,3225,Diverges Up,,,4112,Diverges Up
+655,Collides at 2.34,,,,,,,,,2244,Diverges Up,,,3226,Diverges Up,,,4113,Diverges Up
+656,Collides at 2.34,,,,,,,,,2245,Diverges Up,,,3227,Diverges Up,,,4114,Diverges Up
+657,Collides at 2.34,,,,,,,,,2246,Diverges Up,,,3228,Diverges Up,,,4115,Diverges Up
+658,Collides at 2.34,,,,,,,,,2247,Diverges Up,,,3229,Diverges Up,,,4116,Diverges Up
+659,Collides at 2.34,,,,,,,,,2248,Diverges Up,,,3230,Diverges Up,,,4117,Diverges Up
+660,Collides at 2.34,,,,,,,,,2249,Diverges Up,,,3231,Diverges Up,,,4118,Diverges Up
+661,Collides at 2.34,,,,,,,,,2250,Diverges Up,,,3232,Diverges Up,,,4119,Diverges Up
+662,Collides at 2.34,,,,,,,,,2251,Diverges Up,,,3233,Diverges Up,,,4120,Diverges Up
+663,Collides at 2.34,,,,,,,,,2252,Diverges Up,,,3234,Diverges Up,,,4121,Diverges Up
+664,Collides at 2.34,,,,,,,,,2253,Diverges Up,,,3235,Diverges Up,,,4122,Diverges Up
+665,Collides at 2.34,,,,,,,,,2254,Diverges Up,,,3236,Diverges Up,,,4123,Diverges Up
+666,Collides at 2.34,,,,,,,,,2255,Diverges Up,,,3237,Diverges Up,,,4124,Diverges Up
+667,Collides at 2.34,,,,,,,,,2256,Diverges Up,,,3238,Diverges Up,,,4125,Diverges Up
+668,Collides at 2.34,,,,,,,,,2257,Diverges Up,,,3239,Diverges Up,,,4126,Diverges Up
+669,Collides at 2.34,,,,,,,,,2258,Diverges Up,,,3240,Diverges Up,,,4127,Diverges Up
+670,Collides at 2.34,,,,,,,,,2259,Diverges Up,,,3241,Diverges Up,,,4128,Diverges Up
+671,Collides at 2.34,,,,,,,,,2260,Diverges Up,,,3242,Diverges Up,,,4129,Diverges Up
+672,Collides at 2.34,,,,,,,,,2261,Diverges Up,,,3243,Diverges Up,,,4130,Diverges Up
+673,Collides at 2.34,,,,,,,,,2262,Diverges Up,,,3244,Diverges Up,,,4131,Diverges Up
+674,Collides at 2.34,,,,,,,,,2263,Diverges Up,,,3245,Diverges Up,,,4132,Diverges Up
+675,Collides at 2.34,,,,,,,,,2264,Diverges Up,,,3246,Diverges Up,,,4133,Diverges Up
+676,Collides at 2.34,,,,,,,,,2265,Diverges Up,,,3247,Diverges Up,,,4134,Diverges Up
+677,Collides at 2.34,,,,,,,,,2266,Diverges Up,,,3248,Diverges Up,,,4135,Diverges Up
+678,Collides at 2.34,,,,,,,,,2267,Diverges Up,,,3249,Diverges Up,,,4136,Diverges Up
+679,Collides at 2.34,,,,,,,,,2268,Diverges Up,,,3250,Diverges Up,,,4137,Diverges Up
+680,Collides at 2.34,,,,,,,,,2269,Diverges Up,,,3251,Diverges Up,,,4138,Diverges Up
+681,Collides at 2.34,,,,,,,,,2270,Diverges Up,,,3252,Diverges Up,,,4139,Diverges Up
+682,Collides at 2.34,,,,,,,,,2271,Diverges Up,,,3253,Diverges Up,,,4140,Diverges Up
+683,Collides at 2.34,,,,,,,,,2272,Diverges Up,,,3254,Diverges Up,,,4141,Diverges Up
+684,Collides at 2.34,,,,,,,,,2273,Diverges Up,,,3255,Diverges Up,,,4142,Diverges Up
+685,Collides at 2.34,,,,,,,,,2274,Diverges Up,,,3256,Diverges Up,,,4143,Diverges Up
+686,Collides at 2.34,,,,,,,,,2275,Diverges Up,,,3257,Diverges Up,,,4144,Diverges Up
+687,Collides at 2.34,,,,,,,,,2276,Diverges Up,,,3258,Diverges Up,,,4145,Diverges Up
+688,Collides at 2.34,,,,,,,,,2277,Diverges Up,,,3259,Diverges Up,,,4146,Diverges Up
+689,Collides at 2.34,,,,,,,,,2278,Diverges Up,,,3260,Diverges Up,,,4147,Diverges Up
+690,Collides at 2.34,,,,,,,,,2279,Diverges Up,,,3261,Diverges Up,,,4148,Diverges Up
+691,Collides at 2.34,,,,,,,,,2280,Diverges Up,,,3262,Diverges Up,,,4149,Diverges Up
+692,Collides at 2.34,,,,,,,,,2281,Diverges Up,,,3263,Diverges Up,,,4150,Diverges Up
+693,Collides at 2.34,,,,,,,,,2282,Diverges Up,,,3264,Diverges Up,,,4151,Diverges Up
+694,Collides at 2.34,,,,,,,,,2283,Diverges Up,,,3265,Diverges Up,,,4152,Diverges Up
+695,Collides at 2.34,,,,,,,,,2284,Diverges Up,,,3266,Diverges Up,,,4153,Diverges Up
+696,Collides at 2.34,,,,,,,,,2285,Diverges Up,,,3267,Diverges Up,,,4154,Diverges Up
+697,Collides at 2.34,,,,,,,,,2286,Diverges Up,,,3268,Diverges Up,,,4155,Diverges Up
+698,Collides at 2.34,,,,,,,,,2287,Diverges Up,,,3269,Diverges Up,,,4156,Diverges Up
+699,Collides at 2.34,,,,,,,,,2288,Diverges Up,,,3270,Diverges Up,,,4157,Diverges Up
+700,Collides at 2.34,,,,,,,,,2289,Diverges Up,,,3271,Diverges Up,,,4158,Diverges Up
+701,Collides at 2.34,,,,,,,,,2290,Diverges Up,,,3272,Diverges Up,,,4159,Diverges Up
+702,Collides at 2.34,,,,,,,,,2291,Diverges Up,,,3273,Diverges Up,,,4160,Diverges Up
+703,Collides at 2.34,,,,,,,,,2292,Diverges Up,,,3274,Diverges Up,,,4161,Diverges Up
+704,Collides at 2.34,,,,,,,,,2293,Diverges Up,,,3275,Diverges Up,,,4162,Diverges Up
+705,Collides at 2.34,,,,,,,,,2294,Diverges Up,,,3276,Diverges Up,,,4163,Diverges Up
+706,Collides at 2.34,,,,,,,,,2295,Diverges Up,,,3277,Diverges Up,,,4164,Diverges Up
+707,Collides at 2.34,,,,,,,,,2296,Diverges Up,,,3278,Diverges Up,,,4165,Diverges Up
+708,Collides at 2.34,,,,,,,,,2297,Diverges Up,,,3279,Diverges Up,,,4166,Diverges Up
+709,Collides at 2.34,,,,,,,,,2298,Diverges Up,,,3280,Diverges Up,,,4167,Diverges Up
+710,Collides at 2.34,,,,,,,,,2299,Diverges Up,,,3281,Diverges Up,,,4168,Diverges Up
+711,Collides at 2.34,,,,,,,,,2300,Diverges Up,,,3282,Diverges Up,,,4169,Diverges Up
+712,Collides at 2.34,,,,,,,,,2301,Diverges Up,,,3283,Diverges Up,,,4170,Diverges Up
+713,Collides at 2.34,,,,,,,,,2302,Diverges Up,,,3284,Diverges Up,,,4171,Diverges Up
+714,Collides at 2.34,,,,,,,,,2303,Diverges Up,,,3285,Diverges Up,,,4172,Diverges Up
+715,Collides at 2.34,,,,,,,,,2304,Diverges Up,,,3286,Diverges Up,,,4173,Diverges Up
+716,Collides at 2.34,,,,,,,,,2305,Diverges Up,,,3287,Diverges Up,,,4174,Diverges Up
+717,Collides at 2.34,,,,,,,,,2306,Diverges Up,,,3288,Diverges Up,,,4175,Diverges Up
+718,Collides at 2.34,,,,,,,,,2307,Diverges Up,,,3289,Diverges Up,,,4176,Diverges Up
+719,Collides at 2.34,,,,,,,,,2308,Diverges Up,,,3290,Diverges Up,,,4177,Diverges Up
+720,Collides at 2.34,,,,,,,,,2309,Diverges Up,,,3291,Diverges Up,,,4178,Diverges Up
+721,Collides at 2.34,,,,,,,,,2310,Diverges Up,,,3292,Diverges Up,,,4179,Diverges Up
+722,Collides at 2.34,,,,,,,,,2311,Diverges Up,,,3293,Diverges Up,,,4180,Diverges Up
+723,Collides at 2.34,,,,,,,,,2312,Diverges Up,,,3294,Diverges Up,,,4181,Diverges Up
+724,Collides at 2.34,,,,,,,,,2313,Diverges Up,,,3295,Diverges Up,,,4182,Diverges Up
+725,Collides at 2.34,,,,,,,,,2314,Diverges Up,,,3296,Diverges Up,,,4183,Diverges Up
+726,Collides at 2.34,,,,,,,,,2315,Diverges Up,,,3297,Diverges Up,,,4184,Diverges Up
+727,Collides at 2.34,,,,,,,,,2316,Diverges Up,,,3298,Diverges Up,,,4185,Diverges Up
+728,Collides at 2.34,,,,,,,,,2317,Diverges Up,,,3299,Diverges Up,,,4186,Diverges Up
+729,Collides at 2.34,,,,,,,,,2318,Diverges Up,,,3300,Diverges Up,,,4187,Diverges Up
+730,Collides at 2.34,,,,,,,,,2319,Diverges Up,,,3301,Diverges Up,,,4188,Diverges Up
+731,Collides at 2.34,,,,,,,,,2320,Diverges Up,,,3302,Diverges Up,,,4189,Diverges Up
+732,Collides at 2.34,,,,,,,,,2321,Diverges Up,,,3303,Diverges Up,,,4190,Diverges Up
+733,Collides at 2.34,,,,,,,,,2322,Diverges Up,,,3304,Diverges Up,,,4191,Diverges Up
+734,Collides at 2.34,,,,,,,,,2323,Diverges Up,,,3305,Diverges Up,,,4192,Diverges Up
+735,Collides at 2.34,,,,,,,,,2324,Diverges Up,,,3306,Diverges Up,,,4193,Diverges Up
+736,Collides at 2.34,,,,,,,,,2325,Diverges Up,,,3307,Diverges Up,,,4194,Diverges Up
+737,Collides at 2.34,,,,,,,,,2326,Diverges Up,,,3308,Diverges Up,,,4195,Diverges Up
+738,Collides at 2.34,,,,,,,,,2327,Diverges Up,,,3309,Diverges Up,,,4196,Diverges Up
+739,Collides at 2.34,,,,,,,,,2328,Diverges Up,,,3310,Diverges Up,,,4197,Diverges Up
+740,Collides at 2.34,,,,,,,,,2329,Diverges Up,,,3311,Diverges Up,,,4198,Diverges Up
+741,Collides at 2.34,,,,,,,,,2330,Diverges Up,,,3312,Diverges Up,,,4199,Diverges Up
+742,Collides at 2.34,,,,,,,,,2331,Diverges Up,,,,,,,4200,Diverges Up
+743,Collides at 2.34,,,,,,,,,2332,Diverges Up,,,,,,,4201,Diverges Up
+744,Collides at 2.34,,,,,,,,,2333,Diverges Up,,,,,,,4202,Diverges Up
+745,Collides at 2.34,,,,,,,,,2334,Diverges Up,,,,,,,4203,Diverges Up
+746,Collides at 2.34,,,,,,,,,2335,Diverges Up,,,,,,,4204,Diverges Up
+747,Collides at 2.34,,,,,,,,,2336,Diverges Up,,,,,,,4205,Diverges Up
+748,Collides at 2.34,,,,,,,,,2337,Diverges Up,,,,,,,4206,Diverges Up
+749,Collides at 2.34,,,,,,,,,2338,Diverges Up,,,,,,,4207,Diverges Up
+750,Collides at 2.34,,,,,,,,,2339,Diverges Up,,,,,,,4208,Diverges Up
+751,Collides at 2.34,,,,,,,,,2340,Diverges Up,,,,,,,4209,Diverges Up
+752,Collides at 2.34,,,,,,,,,2341,Diverges Up,,,,,,,4210,Diverges Up
+753,Collides at 2.34,,,,,,,,,2342,Diverges Up,,,,,,,4211,Diverges Up
+754,Collides at 2.34,,,,,,,,,2343,Diverges Up,,,,,,,4212,Diverges Up
+755,Collides at 2.34,,,,,,,,,2344,Diverges Up,,,,,,,4213,Diverges Up
+756,Collides at 2.34,,,,,,,,,2345,Diverges Up,,,,,,,4214,Diverges Up
+757,Collides at 2.34,,,,,,,,,2346,Diverges Up,,,,,,,4215,Diverges Up
+758,Collides at 2.34,,,,,,,,,2347,Diverges Up,,,,,,,4216,Diverges Up
+759,Collides at 2.34,,,,,,,,,2348,Diverges Up,,,,,,,4217,Diverges Up
+760,Collides at 2.34,,,,,,,,,2349,Diverges Up,,,,,,,4218,Diverges Up
+761,Collides at 2.34,,,,,,,,,2350,Diverges Up,,,,,,,4219,Diverges Up
+762,Collides at 2.34,,,,,,,,,2351,Diverges Up,,,,,,,4220,Diverges Up
+763,Collides at 2.34,,,,,,,,,2352,Diverges Up,,,,,,,4221,Diverges Up
+764,Collides at 2.34,,,,,,,,,2353,Diverges Up,,,,,,,4222,Diverges Up
+765,Collides at 2.34,,,,,,,,,2354,Diverges Up,,,,,,,4223,Diverges Up
+766,Collides at 2.34,,,,,,,,,2355,Diverges Up,,,,,,,4224,Diverges Up
+767,Collides at 2.34,,,,,,,,,2356,Diverges Up,,,,,,,4225,Diverges Up
+768,Collides at 2.34,,,,,,,,,2357,Diverges Up,,,,,,,4226,Diverges Up
+769,Collides at 2.34,,,,,,,,,2358,Diverges Up,,,,,,,4227,Diverges Up
+770,Collides at 2.34,,,,,,,,,2359,Diverges Up,,,,,,,4228,Diverges Up
+771,Collides at 2.34,,,,,,,,,2360,Diverges Up,,,,,,,4229,Diverges Up
+772,Collides at 2.34,,,,,,,,,2361,Diverges Up,,,,,,,4230,Diverges Up
+773,Collides at 2.34,,,,,,,,,2362,Diverges Up,,,,,,,4231,Diverges Up
+774,Collides at 2.34,,,,,,,,,2363,Diverges Up,,,,,,,4232,Diverges Up
+775,Collides at 2.34,,,,,,,,,2364,Diverges Up,,,,,,,4233,Diverges Up
+776,Collides at 2.34,,,,,,,,,2365,Diverges Up,,,,,,,4234,Diverges Up
+777,Collides at 2.34,,,,,,,,,2366,Diverges Up,,,,,,,4235,Diverges Up
+778,Collides at 2.34,,,,,,,,,2367,Diverges Up,,,,,,,4236,Diverges Up
+779,Collides at 2.34,,,,,,,,,2368,Diverges Up,,,,,,,4237,Diverges Up
+780,Collides at 2.34,,,,,,,,,2369,Diverges Up,,,,,,,4238,Diverges Up
+781,Collides at 2.34,,,,,,,,,2370,Diverges Up,,,,,,,4239,Diverges Up
+782,Collides at 2.34,,,,,,,,,2371,Diverges Up,,,,,,,4240,Diverges Up
+783,Collides at 2.34,,,,,,,,,2372,Diverges Up,,,,,,,4241,Diverges Up
+784,Collides at 2.34,,,,,,,,,2373,Diverges Up,,,,,,,4242,Diverges Up
+785,Collides at 2.34,,,,,,,,,2374,Diverges Up,,,,,,,4243,Diverges Up
+786,Collides at 2.34,,,,,,,,,2375,Diverges Up,,,,,,,4244,Diverges Up
+787,Collides at 2.34,,,,,,,,,2376,Diverges Up,,,,,,,4245,Diverges Up
+788,Collides at 2.34,,,,,,,,,2377,Diverges Up,,,,,,,4246,Diverges Up
+789,Collides at 2.34,,,,,,,,,2378,Diverges Up,,,,,,,4247,Diverges Up
+790,Collides at 2.34,,,,,,,,,2379,Diverges Up,,,,,,,4248,Diverges Up
+791,Collides at 2.34,,,,,,,,,2380,Diverges Up,,,,,,,4249,Diverges Up
+792,Collides at 2.34,,,,,,,,,2381,Diverges Up,,,,,,,4250,Diverges Up
+793,Collides at 2.34,,,,,,,,,2382,Diverges Up,,,,,,,4251,Diverges Up
+794,Collides at 2.34,,,,,,,,,2383,Diverges Up,,,,,,,4252,Diverges Up
+795,Collides at 2.34,,,,,,,,,2384,Diverges Up,,,,,,,4253,Diverges Up
+796,Collides at 2.34,,,,,,,,,2385,Diverges Up,,,,,,,4254,Diverges Up
+797,Collides at 2.34,,,,,,,,,2386,Diverges Up,,,,,,,4255,Diverges Up
+798,Collides at 2.34,,,,,,,,,2387,Diverges Up,,,,,,,4256,Diverges Up
+799,Collides at 2.34,,,,,,,,,2388,Diverges Up,,,,,,,4257,Diverges Up
+800,Collides at 2.34,,,,,,,,,2389,Diverges Up,,,,,,,4258,Diverges Up
+801,Collides at 2.34,,,,,,,,,2390,Diverges Up,,,,,,,4259,Diverges Up
+802,Collides at 2.34,,,,,,,,,2391,Diverges Up,,,,,,,4260,Diverges Up
+803,Collides at 2.34,,,,,,,,,2392,Diverges Up,,,,,,,4261,Diverges Up
+804,Collides at 2.34,,,,,,,,,2393,Diverges Up,,,,,,,4262,Diverges Up
+805,Collides at 2.34,,,,,,,,,2394,Diverges Up,,,,,,,4263,Diverges Up
+806,Collides at 2.34,,,,,,,,,2395,Diverges Up,,,,,,,4264,Diverges Up
+807,Collides at 2.34,,,,,,,,,2396,Diverges Up,,,,,,,4265,Diverges Up
+808,Collides at 2.34,,,,,,,,,2397,Diverges Up,,,,,,,4266,Diverges Up
+809,Collides at 2.34,,,,,,,,,2398,Diverges Up,,,,,,,4267,Diverges Up
+810,Collides at 2.34,,,,,,,,,2399,Diverges Up,,,,,,,4268,Diverges Up
+811,Collides at 2.34,,,,,,,,,2400,Diverges Up,,,,,,,4269,Diverges Up
+812,Collides at 2.34,,,,,,,,,2401,Diverges Up,,,,,,,4270,Diverges Up
+813,Collides at 2.34,,,,,,,,,2402,Diverges Up,,,,,,,4271,Diverges Up
+814,Collides at 2.34,,,,,,,,,2403,Diverges Up,,,,,,,4272,Diverges Up
+815,Collides at 2.34,,,,,,,,,2404,Diverges Up,,,,,,,4273,Diverges Up
+816,Collides at 2.34,,,,,,,,,2405,Diverges Up,,,,,,,4274,Diverges Up
+817,Collides at 2.34,,,,,,,,,2406,Diverges Up,,,,,,,4275,Diverges Up
+818,Collides at 2.34,,,,,,,,,2407,Diverges Up,,,,,,,4276,Diverges Up
+819,Collides at 2.34,,,,,,,,,2408,Diverges Up,,,,,,,4277,Diverges Up
+820,Collides at 2.34,,,,,,,,,2409,Diverges Up,,,,,,,4278,Diverges Up
+821,Collides at 2.34,,,,,,,,,2410,Diverges Up,,,,,,,4279,Diverges Up
+822,Collides at 2.34,,,,,,,,,2411,Diverges Up,,,,,,,4280,Diverges Up
+823,Collides at 2.34,,,,,,,,,2412,Diverges Up,,,,,,,4281,Diverges Up
+824,Collides at 2.34,,,,,,,,,2413,Diverges Up,,,,,,,4282,Diverges Up
+825,Collides at 2.34,,,,,,,,,2414,Diverges Up,,,,,,,4283,Diverges Up
+826,Collides at 2.34,,,,,,,,,2415,Diverges Up,,,,,,,4284,Diverges Up
+827,Collides at 2.34,,,,,,,,,2416,Diverges Up,,,,,,,4285,Diverges Up
+828,Collides at 2.34,,,,,,,,,2417,Diverges Up,,,,,,,4286,Diverges Up
+829,Collides at 2.34,,,,,,,,,2418,Diverges Up,,,,,,,4287,Diverges Up
+830,Collides at 2.34,,,,,,,,,2419,Diverges Up,,,,,,,4288,Diverges Up
+831,Collides at 2.34,,,,,,,,,2420,Diverges Up,,,,,,,4289,Diverges Up
+832,Collides at 2.34,,,,,,,,,2421,Diverges Up,,,,,,,4290,Diverges Up
+833,Collides at 2.34,,,,,,,,,2422,Diverges Up,,,,,,,4291,Diverges Up
+834,Collides at 2.34,,,,,,,,,2423,Diverges Up,,,,,,,4292,Diverges Up
+835,Collides at 2.34,,,,,,,,,2424,Diverges Up,,,,,,,4293,Diverges Up
+836,Collides at 2.34,,,,,,,,,2425,Diverges Up,,,,,,,4294,Diverges Up
+837,Collides at 2.34,,,,,,,,,2426,Diverges Up,,,,,,,4295,Diverges Up
+838,Collides at 2.34,,,,,,,,,2427,Diverges Up,,,,,,,4296,Diverges Up
+839,Collides at 2.34,,,,,,,,,2428,Diverges Up,,,,,,,4297,Diverges Up
+840,Collides at 2.34,,,,,,,,,2429,Diverges Up,,,,,,,4298,Diverges Up
+841,Collides at 2.34,,,,,,,,,2430,Diverges Up,,,,,,,4299,Diverges Up
+842,Collides at 2.34,,,,,,,,,2431,Diverges Up,,,,,,,4300,Diverges Up
+843,Collides at 2.34,,,,,,,,,2432,Diverges Up,,,,,,,4301,Diverges Up
+844,Collides at 2.34,,,,,,,,,2433,Diverges Up,,,,,,,4302,Diverges Up
+845,Collides at 2.34,,,,,,,,,2434,Diverges Up,,,,,,,4303,Diverges Up
+846,Collides at 2.34,,,,,,,,,2435,Diverges Up,,,,,,,4304,Diverges Up
+847,Collides at 2.34,,,,,,,,,2436,Diverges Up,,,,,,,4305,Diverges Up
+848,Collides at 2.34,,,,,,,,,2437,Diverges Up,,,,,,,4306,Diverges Up
+849,Collides at 2.34,,,,,,,,,2438,Diverges Up,,,,,,,4307,Diverges Up
+850,Collides at 2.34,,,,,,,,,2439,Diverges Up,,,,,,,4308,Diverges Up
+851,Collides at 2.34,,,,,,,,,2440,Diverges Up,,,,,,,4309,Diverges Up
+852,Collides at 2.34,,,,,,,,,2441,Diverges Up,,,,,,,4310,Diverges Up
+853,Collides at 2.34,,,,,,,,,2442,Diverges Up,,,,,,,4311,Diverges Up
+854,Collides at 2.34,,,,,,,,,2443,Diverges Up,,,,,,,4312,Diverges Up
+855,Collides at 2.34,,,,,,,,,2444,Diverges Up,,,,,,,4313,Diverges Up
+856,Collides at 2.34,,,,,,,,,2445,Diverges Up,,,,,,,4314,Diverges Up
+857,Collides at 2.34,,,,,,,,,2446,Diverges Up,,,,,,,4315,Diverges Up
+858,Collides at 2.34,,,,,,,,,2447,Diverges Up,,,,,,,4316,Diverges Up
+859,Collides at 2.34,,,,,,,,,2448,Diverges Up,,,,,,,4317,Diverges Up
+860,Collides at 2.34,,,,,,,,,2449,Diverges Up,,,,,,,4318,Diverges Up
+861,Collides at 2.34,,,,,,,,,2450,Diverges Up,,,,,,,4319,Diverges Up
+862,Collides at 2.34,,,,,,,,,2451,Diverges Up,,,,,,,4320,Diverges Up
+863,Collides at 2.34,,,,,,,,,2452,Diverges Up,,,,,,,4321,Diverges Up
+864,Collides at 2.34,,,,,,,,,2453,Diverges Up,,,,,,,4322,Diverges Up
+865,Collides at 2.34,,,,,,,,,2454,Diverges Up,,,,,,,4323,Diverges Up
+866,Collides at 2.34,,,,,,,,,2455,Diverges Up,,,,,,,4324,Diverges Up
+867,Collides at 2.34,,,,,,,,,2456,Diverges Up,,,,,,,4325,Diverges Up
+868,Collides at 2.34,,,,,,,,,2457,Diverges Up,,,,,,,4326,Diverges Up
+869,Collides at 2.34,,,,,,,,,2458,Diverges Up,,,,,,,4327,Diverges Up
+870,Collides at 2.34,,,,,,,,,2459,Diverges Up,,,,,,,4328,Diverges Up
+871,Collides at 2.34,,,,,,,,,2460,Diverges Up,,,,,,,4329,Diverges Up
+872,Collides at 2.34,,,,,,,,,2461,Diverges Up,,,,,,,4330,Diverges Up
+873,Collides at 2.34,,,,,,,,,2462,Diverges Up,,,,,,,4331,Diverges Up
+874,Collides at 2.34,,,,,,,,,2463,Diverges Up,,,,,,,4332,Diverges Up
+875,Collides at 2.34,,,,,,,,,2464,Diverges Up,,,,,,,4333,Diverges Up
+876,Collides at 2.34,,,,,,,,,2465,Diverges Up,,,,,,,4334,Diverges Up
+877,Collides at 2.34,,,,,,,,,2466,Diverges Up,,,,,,,4335,Diverges Up
+878,Collides at 2.34,,,,,,,,,2467,Diverges Up,,,,,,,4336,Diverges Up
+879,Collides at 2.34,,,,,,,,,2468,Diverges Up,,,,,,,4337,Diverges Up
+880,Collides at 2.34,,,,,,,,,2469,Diverges Up,,,,,,,4338,Diverges Up
+881,Collides at 2.34,,,,,,,,,2470,Diverges Up,,,,,,,4339,Diverges Up
+882,Collides at 2.34,,,,,,,,,2471,Diverges Up,,,,,,,4340,Diverges Up
+883,Collides at 2.34,,,,,,,,,2472,Diverges Up,,,,,,,4341,Diverges Up
+884,Collides at 2.34,,,,,,,,,2473,Diverges Up,,,,,,,4342,Diverges Up
+885,Collides at 2.34,,,,,,,,,2474,Diverges Up,,,,,,,4343,Diverges Up
+886,Collides at 2.34,,,,,,,,,2475,Diverges Up,,,,,,,4344,Diverges Up
+887,Collides at 2.34,,,,,,,,,2476,Diverges Up,,,,,,,4345,Diverges Up
+888,Collides at 2.34,,,,,,,,,2477,Diverges Up,,,,,,,4346,Diverges Up
+889,Collides at 2.34,,,,,,,,,2478,Diverges Up,,,,,,,4347,Diverges Up
+890,Collides at 2.34,,,,,,,,,2479,Diverges Up,,,,,,,4348,Diverges Up
+891,Collides at 2.34,,,,,,,,,2480,Diverges Up,,,,,,,4349,Diverges Up
+892,Collides at 2.34,,,,,,,,,2481,Diverges Up,,,,,,,4350,Diverges Up
+893,Collides at 2.34,,,,,,,,,2482,Diverges Up,,,,,,,4351,Diverges Up
+894,Collides at 2.34,,,,,,,,,2483,Diverges Up,,,,,,,4352,Diverges Up
+895,Collides at 2.34,,,,,,,,,2484,Diverges Up,,,,,,,4353,Diverges Up
+896,Collides at 2.34,,,,,,,,,2485,Diverges Up,,,,,,,4354,Diverges Up
+897,Collides at 2.34,,,,,,,,,2486,Diverges Up,,,,,,,4355,Diverges Up
+898,Collides at 2.34,,,,,,,,,2487,Diverges Up,,,,,,,4356,Diverges Up
+899,Collides at 2.34,,,,,,,,,2488,Diverges Up,,,,,,,4357,Diverges Up
+900,Collides at 2.34,,,,,,,,,2489,Diverges Up,,,,,,,4358,Diverges Up
+901,Collides at 2.34,,,,,,,,,2490,Diverges Up,,,,,,,4359,Diverges Up
+902,Collides at 2.34,,,,,,,,,2491,Diverges Up,,,,,,,4360,Diverges Up
+903,Collides at 2.34,,,,,,,,,2492,Diverges Up,,,,,,,4361,Diverges Up
+904,Collides at 2.34,,,,,,,,,2493,Diverges Up,,,,,,,4362,Diverges Up
+905,Collides at 2.34,,,,,,,,,2494,Diverges Up,,,,,,,4363,Diverges Up
+906,Collides at 2.34,,,,,,,,,2495,Diverges Up,,,,,,,4364,Diverges Up
+907,Collides at 2.34,,,,,,,,,2496,Diverges Up,,,,,,,4365,Diverges Up
+908,Collides at 2.34,,,,,,,,,2497,Diverges Up,,,,,,,4366,Diverges Up
+909,Collides at 2.34,,,,,,,,,2498,Diverges Up,,,,,,,4367,Diverges Up
+910,Collides at 2.34,,,,,,,,,2499,Diverges Up,,,,,,,4368,Diverges Up
+911,Collides at 2.34,,,,,,,,,2500,Diverges Up,,,,,,,4369,Diverges Up
+912,Collides at 2.34,,,,,,,,,2501,Diverges Up,,,,,,,4370,Diverges Up
+913,Collides at 2.34,,,,,,,,,2502,Diverges Up,,,,,,,4371,Diverges Up
+914,Collides at 2.34,,,,,,,,,2503,Diverges Up,,,,,,,4372,Diverges Up
+915,Collides at 2.34,,,,,,,,,2504,Diverges Up,,,,,,,4373,Diverges Up
+916,Collides at 2.34,,,,,,,,,2505,Diverges Up,,,,,,,4374,Diverges Up
+917,Collides at 2.34,,,,,,,,,2506,Diverges Up,,,,,,,4375,Diverges Up
+918,Collides at 2.34,,,,,,,,,2507,Diverges Up,,,,,,,4376,Diverges Up
+919,Collides at 2.34,,,,,,,,,2508,Diverges Up,,,,,,,4377,Diverges Up
+920,Collides at 2.34,,,,,,,,,2509,Diverges Up,,,,,,,4378,Diverges Up
+921,Collides at 2.34,,,,,,,,,2510,Diverges Up,,,,,,,4379,Diverges Up
+922,Collides at 2.34,,,,,,,,,2511,Diverges Up,,,,,,,4380,Diverges Up
+923,Collides at 2.34,,,,,,,,,2512,Diverges Up,,,,,,,4381,Diverges Up
+924,Collides at 2.34,,,,,,,,,2513,Diverges Up,,,,,,,4382,Diverges Up
+925,Collides at 2.34,,,,,,,,,2514,Diverges Up,,,,,,,4383,Diverges Up
+926,Collides at 2.34,,,,,,,,,2515,Diverges Up,,,,,,,4384,Diverges Up
+927,Collides at 2.34,,,,,,,,,2516,Diverges Up,,,,,,,4385,Diverges Up
+928,Collides at 2.34,,,,,,,,,2517,Diverges Up,,,,,,,4386,Diverges Up
+929,Collides at 2.34,,,,,,,,,2518,Diverges Up,,,,,,,4387,Diverges Up
+930,Collides at 2.34,,,,,,,,,2519,Diverges Up,,,,,,,4388,Diverges Up
+931,Collides at 2.34,,,,,,,,,2520,Diverges Up,,,,,,,4389,Diverges Up
+932,Collides at 2.34,,,,,,,,,2521,Diverges Up,,,,,,,4390,Diverges Up
+933,Collides at 2.34,,,,,,,,,2522,Diverges Up,,,,,,,4391,Diverges Up
+934,Collides at 2.34,,,,,,,,,2523,Diverges Up,,,,,,,4392,Diverges Up
+935,Collides at 2.34,,,,,,,,,2524,Diverges Up,,,,,,,4393,Diverges Up
+936,Collides at 2.34,,,,,,,,,2525,Diverges Up,,,,,,,4394,Diverges Up
+937,Collides at 2.34,,,,,,,,,2526,Diverges Up,,,,,,,4395,Diverges Up
+938,Collides at 2.34,,,,,,,,,2527,Diverges Up,,,,,,,4396,Diverges Up
+939,Collides at 2.34,,,,,,,,,2528,Diverges Up,,,,,,,4397,Diverges Up
+940,Collides at 2.34,,,,,,,,,2529,Diverges Up,,,,,,,4398,Diverges Up
+941,Collides at 2.34,,,,,,,,,2530,Diverges Up,,,,,,,4399,Diverges Up
+942,Collides at 2.34,,,,,,,,,2531,Diverges Up,,,,,,,4400,Diverges Up
+943,Collides at 2.34,,,,,,,,,2532,Diverges Up,,,,,,,4401,Diverges Up
+944,Collides at 2.34,,,,,,,,,2533,Diverges Up,,,,,,,4402,Diverges Up
+945,Collides at 2.34,,,,,,,,,2534,Diverges Up,,,,,,,4403,Diverges Up
+946,Collides at 2.34,,,,,,,,,2535,Diverges Up,,,,,,,4404,Diverges Up
+947,Collides at 2.34,,,,,,,,,2536,Diverges Up,,,,,,,4405,Diverges Up
+948,Collides at 2.34,,,,,,,,,2537,Diverges Up,,,,,,,4406,Diverges Up
+949,Collides at 2.34,,,,,,,,,2538,Diverges Up,,,,,,,4407,Diverges Up
+950,Collides at 2.34,,,,,,,,,2539,Diverges Up,,,,,,,4408,Diverges Up
+951,Collides at 2.34,,,,,,,,,2540,Diverges Up,,,,,,,4409,Diverges Up
+952,Collides at 2.34,,,,,,,,,2541,Diverges Up,,,,,,,4410,Diverges Up
+953,Collides at 2.34,,,,,,,,,2542,Diverges Up,,,,,,,4411,Diverges Up
+954,Collides at 2.34,,,,,,,,,2543,Diverges Up,,,,,,,4412,Diverges Up
+955,Collides at 2.34,,,,,,,,,2544,Diverges Up,,,,,,,4413,Diverges Up
+956,Collides at 2.34,,,,,,,,,,,,,,,,,4414,Diverges Up
+957,Collides at 2.34,,,,,,,,,,,,,,,,,4415,Diverges Up
+958,Collides at 2.34,,,,,,,,,,,,,,,,,4416,Diverges Up
+959,Collides at 2.34,,,,,,,,,,,,,,,,,4417,Diverges Up
+960,Collides at 2.34,,,,,,,,,,,,,,,,,4418,Diverges Up
+961,Collides at 2.34,,,,,,,,,,,,,,,,,4419,Diverges Up
+962,Collides at 2.34,,,,,,,,,,,,,,,,,4420,Diverges Up
+963,Collides at 2.34,,,,,,,,,,,,,,,,,4421,Diverges Up
+964,Collides at 2.34,,,,,,,,,,,,,,,,,4422,Diverges Up
+965,Collides at 2.34,,,,,,,,,,,,,,,,,4423,Diverges Up
+966,Collides at 2.34,,,,,,,,,,,,,,,,,4424,Diverges Up
+967,Collides at 2.34,,,,,,,,,,,,,,,,,4425,Diverges Up
+968,Collides at 2.34,,,,,,,,,,,,,,,,,4426,Diverges Up
+969,Collides at 2.34,,,,,,,,,,,,,,,,,4427,Diverges Up
+970,Collides at 2.34,,,,,,,,,,,,,,,,,4428,Diverges Up
+971,Collides at 2.34,,,,,,,,,,,,,,,,,4429,Diverges Up
+972,Collides at 2.34,,,,,,,,,,,,,,,,,4430,Diverges Up
+973,Collides at 2.34,,,,,,,,,,,,,,,,,4431,Diverges Up
+974,Collides at 2.34,,,,,,,,,,,,,,,,,4432,Diverges Up
+975,Collides at 2.34,,,,,,,,,,,,,,,,,4433,Diverges Up
+976,Collides at 2.34,,,,,,,,,,,,,,,,,4434,Diverges Up
+977,Collides at 2.34,,,,,,,,,,,,,,,,,4435,Diverges Up
+978,Collides at 2.34,,,,,,,,,,,,,,,,,4436,Diverges Up
+979,Collides at 2.34,,,,,,,,,,,,,,,,,4437,Diverges Up
+980,Collides at 2.34,,,,,,,,,,,,,,,,,4438,Diverges Up
+981,Collides at 2.34,,,,,,,,,,,,,,,,,4439,Diverges Up
+982,Collides at 2.34,,,,,,,,,,,,,,,,,4440,Diverges Up
+983,Collides at 2.34,,,,,,,,,,,,,,,,,4441,Diverges Up
+984,Collides at 2.34,,,,,,,,,,,,,,,,,4442,Diverges Up
+985,Collides at 2.34,,,,,,,,,,,,,,,,,4443,Diverges Up
+986,Collides at 2.34,,,,,,,,,,,,,,,,,4444,Diverges Up
+987,Collides at 2.34,,,,,,,,,,,,,,,,,4445,Diverges Up
+988,Collides at 2.34,,,,,,,,,,,,,,,,,4446,Diverges Up
+989,Collides at 2.34,,,,,,,,,,,,,,,,,4447,Diverges Up
+990,Collides at 2.34,,,,,,,,,,,,,,,,,4448,Diverges Up
+991,Collides at 2.34,,,,,,,,,,,,,,,,,4449,Diverges Up
+992,Collides at 2.34,,,,,,,,,,,,,,,,,4450,Diverges Up
+993,Collides at 2.34,,,,,,,,,,,,,,,,,4451,Diverges Up
+994,Collides at 2.34,,,,,,,,,,,,,,,,,4452,Diverges Up
+995,Collides at 2.34,,,,,,,,,,,,,,,,,4453,Diverges Up
+996,Collides at 2.34,,,,,,,,,,,,,,,,,4454,Diverges Up
+997,Collides at 2.34,,,,,,,,,,,,,,,,,4455,Diverges Up
+998,Collides at 2.34,,,,,,,,,,,,,,,,,4456,Diverges Up
+999,Collides at 2.34,,,,,,,,,,,,,,,,,4457,Diverges Up
+1000,Collides at 2.34,,,,,,,,,,,,,,,,,4458,Diverges Up
+1001,Collides at 2.34,,,,,,,,,,,,,,,,,4459,Diverges Up
+1002,Collides at 2.34,,,,,,,,,,,,,,,,,4460,Diverges Up
+1003,Collides at 2.34,,,,,,,,,,,,,,,,,4461,Diverges Up
+1004,Collides at 2.34,,,,,,,,,,,,,,,,,4462,Diverges Up
+1005,Collides at 2.34,,,,,,,,,,,,,,,,,4463,Diverges Up
+1006,Collides at 2.34,,,,,,,,,,,,,,,,,4464,Diverges Up
+1007,Collides at 2.34,,,,,,,,,,,,,,,,,4465,Diverges Up
+1008,Collides at 2.34,,,,,,,,,,,,,,,,,4466,Diverges Up
+1009,Collides at 2.34,,,,,,,,,,,,,,,,,4467,Diverges Up
+1010,Collides at 2.34,,,,,,,,,,,,,,,,,4468,Diverges Up
+1011,Collides at 2.34,,,,,,,,,,,,,,,,,4469,Diverges Up
+1012,Collides at 2.34,,,,,,,,,,,,,,,,,4470,Diverges Up
+1013,Collides at 2.34,,,,,,,,,,,,,,,,,4471,Diverges Up
+1014,Collides at 2.34,,,,,,,,,,,,,,,,,4472,Diverges Up
+1015,Collides at 2.34,,,,,,,,,,,,,,,,,4473,Diverges Up
+1016,Collides at 2.34,,,,,,,,,,,,,,,,,4474,Diverges Up
+1017,Collides at 2.34,,,,,,,,,,,,,,,,,4475,Diverges Up
+1018,Collides at 2.34,,,,,,,,,,,,,,,,,4476,Diverges Up
+1019,Collides at 2.34,,,,,,,,,,,,,,,,,4477,Diverges Up
+1020,Collides at 2.34,,,,,,,,,,,,,,,,,4478,Diverges Up
+1021,Collides at 2.34,,,,,,,,,,,,,,,,,4479,Diverges Up
+1022,Collides at 2.40,,,,,,,,,,,,,,,,,4480,Diverges Up
+1023,Collides at 2.40,,,,,,,,,,,,,,,,,4481,Diverges Up
+1024,Collides at 2.40,,,,,,,,,,,,,,,,,4482,Diverges Up
+1025,Collides at 2.40,,,,,,,,,,,,,,,,,4483,Diverges Up
+1026,Collides at 2.40,,,,,,,,,,,,,,,,,4484,Diverges Up
+1027,Collides at 2.40,,,,,,,,,,,,,,,,,4485,Diverges Up
+1028,Collides at 2.40,,,,,,,,,,,,,,,,,4486,Diverges Up
+1029,Collides at 2.40,,,,,,,,,,,,,,,,,4487,Diverges Up
+1030,Collides at 2.40,,,,,,,,,,,,,,,,,4488,Diverges Up
+1031,Collides at 2.40,,,,,,,,,,,,,,,,,4489,Diverges Up
+1032,Collides at 2.40,,,,,,,,,,,,,,,,,4490,Diverges Up
+1033,Collides at 2.40,,,,,,,,,,,,,,,,,4491,Diverges Up
+1034,Collides at 2.40,,,,,,,,,,,,,,,,,4492,Diverges Up
+1035,Collides at 2.40,,,,,,,,,,,,,,,,,4493,Diverges Up
+1036,Collides at 2.40,,,,,,,,,,,,,,,,,4494,Diverges Up
+1037,Collides at 2.40,,,,,,,,,,,,,,,,,4495,Diverges Up
+1038,Collides at 2.40,,,,,,,,,,,,,,,,,4496,Diverges Up
+1039,Collides at 2.40,,,,,,,,,,,,,,,,,4497,Diverges Up
+1040,Collides at 2.40,,,,,,,,,,,,,,,,,4498,Diverges Up
+1041,Collides at 2.40,,,,,,,,,,,,,,,,,4499,Diverges Up
+1042,Collides at 2.40,,,,,,,,,,,,,,,,,4500,Diverges Up
+1043,Collides at 2.40,,,,,,,,,,,,,,,,,4501,Diverges Up
+1044,Collides at 2.40,,,,,,,,,,,,,,,,,4502,Diverges Up
+1045,Collides at 2.40,,,,,,,,,,,,,,,,,4503,Diverges Up
+1046,Collides at 2.40,,,,,,,,,,,,,,,,,4504,Diverges Up
+1047,Collides at 2.40,,,,,,,,,,,,,,,,,4505,Diverges Up
+1048,Collides at 2.40,,,,,,,,,,,,,,,,,4506,Diverges Up
+1049,Collides at 2.40,,,,,,,,,,,,,,,,,4507,Diverges Up
+1050,Collides at 2.40,,,,,,,,,,,,,,,,,4508,Diverges Up
+1051,Collides at 2.40,,,,,,,,,,,,,,,,,4509,Diverges Up
+1052,Collides at 2.40,,,,,,,,,,,,,,,,,4510,Diverges Up
+1053,Collides at 2.40,,,,,,,,,,,,,,,,,4511,Diverges Up
+1054,Collides at 2.40,,,,,,,,,,,,,,,,,4512,Diverges Up
+1055,Collides at 2.40,,,,,,,,,,,,,,,,,4513,Diverges Up
+1056,Collides at 2.40,,,,,,,,,,,,,,,,,4514,Diverges Up
+1057,Collides at 2.40,,,,,,,,,,,,,,,,,4515,Diverges Up
+1058,Collides at 2.40,,,,,,,,,,,,,,,,,4516,Diverges Up
+1059,Collides at 2.40,,,,,,,,,,,,,,,,,4517,Diverges Up
+1060,Collides at 2.40,,,,,,,,,,,,,,,,,4518,Diverges Up
+1061,Collides at 2.40,,,,,,,,,,,,,,,,,4519,Diverges Up
+1062,Collides at 2.40,,,,,,,,,,,,,,,,,4520,Diverges Up
+1063,Collides at 2.40,,,,,,,,,,,,,,,,,4521,Diverges Up
+1064,Collides at 2.40,,,,,,,,,,,,,,,,,4522,Diverges Up
+1065,Collides at 2.40,,,,,,,,,,,,,,,,,4523,Diverges Up
+1066,Collides at 2.40,,,,,,,,,,,,,,,,,4524,Diverges Up
+1067,Collides at 2.40,,,,,,,,,,,,,,,,,4525,Diverges Up
+1068,Collides at 2.40,,,,,,,,,,,,,,,,,4526,Diverges Up
+1069,Collides at 2.40,,,,,,,,,,,,,,,,,4527,Diverges Up
+1070,Collides at 2.40,,,,,,,,,,,,,,,,,4528,Diverges Up
+1071,Collides at 2.40,,,,,,,,,,,,,,,,,4529,Diverges Up
+1072,Collides at 2.40,,,,,,,,,,,,,,,,,4530,Diverges Up
+1073,Collides at 2.40,,,,,,,,,,,,,,,,,4531,Diverges Up
+1074,Collides at 2.40,,,,,,,,,,,,,,,,,4532,Diverges Up
+1075,Collides at 2.40,,,,,,,,,,,,,,,,,4533,Diverges Up
+1076,Collides at 2.40,,,,,,,,,,,,,,,,,4534,Diverges Up
+1077,Collides at 2.40,,,,,,,,,,,,,,,,,4535,Diverges Up
+1078,Collides at 2.40,,,,,,,,,,,,,,,,,4536,Diverges Up
+1079,Collides at 2.40,,,,,,,,,,,,,,,,,4537,Diverges Up
+1080,Collides at 2.40,,,,,,,,,,,,,,,,,4538,Diverges Up
+1081,Collides at 2.40,,,,,,,,,,,,,,,,,4539,Diverges Up
+1082,Collides at 2.40,,,,,,,,,,,,,,,,,4540,Diverges Up
+1083,Collides at 2.40,,,,,,,,,,,,,,,,,4541,Diverges Up
+1084,Collides at 2.40,,,,,,,,,,,,,,,,,4542,Diverges Up
+1085,Collides at 2.40,,,,,,,,,,,,,,,,,4543,Diverges Up
+1086,Collides at 2.40,,,,,,,,,,,,,,,,,4544,Diverges Up
+1087,Collides at 2.40,,,,,,,,,,,,,,,,,4545,Diverges Up
+1088,Collides at 2.40,,,,,,,,,,,,,,,,,4546,Diverges Up
+1089,Collides at 2.40,,,,,,,,,,,,,,,,,4547,Diverges Up
+1090,Collides at 2.40,,,,,,,,,,,,,,,,,4548,Diverges Up
+1091,Collides at 2.40,,,,,,,,,,,,,,,,,4549,Diverges Up
+1092,Collides at 2.40,,,,,,,,,,,,,,,,,4550,Diverges Up
+1093,Collides at 2.40,,,,,,,,,,,,,,,,,4551,Diverges Up
+1094,Collides at 2.40,,,,,,,,,,,,,,,,,4552,Diverges Up
+1095,Collides at 2.40,,,,,,,,,,,,,,,,,4553,Diverges Up
+1096,Collides at 2.40,,,,,,,,,,,,,,,,,4554,Diverges Up
+1097,Collides at 2.40,,,,,,,,,,,,,,,,,4555,Diverges Up
+1098,Collides at 2.40,,,,,,,,,,,,,,,,,4556,Diverges Up
+1099,Collides at 2.40,,,,,,,,,,,,,,,,,4557,Diverges Up
+1100,Collides at 2.40,,,,,,,,,,,,,,,,,4558,Diverges Up
+1101,Collides at 2.40,,,,,,,,,,,,,,,,,4559,Diverges Up
+1102,Collides at 2.40,,,,,,,,,,,,,,,,,4560,Diverges Up
+1103,Collides at 2.40,,,,,,,,,,,,,,,,,4561,Diverges Up
+1104,Collides at 2.40,,,,,,,,,,,,,,,,,4562,Diverges Up
+1105,Collides at 2.40,,,,,,,,,,,,,,,,,4563,Diverges Up
+1106,Collides at 2.40,,,,,,,,,,,,,,,,,4564,Diverges Up
+1107,Collides at 2.40,,,,,,,,,,,,,,,,,4565,Diverges Up
+1108,Collides at 2.40,,,,,,,,,,,,,,,,,4566,Diverges Up
+1109,Collides at 2.40,,,,,,,,,,,,,,,,,4567,Diverges Up
+1110,Collides at 2.40,,,,,,,,,,,,,,,,,4568,Diverges Up
+1111,Collides at 2.40,,,,,,,,,,,,,,,,,4569,Diverges Up
+1112,Collides at 2.40,,,,,,,,,,,,,,,,,4570,Diverges Up
+1113,Collides at 2.40,,,,,,,,,,,,,,,,,4571,Diverges Up
+1114,Collides at 2.40,,,,,,,,,,,,,,,,,4572,Diverges Up
+1115,Collides at 2.40,,,,,,,,,,,,,,,,,4573,Diverges Up
+1116,Collides at 2.40,,,,,,,,,,,,,,,,,4574,Diverges Up
+1117,Collides at 2.40,,,,,,,,,,,,,,,,,4575,Diverges Up
+1118,Collides at 2.40,,,,,,,,,,,,,,,,,4576,Diverges Up
+1119,Collides at 2.40,,,,,,,,,,,,,,,,,4577,Diverges Up
+1120,Collides at 2.40,,,,,,,,,,,,,,,,,4578,Diverges Up
+1121,Collides at 2.40,,,,,,,,,,,,,,,,,4579,Diverges Up
+1122,Collides at 2.40,,,,,,,,,,,,,,,,,4580,Diverges Up
+1123,Collides at 2.40,,,,,,,,,,,,,,,,,4581,Diverges Up
+1124,Collides at 2.40,,,,,,,,,,,,,,,,,4582,Diverges Up
+1125,Collides at 2.40,,,,,,,,,,,,,,,,,4583,Diverges Up
+1126,Collides at 2.40,,,,,,,,,,,,,,,,,4584,Diverges Up
+1127,Collides at 2.40,,,,,,,,,,,,,,,,,4585,Diverges Up
+1128,Collides at 2.40,,,,,,,,,,,,,,,,,4586,Diverges Up
+1129,Collides at 2.40,,,,,,,,,,,,,,,,,4587,Diverges Up
+1130,Collides at 2.40,,,,,,,,,,,,,,,,,4588,Diverges Up
+1131,Collides at 2.40,,,,,,,,,,,,,,,,,4589,Diverges Up
+1132,Collides at 2.40,,,,,,,,,,,,,,,,,4590,Diverges Up
+1133,Collides at 2.40,,,,,,,,,,,,,,,,,4591,Diverges Up
+1134,Collides at 2.40,,,,,,,,,,,,,,,,,4592,Diverges Up
+1135,Collides at 2.40,,,,,,,,,,,,,,,,,4593,Diverges Up
+1136,Collides at 2.40,,,,,,,,,,,,,,,,,4594,Diverges Up
+1137,Collides at 2.40,,,,,,,,,,,,,,,,,4595,Diverges Up
+1138,Collides at 2.40,,,,,,,,,,,,,,,,,4596,Diverges Up
+1139,Collides at 2.40,,,,,,,,,,,,,,,,,4597,Diverges Up
+1140,Collides at 2.40,,,,,,,,,,,,,,,,,4598,Diverges Up
+1141,Collides at 2.40,,,,,,,,,,,,,,,,,4599,Diverges Up
+1142,Collides at 2.40,,,,,,,,,,,,,,,,,4600,Diverges Up
+1143,Collides at 2.40,,,,,,,,,,,,,,,,,4601,Diverges Up
+1144,Collides at 2.40,,,,,,,,,,,,,,,,,4602,Diverges Up
+1145,Collides at 2.40,,,,,,,,,,,,,,,,,4603,Diverges Up
+1146,Collides at 2.40,,,,,,,,,,,,,,,,,4604,Diverges Up
+1147,Collides at 2.40,,,,,,,,,,,,,,,,,4605,Diverges Up
+1148,Collides at 2.40,,,,,,,,,,,,,,,,,4606,Diverges Up
+1149,Collides at 2.40,,,,,,,,,,,,,,,,,4607,Diverges Up
+1150,Collides at 2.40,,,,,,,,,,,,,,,,,4608,Diverges Up
+1151,Collides at 2.40,,,,,,,,,,,,,,,,,4609,Diverges Up
+1152,Collides at 2.40,,,,,,,,,,,,,,,,,4610,Diverges Up
+1153,Collides at 2.40,,,,,,,,,,,,,,,,,4611,Diverges Up
+1154,Collides at 2.40,,,,,,,,,,,,,,,,,4612,Diverges Up
+1155,Collides at 2.40,,,,,,,,,,,,,,,,,4613,Diverges Up
+1156,Collides at 2.40,,,,,,,,,,,,,,,,,4614,Diverges Up
+1157,Collides at 2.40,,,,,,,,,,,,,,,,,4615,Diverges Up
+1158,Collides at 2.40,,,,,,,,,,,,,,,,,4616,Diverges Up
+1159,Collides at 2.40,,,,,,,,,,,,,,,,,4617,Diverges Up
+1160,Collides at 2.40,,,,,,,,,,,,,,,,,4618,Diverges Up
+1161,Collides at 2.40,,,,,,,,,,,,,,,,,4619,Diverges Up
+1162,Collides at 2.40,,,,,,,,,,,,,,,,,4620,Diverges Up
+1163,Collides at 2.40,,,,,,,,,,,,,,,,,4621,Diverges Up
+1164,Collides at 2.40,,,,,,,,,,,,,,,,,4622,Diverges Up
+,,,,,,,,,,,,,,,,,,4623,Diverges Up
+,,,,,,,,,,,,,,,,,,4624,Diverges Up
+,,,,,,,,,,,,,,,,,,4625,Diverges Up
+,,,,,,,,,,,,,,,,,,4626,Diverges Up
+,,,,,,,,,,,,,,,,,,4627,Diverges Up
+,,,,,,,,,,,,,,,,,,4628,Diverges Up
+,,,,,,,,,,,,,,,,,,4629,Diverges Up
+,,,,,,,,,,,,,,,,,,4630,Diverges Up
+,,,,,,,,,,,,,,,,,,4631,Diverges Up
+,,,,,,,,,,,,,,,,,,4632,Diverges Up
+,,,,,,,,,,,,,,,,,,4633,Diverges Up
+,,,,,,,,,,,,,,,,,,4634,Diverges Up
+,,,,,,,,,,,,,,,,,,4635,Diverges Up
+,,,,,,,,,,,,,,,,,,4636,Diverges Up
+,,,,,,,,,,,,,,,,,,4637,Diverges Up
+,,,,,,,,,,,,,,,,,,4638,Diverges Up
+,,,,,,,,,,,,,,,,,,4639,Diverges Up
+,,,,,,,,,,,,,,,,,,4640,Diverges Up
+,,,,,,,,,,,,,,,,,,4641,Diverges Up
+,,,,,,,,,,,,,,,,,,4642,Diverges Up
+,,,,,,,,,,,,,,,,,,4643,Diverges Up
+,,,,,,,,,,,,,,,,,,4644,Diverges Up
+,,,,,,,,,,,,,,,,,,4645,Diverges Up
+,,,,,,,,,,,,,,,,,,4646,Diverges Up
+,,,,,,,,,,,,,,,,,,4647,Diverges Up
+,,,,,,,,,,,,,,,,,,4648,Diverges Up
+,,,,,,,,,,,,,,,,,,4649,Diverges Up
+,,,,,,,,,,,,,,,,,,4650,Diverges Up
+,,,,,,,,,,,,,,,,,,4651,Diverges Up
+,,,,,,,,,,,,,,,,,,4652,Diverges Up
+,,,,,,,,,,,,,,,,,,4653,Diverges Up
+,,,,,,,,,,,,,,,,,,4654,Diverges Up
+,,,,,,,,,,,,,,,,,,4655,Diverges Up
+,,,,,,,,,,,,,,,,,,4656,Diverges Up
+,,,,,,,,,,,,,,,,,,4657,Diverges Up
+,,,,,,,,,,,,,,,,,,4658,Diverges Up
+,,,,,,,,,,,,,,,,,,4659,Diverges Up
+,,,,,,,,,,,,,,,,,,4660,Diverges Up
+,,,,,,,,,,,,,,,,,,4661,Diverges Up
+,,,,,,,,,,,,,,,,,,4662,Diverges Up
+,,,,,,,,,,,,,,,,,,4663,Diverges Up
+,,,,,,,,,,,,,,,,,,4664,Diverges Up
+,,,,,,,,,,,,,,,,,,4665,Diverges Up
+,,,,,,,,,,,,,,,,,,4666,Diverges Up
+,,,,,,,,,,,,,,,,,,4667,Diverges Up
+,,,,,,,,,,,,,,,,,,4668,Diverges Up
+,,,,,,,,,,,,,,,,,,4669,Diverges Up
+,,,,,,,,,,,,,,,,,,4670,Diverges Up
+,,,,,,,,,,,,,,,,,,4671,Diverges Up
+,,,,,,,,,,,,,,,,,,4672,Diverges Up
+,,,,,,,,,,,,,,,,,,4673,Diverges Up
+,,,,,,,,,,,,,,,,,,4674,Diverges Up
+,,,,,,,,,,,,,,,,,,4675,Diverges Up
+,,,,,,,,,,,,,,,,,,4676,Diverges Up
+,,,,,,,,,,,,,,,,,,4677,Diverges Up
+,,,,,,,,,,,,,,,,,,4678,Diverges Up
+,,,,,,,,,,,,,,,,,,4679,Diverges Up
+,,,,,,,,,,,,,,,,,,4680,Diverges Up
+,,,,,,,,,,,,,,,,,,4681,Diverges Up
+,,,,,,,,,,,,,,,,,,4682,Diverges Up
+,,,,,,,,,,,,,,,,,,4683,Diverges Up
+,,,,,,,,,,,,,,,,,,4684,Diverges Up
+,,,,,,,,,,,,,,,,,,4685,Diverges Up
+,,,,,,,,,,,,,,,,,,4686,Diverges Up
+,,,,,,,,,,,,,,,,,,4687,Diverges Up
+,,,,,,,,,,,,,,,,,,4688,Diverges Up
+,,,,,,,,,,,,,,,,,,4689,Diverges Up
+,,,,,,,,,,,,,,,,,,4690,Diverges Up
+,,,,,,,,,,,,,,,,,,4691,Diverges Up
+,,,,,,,,,,,,,,,,,,4692,Diverges Up
+,,,,,,,,,,,,,,,,,,4693,Diverges Up
+,,,,,,,,,,,,,,,,,,4694,Diverges Up
+,,,,,,,,,,,,,,,,,,4695,Diverges Up
+,,,,,,,,,,,,,,,,,,4696,Diverges Up
+,,,,,,,,,,,,,,,,,,4697,Diverges Up
+,,,,,,,,,,,,,,,,,,4698,Diverges Up
+,,,,,,,,,,,,,,,,,,4699,Diverges Up
+,,,,,,,,,,,,,,,,,,4700,Diverges Up
+,,,,,,,,,,,,,,,,,,4701,Diverges Up
+,,,,,,,,,,,,,,,,,,4702,Diverges Up
+,,,,,,,,,,,,,,,,,,4703,Diverges Up
+,,,,,,,,,,,,,,,,,,4704,Diverges Up
+,,,,,,,,,,,,,,,,,,4705,Diverges Up
+,,,,,,,,,,,,,,,,,,4706,Diverges Up
+,,,,,,,,,,,,,,,,,,4707,Diverges Up
+,,,,,,,,,,,,,,,,,,4708,Diverges Up
+,,,,,,,,,,,,,,,,,,4709,Diverges Up
+,,,,,,,,,,,,,,,,,,4710,Diverges Up
+,,,,,,,,,,,,,,,,,,4711,Diverges Up
+,,,,,,,,,,,,,,,,,,4712,Diverges Up
+,,,,,,,,,,,,,,,,,,4713,Diverges Up
+,,,,,,,,,,,,,,,,,,4714,Diverges Up
+,,,,,,,,,,,,,,,,,,4715,Diverges Up
+,,,,,,,,,,,,,,,,,,4716,Diverges Up
+,,,,,,,,,,,,,,,,,,4717,Diverges Up
+,,,,,,,,,,,,,,,,,,4718,Diverges Up
+,,,,,,,,,,,,,,,,,,4719,Diverges Up
+,,,,,,,,,,,,,,,,,,4720,Diverges Up
+,,,,,,,,,,,,,,,,,,4721,Diverges Up
+,,,,,,,,,,,,,,,,,,4722,Diverges Up
+,,,,,,,,,,,,,,,,,,4723,Diverges Up
+,,,,,,,,,,,,,,,,,,4724,Diverges Up
+,,,,,,,,,,,,,,,,,,4725,Diverges Up
+,,,,,,,,,,,,,,,,,,4726,Diverges Up
+,,,,,,,,,,,,,,,,,,4727,Diverges Up
+,,,,,,,,,,,,,,,,,,4728,Diverges Up
+,,,,,,,,,,,,,,,,,,4729,Diverges Up
+,,,,,,,,,,,,,,,,,,4730,Diverges Up
+,,,,,,,,,,,,,,,,,,4731,Diverges Up
+,,,,,,,,,,,,,,,,,,4732,Diverges Up
+,,,,,,,,,,,,,,,,,,4733,Diverges Up
+,,,,,,,,,,,,,,,,,,4734,Diverges Up
+,,,,,,,,,,,,,,,,,,4735,Diverges Up
+,,,,,,,,,,,,,,,,,,4736,Diverges Up
+,,,,,,,,,,,,,,,,,,4737,Diverges Up
+,,,,,,,,,,,,,,,,,,4738,Diverges Up
+,,,,,,,,,,,,,,,,,,4739,Diverges Up
+,,,,,,,,,,,,,,,,,,4740,Diverges Up
+,,,,,,,,,,,,,,,,,,4741,Diverges Up
+,,,,,,,,,,,,,,,,,,4742,Diverges Up
+,,,,,,,,,,,,,,,,,,4743,Diverges Up
+,,,,,,,,,,,,,,,,,,4744,Diverges Up
+,,,,,,,,,,,,,,,,,,4745,Diverges Up
+,,,,,,,,,,,,,,,,,,4746,Diverges Up
+,,,,,,,,,,,,,,,,,,4747,Diverges Up
+,,,,,,,,,,,,,,,,,,4748,Diverges Up
+,,,,,,,,,,,,,,,,,,4749,Diverges Up
+,,,,,,,,,,,,,,,,,,4750,Diverges Up
+,,,,,,,,,,,,,,,,,,4751,Diverges Up
+,,,,,,,,,,,,,,,,,,4752,Diverges Up
+,,,,,,,,,,,,,,,,,,4753,Diverges Up
+,,,,,,,,,,,,,,,,,,4754,Diverges Up
+,,,,,,,,,,,,,,,,,,4755,Diverges Up
+,,,,,,,,,,,,,,,,,,4756,Diverges Up
+,,,,,,,,,,,,,,,,,,4757,Diverges Up
+,,,,,,,,,,,,,,,,,,4758,Diverges Up
+,,,,,,,,,,,,,,,,,,4759,Diverges Up
+,,,,,,,,,,,,,,,,,,4760,Diverges Up
+,,,,,,,,,,,,,,,,,,4761,Diverges Up
+,,,,,,,,,,,,,,,,,,4762,Diverges Up
+,,,,,,,,,,,,,,,,,,4763,Diverges Up
+,,,,,,,,,,,,,,,,,,4764,Diverges Up
+,,,,,,,,,,,,,,,,,,4765,Diverges Up
+,,,,,,,,,,,,,,,,,,4766,Diverges Up
+,,,,,,,,,,,,,,,,,,4767,Diverges Up
+,,,,,,,,,,,,,,,,,,4768,Diverges Up
+,,,,,,,,,,,,,,,,,,4769,Diverges Up
+,,,,,,,,,,,,,,,,,,4770,Diverges Up
+,,,,,,,,,,,,,,,,,,4771,Diverges Up
+,,,,,,,,,,,,,,,,,,4772,Diverges Up
+,,,,,,,,,,,,,,,,,,4773,Diverges Up
+,,,,,,,,,,,,,,,,,,4774,Diverges Up
+,,,,,,,,,,,,,,,,,,4775,Diverges Up
+,,,,,,,,,,,,,,,,,,4776,Diverges Up
+,,,,,,,,,,,,,,,,,,4777,Diverges Up
+,,,,,,,,,,,,,,,,,,4778,Diverges Up
+,,,,,,,,,,,,,,,,,,4779,Diverges Up
+,,,,,,,,,,,,,,,,,,4780,Diverges Up
+,,,,,,,,,,,,,,,,,,4781,Diverges Up
+,,,,,,,,,,,,,,,,,,4782,Diverges Up
+,,,,,,,,,,,,,,,,,,4783,Diverges Up
+,,,,,,,,,,,,,,,,,,4784,Diverges Up
+,,,,,,,,,,,,,,,,,,4785,Diverges Up
+,,,,,,,,,,,,,,,,,,4786,Diverges Up
+,,,,,,,,,,,,,,,,,,4787,Diverges Up
+,,,,,,,,,,,,,,,,,,4788,Diverges Up
+,,,,,,,,,,,,,,,,,,4789,Diverges Up
+,,,,,,,,,,,,,,,,,,4790,Diverges Up
+,,,,,,,,,,,,,,,,,,4791,Diverges Up
+,,,,,,,,,,,,,,,,,,4792,Diverges Up
+,,,,,,,,,,,,,,,,,,4793,Diverges Up
+,,,,,,,,,,,,,,,,,,4794,Diverges Up
+,,,,,,,,,,,,,,,,,,4795,Diverges Up
+,,,,,,,,,,,,,,,,,,4796,Diverges Up
+,,,,,,,,,,,,,,,,,,4797,Diverges Up
+,,,,,,,,,,,,,,,,,,4798,Diverges Up
+,,,,,,,,,,,,,,,,,,4799,Diverges Up
+,,,,,,,,,,,,,,,,,,4800,Diverges Up
+,,,,,,,,,,,,,,,,,,4801,Diverges Up
+,,,,,,,,,,,,,,,,,,4802,Diverges Up
+,,,,,,,,,,,,,,,,,,4803,Diverges Up
+,,,,,,,,,,,,,,,,,,4804,Diverges Up
+,,,,,,,,,,,,,,,,,,4805,Diverges Up
+,,,,,,,,,,,,,,,,,,4806,Diverges Up
+,,,,,,,,,,,,,,,,,,4807,Diverges Up
+,,,,,,,,,,,,,,,,,,4808,Diverges Up
+,,,,,,,,,,,,,,,,,,4809,Diverges Up
+,,,,,,,,,,,,,,,,,,4810,Diverges Up
+,,,,,,,,,,,,,,,,,,4811,Diverges Up
+,,,,,,,,,,,,,,,,,,4812,Diverges Up
+,,,,,,,,,,,,,,,,,,4813,Diverges Up
+,,,,,,,,,,,,,,,,,,4814,Diverges Up
+,,,,,,,,,,,,,,,,,,4815,Diverges Up
+,,,,,,,,,,,,,,,,,,4816,Diverges Up
+,,,,,,,,,,,,,,,,,,4817,Diverges Up
+,,,,,,,,,,,,,,,,,,4818,Diverges Up
+,,,,,,,,,,,,,,,,,,4819,Diverges Up
+,,,,,,,,,,,,,,,,,,4820,Diverges Up
+,,,,,,,,,,,,,,,,,,4821,Diverges Up
+,,,,,,,,,,,,,,,,,,4822,Diverges Up
+,,,,,,,,,,,,,,,,,,4823,Diverges Up
+,,,,,,,,,,,,,,,,,,4824,Diverges Up
+,,,,,,,,,,,,,,,,,,4825,Diverges Up
+,,,,,,,,,,,,,,,,,,4826,Diverges Up
+,,,,,,,,,,,,,,,,,,4827,Diverges Up
+,,,,,,,,,,,,,,,,,,4828,Diverges Up
+,,,,,,,,,,,,,,,,,,4829,Diverges Up
+,,,,,,,,,,,,,,,,,,4830,Diverges Up
+,,,,,,,,,,,,,,,,,,4831,Diverges Up
+,,,,,,,,,,,,,,,,,,4832,Diverges Up
+,,,,,,,,,,,,,,,,,,4833,Diverges Up
+,,,,,,,,,,,,,,,,,,4834,Diverges Up
+,,,,,,,,,,,,,,,,,,4835,Diverges Up
+,,,,,,,,,,,,,,,,,,4836,Diverges Up
+,,,,,,,,,,,,,,,,,,4837,Diverges Up
+,,,,,,,,,,,,,,,,,,4838,Diverges Up
+,,,,,,,,,,,,,,,,,,4839,Diverges Up
+,,,,,,,,,,,,,,,,,,4840,Diverges Up
+,,,,,,,,,,,,,,,,,,4841,Diverges Up
+,,,,,,,,,,,,,,,,,,4842,Diverges Up
+,,,,,,,,,,,,,,,,,,4843,Diverges Up
+,,,,,,,,,,,,,,,,,,4844,Diverges Up
+,,,,,,,,,,,,,,,,,,4845,Diverges Up
+,,,,,,,,,,,,,,,,,,4846,Diverges Up
+,,,,,,,,,,,,,,,,,,4847,Diverges Up
+,,,,,,,,,,,,,,,,,,4848,Diverges Up
+,,,,,,,,,,,,,,,,,,4849,Diverges Up
+,,,,,,,,,,,,,,,,,,4850,Diverges Up
+,,,,,,,,,,,,,,,,,,4851,Diverges Up
+,,,,,,,,,,,,,,,,,,4852,Diverges Up
+,,,,,,,,,,,,,,,,,,4853,Diverges Up
+,,,,,,,,,,,,,,,,,,4854,Diverges Up
+,,,,,,,,,,,,,,,,,,4855,Diverges Up
+,,,,,,,,,,,,,,,,,,4856,Diverges Up
+,,,,,,,,,,,,,,,,,,4857,Diverges Up
+,,,,,,,,,,,,,,,,,,4858,Diverges Up
+,,,,,,,,,,,,,,,,,,4859,Diverges Up
+,,,,,,,,,,,,,,,,,,4860,Diverges Up
+,,,,,,,,,,,,,,,,,,4861,Diverges Up
+,,,,,,,,,,,,,,,,,,4862,Diverges Up
+,,,,,,,,,,,,,,,,,,4863,Diverges Up
+,,,,,,,,,,,,,,,,,,4864,Diverges Up
+,,,,,,,,,,,,,,,,,,4865,Diverges Up
+,,,,,,,,,,,,,,,,,,4866,Diverges Up
+,,,,,,,,,,,,,,,,,,4867,Diverges Up
+,,,,,,,,,,,,,,,,,,4868,Diverges Up
+,,,,,,,,,,,,,,,,,,4869,Diverges Up
+,,,,,,,,,,,,,,,,,,4870,Diverges Up
+,,,,,,,,,,,,,,,,,,4871,Diverges Up
+,,,,,,,,,,,,,,,,,,4872,Diverges Up
+,,,,,,,,,,,,,,,,,,4873,Diverges Up
+,,,,,,,,,,,,,,,,,,4874,Diverges Up
+,,,,,,,,,,,,,,,,,,4875,Diverges Up
+,,,,,,,,,,,,,,,,,,4876,Diverges Up
+,,,,,,,,,,,,,,,,,,4877,Diverges Up
+,,,,,,,,,,,,,,,,,,4878,Diverges Up
+,,,,,,,,,,,,,,,,,,4879,Diverges Up
+,,,,,,,,,,,,,,,,,,4880,Diverges Up
+,,,,,,,,,,,,,,,,,,4881,Diverges Up
+,,,,,,,,,,,,,,,,,,4882,Diverges Up
+,,,,,,,,,,,,,,,,,,4883,Diverges Up
+,,,,,,,,,,,,,,,,,,4884,Diverges Up
+,,,,,,,,,,,,,,,,,,4885,Diverges Up
+,,,,,,,,,,,,,,,,,,4886,Diverges Up
+,,,,,,,,,,,,,,,,,,4887,Diverges Up
+,,,,,,,,,,,,,,,,,,4888,Diverges Up
+,,,,,,,,,,,,,,,,,,4889,Diverges Up
+,,,,,,,,,,,,,,,,,,4890,Diverges Up
+,,,,,,,,,,,,,,,,,,4891,Diverges Up
+,,,,,,,,,,,,,,,,,,4892,Diverges Up
+,,,,,,,,,,,,,,,,,,4893,Diverges Up
+,,,,,,,,,,,,,,,,,,4894,Diverges Up
+,,,,,,,,,,,,,,,,,,4895,Diverges Up
+,,,,,,,,,,,,,,,,,,4896,Diverges Up
+,,,,,,,,,,,,,,,,,,4897,Diverges Up
+,,,,,,,,,,,,,,,,,,4898,Diverges Up
+,,,,,,,,,,,,,,,,,,4899,Diverges Up
+,,,,,,,,,,,,,,,,,,4900,Diverges Up
+,,,,,,,,,,,,,,,,,,4901,Diverges Up
+,,,,,,,,,,,,,,,,,,4902,Diverges Up
+,,,,,,,,,,,,,,,,,,4903,Diverges Up
+,,,,,,,,,,,,,,,,,,4904,Diverges Up
+,,,,,,,,,,,,,,,,,,4905,Diverges Up
+,,,,,,,,,,,,,,,,,,4906,Diverges Up
+,,,,,,,,,,,,,,,,,,4907,Diverges Up
+,,,,,,,,,,,,,,,,,,4908,Diverges Up
+,,,,,,,,,,,,,,,,,,4909,Diverges Up
+,,,,,,,,,,,,,,,,,,4910,Diverges Up
+,,,,,,,,,,,,,,,,,,4911,Diverges Up
+,,,,,,,,,,,,,,,,,,4912,Diverges Up
+,,,,,,,,,,,,,,,,,,4913,Diverges Up
+,,,,,,,,,,,,,,,,,,4914,Diverges Up
+,,,,,,,,,,,,,,,,,,4915,Diverges Up
+,,,,,,,,,,,,,,,,,,4916,Diverges Up
+,,,,,,,,,,,,,,,,,,4917,Diverges Up
+,,,,,,,,,,,,,,,,,,4918,Diverges Up
+,,,,,,,,,,,,,,,,,,4919,Diverges Up
+,,,,,,,,,,,,,,,,,,4920,Diverges Up
+,,,,,,,,,,,,,,,,,,4921,Diverges Up
+,,,,,,,,,,,,,,,,,,4922,Diverges Up
+,,,,,,,,,,,,,,,,,,4923,Diverges Up
+,,,,,,,,,,,,,,,,,,4924,Diverges Up
+,,,,,,,,,,,,,,,,,,4925,Diverges Up
+,,,,,,,,,,,,,,,,,,4926,Diverges Up
+,,,,,,,,,,,,,,,,,,4927,Diverges Up
+,,,,,,,,,,,,,,,,,,4928,Diverges Up
+,,,,,,,,,,,,,,,,,,4929,Diverges Up
+,,,,,,,,,,,,,,,,,,4930,Diverges Up
+,,,,,,,,,,,,,,,,,,4931,Diverges Up
+,,,,,,,,,,,,,,,,,,4932,Diverges Up
+,,,,,,,,,,,,,,,,,,4933,Diverges Up
+,,,,,,,,,,,,,,,,,,4934,Diverges Up
+,,,,,,,,,,,,,,,,,,4935,Diverges Up
+,,,,,,,,,,,,,,,,,,4936,Diverges Up
+,,,,,,,,,,,,,,,,,,4937,Diverges Up
+,,,,,,,,,,,,,,,,,,4938,Diverges Up
+,,,,,,,,,,,,,,,,,,4939,Diverges Up
+,,,,,,,,,,,,,,,,,,4940,Diverges Up
+,,,,,,,,,,,,,,,,,,4941,Diverges Up
+,,,,,,,,,,,,,,,,,,4942,Diverges Up
+,,,,,,,,,,,,,,,,,,4943,Diverges Up
+,,,,,,,,,,,,,,,,,,4944,Diverges Up
+,,,,,,,,,,,,,,,,,,4945,Diverges Up
+,,,,,,,,,,,,,,,,,,4946,Diverges Up
+,,,,,,,,,,,,,,,,,,4947,Diverges Up
+,,,,,,,,,,,,,,,,,,4948,Diverges Up
+,,,,,,,,,,,,,,,,,,4949,Diverges Up
+,,,,,,,,,,,,,,,,,,4950,Diverges Up
+,,,,,,,,,,,,,,,,,,4951,Diverges Up
+,,,,,,,,,,,,,,,,,,4952,Diverges Up
+,,,,,,,,,,,,,,,,,,4953,Diverges Up
+,,,,,,,,,,,,,,,,,,4954,Diverges Up
+,,,,,,,,,,,,,,,,,,4955,Diverges Up
+,,,,,,,,,,,,,,,,,,4956,Diverges Up
+,,,,,,,,,,,,,,,,,,4957,Diverges Up
+,,,,,,,,,,,,,,,,,,4958,Diverges Up
+,,,,,,,,,,,,,,,,,,4959,Diverges Up
+,,,,,,,,,,,,,,,,,,4960,Diverges Up
+,,,,,,,,,,,,,,,,,,4961,Diverges Up
+,,,,,,,,,,,,,,,,,,4962,Diverges Up
+,,,,,,,,,,,,,,,,,,4963,Diverges Up
+,,,,,,,,,,,,,,,,,,4964,Diverges Up
+,,,,,,,,,,,,,,,,,,4965,Diverges Up
+,,,,,,,,,,,,,,,,,,4966,Diverges Up
+,,,,,,,,,,,,,,,,,,4967,Diverges Up
+,,,,,,,,,,,,,,,,,,4968,Diverges Up
+,,,,,,,,,,,,,,,,,,4969,Diverges Up
+,,,,,,,,,,,,,,,,,,4970,Diverges Up
+,,,,,,,,,,,,,,,,,,4971,Diverges Up
+,,,,,,,,,,,,,,,,,,4972,Diverges Up
+,,,,,,,,,,,,,,,,,,4973,Diverges Up
+,,,,,,,,,,,,,,,,,,4974,Diverges Up
+,,,,,,,,,,,,,,,,,,4975,Diverges Up
+,,,,,,,,,,,,,,,,,,4976,Diverges Up
+,,,,,,,,,,,,,,,,,,4977,Diverges Up
+,,,,,,,,,,,,,,,,,,4978,Diverges Up
+,,,,,,,,,,,,,,,,,,4979,Diverges Up
+,,,,,,,,,,,,,,,,,,4980,Diverges Up
+,,,,,,,,,,,,,,,,,,4981,Diverges Up
+,,,,,,,,,,,,,,,,,,4982,Diverges Up
+,,,,,,,,,,,,,,,,,,4983,Diverges Up
+,,,,,,,,,,,,,,,,,,4984,Diverges Up
+,,,,,,,,,,,,,,,,,,4985,Diverges Up
+,,,,,,,,,,,,,,,,,,4986,Diverges Up
+,,,,,,,,,,,,,,,,,,4987,Diverges Up
+,,,,,,,,,,,,,,,,,,4988,Diverges Up
+,,,,,,,,,,,,,,,,,,4989,Diverges Up
+,,,,,,,,,,,,,,,,,,4990,Diverges Up
+,,,,,,,,,,,,,,,,,,4991,Diverges Up
+,,,,,,,,,,,,,,,,,,4992,Diverges Up
+,,,,,,,,,,,,,,,,,,4993,Diverges Up
+,,,,,,,,,,,,,,,,,,4994,Diverges Up
+,,,,,,,,,,,,,,,,,,4995,Diverges Up
+,,,,,,,,,,,,,,,,,,4996,Diverges Up
+,,,,,,,,,,,,,,,,,,4997,Diverges Up
+,,,,,,,,,,,,,,,,,,4998,Diverges Up
+,,,,,,,,,,,,,,,,,,4999,Diverges Up
+,,,,,,,,,,,,,,,,,,5000,Diverges Up
+,,,,,,,,,,,,,,,,,,5001,Diverges Up

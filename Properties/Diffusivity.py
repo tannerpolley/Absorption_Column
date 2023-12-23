@@ -6,7 +6,7 @@ def liquid_diffusivity(Tl, C_MEA, df_param):
     C_MEA = C_MEA * 1e-3
 
     # Get Diffusivity of Liquid
-    a, b, c, d, e = df_param['Dl_CO2'].dropna().to_numpy()
+    a, b, c, d, e = 0.00000235, 2.98E-08, -9.71E-09, -2119, -20.132
 
     Dl_CO2 = (a + b * C_MEA + c * C_MEA**2) * np.exp((d + (e * C_MEA))/Tl)
 
@@ -15,7 +15,7 @@ def liquid_diffusivity(Tl, C_MEA, df_param):
 
 def vapor_diffusivity(Tv, y, P,  df_param):
 
-    coefficients = df_param['Vapor Diffusivity'].dropna().to_numpy()
+    coefficients = np.array([0.000087, 0.00012, 0.000095, 0.000116])
 
     Dv = (coefficients * Tv ** 1.75) / P
 

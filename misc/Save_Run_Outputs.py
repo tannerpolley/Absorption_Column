@@ -1,18 +1,16 @@
-from Parameters import make_dfs_dict, n
-from numpy import arange, round
+from Parameters import make_dfs_dict
 import numpy as np
-import pandas as pd
 from BVP.ABS_Column import abs_column
 import xlwings as xw
 
 # Put outputs into dictionary and dataframe
 
 
-def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, z, stages):
+def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, z, A, P, df_param, n):
 
     run_type = 'saving'
 
-    outputs_0, keys_dict = abs_column(z[0], Y.T[0], Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type)
+    outputs_0, keys_dict = abs_column(z[0], Y.T[0], Fl_MEA, Fv_N2, Fv_O2, P, A, df_param, run_type)
 
     sheetnames = list(keys_dict.keys())
 
@@ -24,13 +22,13 @@ def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, P, df_param, z, stages):
 
     # Updates each output array and the (i, j) height step (i) for relevant group (j)
     for i in range(n):
-        outputs, _ = abs_column(z[i], Y.T[i], Fl_MEA, Fv_N2, Fv_O2, P, df_param, run_type)
+        outputs, _ = abs_column(z[i], Y.T[i], Fl_MEA, Fv_N2, Fv_O2, P, A, df_param, run_type)
 
         for k in sheetnames:
             output_dict[k][i] = outputs[k]
 
     # Converts the Outputs dictionary into a dictionary of dataframes
-    dfs_dict = make_dfs_dict(output_dict, keys_dict, stages)
+    dfs_dict = make_dfs_dict(output_dict, keys_dict, z)
 
     # Updates each sheet in the Excel file with the new data from the df
     wb = xw.Book('data/Results/Profiles.xlsx', read_only=False)
