@@ -1,5 +1,4 @@
 import numpy as np
-from Parameters import f_interp
 
 
 def solve_driving_force(x, y, Tl, a0, alpha, KH, H_CO2_mix, P, zi):

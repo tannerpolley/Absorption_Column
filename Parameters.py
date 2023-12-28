@@ -21,11 +21,11 @@ R = 8.314462618  # J/mol-K
 # Integration Parameters
 n = 101  # Number of points to evaluate for the integral
 
-df_surr = pd.read_csv(r'data\T_surrogate.csv')
+# df_surr = pd.read_csv(r'data\T_surrogate.csv')
 
 
-def f_interp(name, zi):
-    return np.float64(interp1d(df_surr[df_surr.columns[0]].to_numpy()[::-1], df_surr[name].to_numpy()[::-1], kind='cubic')(zi))
+# def f_interp(name, zi):
+#     return np.float64(interp1d(df_surr[df_surr.columns[0]].to_numpy()[::-1], df_surr[name].to_numpy()[::-1], kind='cubic')(zi))
 
 
 def make_dfs_dict(output_dict, keys_dict, stages):

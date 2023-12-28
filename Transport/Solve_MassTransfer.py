@@ -1,4 +1,4 @@
-from Parameters import a_p, Clp, Cvp, ϵ, g, R, f_interp
+from Parameters import a_p, Clp, Cvp, ϵ, g, R
 import numpy as np
 
 log = np.log

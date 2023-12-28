@@ -62,8 +62,6 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     Fl_CO2_z, Fl_H2O_z, Tl_z_sim = Y[0, -1], Y[1, -1], Y[4, -1]
 
-    print(f'Real: {Fl_z[0]:.3f}, Sim: {Fl_CO2_z:.3f}')
-
     # Computes the relative error between the solution that the shooter found to the actual inlet concentration for the relevant liquid species
     CO2_rel_err = abs(Fl_z[0] - Fl_CO2_z) / Fl_z[0] * 100
     H2O_rel_err = abs(Fl_z[2] - Fl_H2O_z) / Fl_z[2] * 100
@@ -71,7 +69,7 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     # Prints out relevant info such as simulation time, relative errors, CO2% captured, if max iterations were reached, and number of Nan's counted
     if show_info:
-        print(f'{CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}%, H2O = {H2O_rel_err:0>{5}.2f}%, Tl = {Tl_rel_err:0>{5}.2f}% - {shooter_message}')
+        print(f'CO2 % Cap: {CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}%, H2O = {H2O_rel_err:0>{5}.2f}%, Tl = {Tl_rel_err:0>{5}.2f}% - {shooter_message}')
 
     # Stores output data into text files (concentrations, mole fractions, and temperatures) (can also plot)
     if save_run_results:

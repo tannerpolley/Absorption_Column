@@ -10,7 +10,7 @@ from Properties.Surface_Tension import surface_tension
 from Properties.Diffusivity import liquid_diffusivity, vapor_diffusivity
 from Properties.Heat_Capacity import heat_capacity
 from Properties.Thermal_Conductivity import thermal_conductivity
-from Parameters import MWs_l, f_interp
+from Parameters import MWs_l
 from Transport.Heat_Transfer import heat_transfer
 
 
