@@ -11,9 +11,11 @@ results_array = []
 inputs_array = []
 
 df = pd.read_csv('data/runs_file_SRP_cases.csv', index_col=0)
-for i in range(0, 1):
-
-    CO2_cap, shooter_message = run_model(df, run=i, show_residuals=False, save_run_results=True)
+for i in range(len(df)):
+    try:
+        CO2_cap, shooter_message = run_model(df, run=i, show_residuals=False, save_run_results=False)
+    except:
+        pass
 
     # inputs_array.append(X)
     # CO2_cap_array.append(CO2_cap)

@@ -14,10 +14,10 @@ np.set_printoptions(suppress=True)
 
 def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=True):
 
-    X = df.iloc[run, :8].to_numpy()
+    X = df.iloc[run, :9].to_numpy()
 
     # Grab the parameters for each run
-    parameters = df.iloc[run, 8:].to_dict()
+    parameters = df.iloc[run, 9:].to_dict()
 
     # Convert the parameters to a nested dictionary based on type (VLE, Surface Tension, Viscosity)
     df_param = defaultdict(dict)
@@ -30,7 +30,7 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
     # Tl_z, Tv_0, L, G, alpha, y_CO2, y_H2O, H
     # X2 = [314, 320, 29.0, 3.52, 0.279,	0.013,	0.177, 6]
     # Create an input list for the values that are used in the simulation
-    inputs = convert_SRP_data(X, n)
+    inputs = convert_SRP_data(X, n, mass=True)
 
     # Determine Scaling values
     Fl_CO2_0_scaling = 1.5
