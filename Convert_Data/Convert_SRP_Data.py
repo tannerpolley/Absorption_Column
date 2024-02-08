@@ -10,15 +10,15 @@ def convert_SRP_data(X, n, mass):
     MW_N2 = MWs_v[2]
     MW_O2 = MWs_v[3]
 
-    alpha_O2_N2 = 0.08485753604
+    alpha_O2_N2 = 0.085
+    P = 109180
+    D = .43
+    H = 6
+    A = np.pi * D ** 2 / 4
+    z = np.linspace(0, H, n)
 
     if mass:
-        Tl_z, Tv_0, ml_z, mv_0, alpha, w_MEA, y_H2O, y_CO2, H = X
-
-        P = 107560
-        D = .43
-        A = np.pi * D ** 2 / 4
-        z = np.linspace(0, H, n)
+        Tl_z, Tv_0, ml_z, mv_0, alpha, w_MEA, y_H2O, y_CO2 = X
 
         # Liquid Calculations
 
@@ -66,14 +66,7 @@ def convert_SRP_data(X, n, mass):
         Fv_T = sum(Fv)
 
     else:
-        Tl_z, Tv_0, Fl_z, Fv_0, alpha, w_MEA, y_H2O, y_CO2, H = X
-
-        P = 107560
-        D = .43
-        A = np.pi * D ** 2 / 4
-        z = np.linspace(0, H, n)
-
-        alpha_O2_N2 = 0.08485753604
+        Tl_z, Tv_0, Fl_z, Fv_0, alpha, w_MEA, y_H2O, y_CO2 = X
 
         x_MEA = ((1 + alpha + (MW_MEA/MW_H2O))*(1-w_MEA)/w_MEA)**-1
         x_CO2 = x_MEA*alpha
@@ -105,6 +98,8 @@ def convert_SRP_data(X, n, mass):
         mv_O2_0 = Fv_O2_0 * MW_O2
 
         m_T_v = mv_CO2_0 + mv_H2O_0 + mv_N2_0 + mv_O2_0
+
+        # print(m_T_l, m_T_v)
 
         Fl = Fl_CO2_z, Fl_MEA_z, Fl_H2O_z
         Fv = Fv_CO2_0, Fv_H2O_0, Fv_N2_0, Fv_O2_0

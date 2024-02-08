@@ -2,7 +2,6 @@ import numpy as np
 from numpy import sum
 from Transport.Solve_MassTransfer import solve_masstransfer
 from Thermodynamics.Solve_Driving_Force import solve_driving_force
-from Reactions.Solve_ChemEQ import solve_ChemEQ_log
 from Properties.Henrys_Law import henrys_law
 from Properties.Density import liquid_density, vapor_density
 from Properties.Viscosity import viscosity
@@ -18,10 +17,9 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, A, df_param, run_type):
 
     Fl_CO2, Fl_H2O, Fv_CO2, Fv_H2O, Tl, Tv = Y
 
-    if Tl >= 355:
-        Tl = 355
-    if Tv >= 355:
-        Tv = 354.99
+    # if Tl >= 500 or Tl <= 280:
+    #     raise AssertionError
+
 
     a0 = Fl_MEA/(Fl_MEA + Fl_H2O)
 
@@ -87,14 +85,14 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, A, df_param, run_type):
     # Mass Transfer Coefficients and Properties
     kv_CO2, kv_H2O, kv_T, KH, k_mxs, uv, a_e, hydr = solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix,
                                                                         sigma, Dl_CO2, Dv_CO2, Dv_H2O, Dv_T, A, Tl, Tv,
-                                                                        ul, uv, H_CO2_mix, Cl_MEA_true, zi)
+                                                                        ul, uv, H_CO2_mix, Cl_MEA_true)
 
     # Heat Transfer Coefficient
-    UT = heat_transfer(P, kv_CO2, kt_CO2, Cpv_T, rho_mol_v, Dv_CO2)
+    UT = heat_transfer(P, kv_CO2, kt_CO2, Cpv_T, rho_mol_v, Dv_CO2)*.7
 
     # ------------------------------ Thermodynamics --------------------------------------
 
-    DF_CO2, DF_H2O, PEQ = solve_driving_force(x, y, Tl, a0, alpha, KH, H_CO2_mix, P, zi)
+    DF_CO2, DF_H2O, PEQ = solve_driving_force(x, y, Tl, a0, alpha, KH, H_CO2_mix, P)
 
     # ------------------------------ Material and Energy Flux Setup --------------------------------------
 
@@ -153,7 +151,7 @@ def abs_column(zi, Y, Fl_MEA, Fv_N2, Fv_O2, P, A, df_param, run_type):
 
         output_dict = {'Fl': [Fl_CO2, Fl_MEA, Fl_H2O],
                        'Fv': [Fv_CO2, Fv_H2O, Fv_N2, Fv_O2],
-                       'Cl': [Cl_CO2, Cl_MEA, Cl_H2O],
+                       'Cl': [Cl_CO2, Cl_MEA, Cl_MEA_true, Cl_H2O],
                        'Cv': [Cv_CO2, Cv_H2O, Cv_N2, Cv_O2],
                        'x': [x_CO2, x_MEA, x_H2O],
                        'y': [y_CO2, y_H2O, y_N2, y_O2],

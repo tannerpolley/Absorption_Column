@@ -6,11 +6,16 @@ def solve_bcs(inputs, df_param, scales, show_residuals):
 
     Fl_z, Fv_0, Tl_z, Tv_0, z = inputs[:-2]
 
+    Fl_CO2_z, Fl_MEA_z, Fl_H2O_z = Fl_z
     Fv_CO2_0, Fv_H2O_0, Fv_N2_0, Fv_O2_0 = Fv_0
 
-    Fl_CO2_0_guess = 1.2
-    Fl_H2O_0_guess = 28
-    Tl_0_guess = 325
+    Fl_CO2_0_guess = Fl_CO2_z + Fv_CO2_0*.70
+    Fl_H2O_0_guess = Fl_H2O_z
+    Tl_0_guess = 318
+
+    Fl_CO2_0_guess = 1.34
+    Fl_H2O_0_guess = 24.5
+    Tl_0_guess = 316.5
 
     Yv_0_guess = [Fl_CO2_0_guess/scales[0], Fl_H2O_0_guess/scales[1], Tl_0_guess/scales[2]]
 
@@ -23,8 +28,8 @@ def solve_bcs(inputs, df_param, scales, show_residuals):
 
         if method == 'df-sane':
 
-            options = {'ftol': 1e-2,
-                       'fatol': .25,
+            options = {'ftol': .1,
+                       'fatol': .1,
                        'maxfev': 50,
                        'line_search': 'cruz',
                        'disp': display,
@@ -33,11 +38,10 @@ def solve_bcs(inputs, df_param, scales, show_residuals):
 
         elif method == 'Krylov':
 
-            options = {'ftol': .2,
-                       'fatol': .25,
+            options = {'fatol': .1,
                        'maxiter': 50,
-                       'disp': display,
                        'line_search': 'armijo',
+                       'disp': display,
                        }
 
         root_output = root(shooter,

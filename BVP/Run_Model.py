@@ -1,7 +1,5 @@
 import numpy as np
-import pandas as pd
 import time
-import math
 from Parameters import n
 from BVP.Simulate_Abs_Column import simulate_abs_column
 from Convert_Data.Convert_NCCC_Data import convert_NCCC_data
@@ -14,10 +12,11 @@ np.set_printoptions(suppress=True)
 
 def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=True):
 
-    X = df.iloc[run, :9].to_numpy()
+    X = df.iloc[run, :8].to_numpy()
+    X = [314, 320, 29.0, 3.52, 0.279, 0.325, 0.013, 0.100]
 
     # Grab the parameters for each run
-    parameters = df.iloc[run, 9:].to_dict()
+    parameters = df.iloc[run, 8:].to_dict()
 
     # Convert the parameters to a nested dictionary based on type (VLE, Surface Tension, Viscosity)
     df_param = defaultdict(dict)
@@ -28,14 +27,14 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     # ---- SRP Data Runs ---
     # Tl_z, Tv_0, L, G, alpha, y_CO2, y_H2O, H
-    # X2 = [314, 320, 29.0, 3.52, 0.279,	0.013,	0.177, 6]
+    # X2 = [314, 320, 29.0, 3.52, 0.279, 0.013,	0.177, 6]
     # Create an input list for the values that are used in the simulation
-    inputs = convert_SRP_data(X, n, mass=True)
+    inputs = convert_SRP_data(X, n, mass=False)
 
     # Determine Scaling values
     Fl_CO2_0_scaling = 1.5
-    Fl_H2O_0_scaling = 26
-    Tl_0_scaling = 350
+    Fl_H2O_0_scaling = 30
+    Tl_0_scaling = 360
 
     scales = [Fl_CO2_0_scaling, Fl_H2O_0_scaling, Tl_0_scaling]
 
@@ -47,7 +46,11 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     # Simulate the Absorption Column from start to finish given the inlet concentrations of the top liquid and bottom vapor streams
     # This function simulates either with solving for BC's or assuming them
-    Y, shooter_message = simulate_abs_column(inputs, df_param, scales, show_residuals)
+    Y, shooter_message, success, message = simulate_abs_column(inputs, df_param, scales, show_residuals)
+
+    if not success:
+        print('Integration Failed:', message)
+        return 0, 0
 
     # Ends the time tracker for the total computation time for one simulation run
     end = time.time()
@@ -69,7 +72,7 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     # Prints out relevant info such as simulation time, relative errors, CO2% captured, if max iterations were reached, and number of Nan's counted
     if show_info:
-        print(f'CO2 % Cap: {CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}%, H2O = {H2O_rel_err:0>{5}.2f}%, Tl = {Tl_rel_err:0>{5}.2f}% - {shooter_message}')
+        print(f'CO2 % Cap: {CO2_cap:.2f}% - Time: {total_time:0>{4}.1f} sec - % Error: CO2 = {CO2_rel_err:0>{5}.2f}% [{Fl_CO2_z:.3f}, {Fl_z[0]:.3f}], H2O = {H2O_rel_err:0>{5}.2f}%, Tl = {Tl_rel_err:0>{5}.2f}% - {shooter_message}')
 
     # Stores output data into text files (concentrations, mole fractions, and temperatures) (can also plot)
     if save_run_results:

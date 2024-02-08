@@ -10,9 +10,9 @@ def simulate_abs_column(inputs, df_param, scales, show_residuals):
 
     Fl_z, Fv_0, Tl_z, Tv_0, z, A, P = inputs
 
-    options = {'first_step': 1,
-               'max_step': 1,
-               'atol': 1e-7,
+    options = {'first_step': None,
+               'max_step': 1e10,
+               'atol': 1e-5,
                }
 
     options_default = {'max_step': 1,
@@ -21,14 +21,8 @@ def simulate_abs_column(inputs, df_param, scales, show_residuals):
                        'jac': None,
                        'jac_sparsity': None,
                        'vectorized': False,
-                       'first_step': None,
-
-                        'first_step': 1,
-
-                       'atol': 1e-7,
+                       'first_step': 1,
                        }
-
-    # Y = odeint(abs_column, Y_0, z, args=(Fl_z[1], Fv_0[2], Fv_0[3], P, df_param, run_type), tfirst=True).T
 
     obj = solve_ivp(abs_column,
                     [z[0], z[-1]],
@@ -42,4 +36,4 @@ def simulate_abs_column(inputs, df_param, scales, show_residuals):
 
     t, Y, nfev, njev, nlu, status, message, success = obj.t, obj.y, obj.nfev, obj.njev, obj.nlu, obj.status, obj.message, obj.success
 
-    return Y, shooter_message
+    return Y, shooter_message, success, message
