@@ -6,7 +6,7 @@ def viscosity(Tl, Tv, y, w_MEA, alpha, df_param):
     W_MEA = w_MEA*100
 
     mul_H2O = 1.002 * 10 ** ((1.3272*(293.15 - Tl - .001053 * (Tl - 293.15) ** 2))/(Tl - 168.15))
-    a, b, c, d, e, f, g = df_param['Liquid Mixture Viscosity'].dropna().to_numpy()
+    a, b, c, d, e, f, g = df_param['viscosity'].values()
 
     # print(f'From Viscosity: {a}')
 

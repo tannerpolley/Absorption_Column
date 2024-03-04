@@ -1,24 +1,23 @@
 from scipy.optimize import root
 from BVP.Shooter import shooter
-from Parameters import CO2_cap_guess
 
 
-def solve_bcs(inputs, df_param, show_residuals):
+def solve_bcs(inputs, df_param, scales, show_residuals):
 
-    Fl_0, Fv_z, Tl_0, Tv_z, z = inputs[:-1]
+    Fl_z, Fv_0, Tl_z, Tv_0, z = inputs[:-2]
 
-    CO2_cap_guess_dec = CO2_cap_guess*1e-2
+    Fl_CO2_z, Fl_MEA_z, Fl_H2O_z = Fl_z
+    Fv_CO2_0, Fv_H2O_0, Fv_N2_0, Fv_O2_0 = Fv_0
 
-    # Top of column Boundary Condition guesses for Vapor Flow Rates and Vapor Temperature
-    Fv_CO2_0_guess = Fv_z[0] * (1 - CO2_cap_guess_dec)
-    Fv_H2O_0_guess = 3.918873559
-    Tv_0_guess = 333
+    Fl_CO2_0_guess = Fl_CO2_z + Fv_CO2_0*.70
+    Fl_H2O_0_guess = Fl_H2O_z
+    Tl_0_guess = 318
 
-    Yv_0_guess = [Fv_CO2_0_guess, Fv_H2O_0_guess, Tv_0_guess]
+    Fl_CO2_0_guess = 1.34
+    Fl_H2O_0_guess = 24.5
+    Tl_0_guess = 316.5
 
-    # Prints out the CO2% Captured Guess Value before each run
-    CO2_cap_guess_print = (1 - Fv_CO2_0_guess / Fv_z[0]) * 100
-    print(f'CO2 Cap Guess/Actual: {CO2_cap_guess_print:.2f}%/')
+    Yv_0_guess = [Fl_CO2_0_guess/scales[0], Fl_H2O_0_guess/scales[1], Tl_0_guess/scales[2]]
 
     shoot = True
 
@@ -29,8 +28,8 @@ def solve_bcs(inputs, df_param, show_residuals):
 
         if method == 'df-sane':
 
-            options = {'ftol': 1e-2,
-                       'fatol': .25,
+            options = {'ftol': .1,
+                       'fatol': .1,
                        'maxfev': 50,
                        'line_search': 'cruz',
                        'disp': display,
@@ -39,17 +38,15 @@ def solve_bcs(inputs, df_param, show_residuals):
 
         elif method == 'Krylov':
 
-            options = {'ftol': .2,
-                       'fatol': .25,
+            options = {'fatol': .1,
                        'maxiter': 50,
-                       'disp': display,
                        'line_search': 'armijo',
-
+                       'disp': display,
                        }
 
         root_output = root(shooter,
                            Yv_0_guess,
-                           args=(inputs, df_param),
+                           args=(inputs, df_param, scales),
                            method=method,
                            options=options)
 
@@ -57,14 +54,14 @@ def solve_bcs(inputs, df_param, show_residuals):
 
         shooter_message = f'Solved? {solved}, with {n_eval:02d} obj function evaluations'
 
-        Fv_CO2_0, Fv_H2O_0, Tv_0 = solved_initials
+        Fl_CO2_0, Fl_H2O_0, Tl_0 = solved_initials
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0, Fv_H2O_0, Tl_0, Tv_0]
+        Y_0 = [Fl_CO2_0*scales[0], Fl_H2O_0*scales[1], Fv_CO2_0, Fv_H2O_0, Tl_0*scales[2], Tv_0]
 
     else:
         shooter_message = 'No shooting'
 
-        Y_0 = [Fl_0[0], Fl_0[2], Fv_CO2_0_guess, Fv_H2O_0_guess, Tl_0, Tv_0_guess]
+        Y_0 = [Fl_CO2_0_guess, Fl_H2O_0_guess, Fv_CO2_0, Fv_H2O_0, Tl_0_guess, Tv_0]
 
     return Y_0, shooter_message
 

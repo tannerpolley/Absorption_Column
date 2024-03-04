@@ -1,32 +1,38 @@
 from scipy.integrate import solve_ivp
 from BVP.ABS_Column import abs_column
+import matplotlib.pyplot as plt
 
 
-def shooter(X, inputs, df_param):
+def shooter(X, inputs, df_param, scales):
 
-    Fv_CO2_0, Fv_H2O_0, Tv_0 = X
+    Fl_CO2_0, Fl_H2O_0, Tl_0 = X
 
-    Fl_0, Fv_z, Tl_0, Tv_z, z, P = inputs
+    Fl_z, Fv_0, Tl_z, Tv_0, z, A, P = inputs
 
-    Fl_CO2_0, Fl_MEA_0, Fl_H2O_0 = Fl_0
-    Fv_CO2_z, Fv_H2O_z, Fv_N2_z, Fv_O2_z = Fv_z
+    Fl_CO2_z, Fl_MEA_z, Fl_H2O_z = Fl_z
+    Fv_CO2_0, Fv_H2O_0, Fv_N2_0, Fv_O2_0 = Fv_0
 
-    Y_0 = [Fl_CO2_0, Fl_H2O_0, Fv_CO2_0, Fv_H2O_0, Tl_0, Tv_0]
+    Y_0 = [Fl_CO2_0*scales[0], Fl_H2O_0*scales[1], Fv_CO2_0, Fv_H2O_0, Tl_0*scales[2], Tv_0]
 
     run_type = 'shooting'
 
     Y = solve_ivp(abs_column,
                   [z[0], z[-1]],
                   Y_0,
-                  args=(Fl_MEA_0, Fv_N2_z, Fv_O2_z, P, df_param, run_type),
-                  method='Radau').y
+                  args=(Fl_MEA_z, Fv_N2_0, Fv_O2_0, P, A, df_param, run_type),
+                  method='Radau', t_eval=z).y
 
-    Fv_CO2_z_sim, Fv_H2O_z_sim, Tv_z_sim = Y[2, -1], Y[3, -1], Y[-1, -1]
+    # print(Y[4])
 
-    eq1 = Fv_CO2_z_sim - Fv_CO2_z
-    eq2 = Fv_H2O_z_sim - Fv_H2O_z
-    eq3 = Tv_z_sim - Tv_z
+    Fl_CO2_z_sim, Fl_H2O_z_sim, Tl_z_sim = Y[0, -1], Y[1, -1], Y[4, -2]
+
+    eq1 = Fl_CO2_z_sim/scales[0] - Fl_CO2_z/scales[0]
+    eq2 = Fl_H2O_z_sim/scales[1] - Fl_H2O_z/scales[1]
+    eq3 = Tl_z_sim/scales[2] - Tl_z/scales[2]
 
     eqs = [eq1, eq2, eq3]
+
+    # plt.plot(z, Y[4])
+    # plt.show()
 
     return eqs

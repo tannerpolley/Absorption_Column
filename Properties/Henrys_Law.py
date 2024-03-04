@@ -2,7 +2,7 @@ from numpy import log, exp
 from Parameters import MWs_l
 
 
-def henrys_law(x, Tl):
+def henrys_law(x, Tl, df_param):
 
     x_CO2, x_MEA, x_H2O = x
 
@@ -16,7 +16,7 @@ def henrys_law(x, Tl):
     H_N2O_H2O = 8.449e6 * exp(-2283 / Tl)
     H_CO2_MEA = H_N2O_MEA * (H_CO2_H2O / H_N2O_H2O)
 
-    a1, a2, a3, b = -2.076073001, 0.037322205, -0.00032721, -0.111102655
+    a1, a2, a3, b = list(df_param['VLE'].values())
     lwm = (a1 + a2 * (Tl-273.15) + a3 * (Tl-273.15) ** 2 + b * wt_H2O)
 
     Ra = lwm * wt_MEA * wt_H2O
