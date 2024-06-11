@@ -1,4 +1,4 @@
-from Parameters import a_p, Clp, Cvp, ϵ, g, R
+from Parameters import a_p, Clp, Cvp, ϵ, g, R, S
 import numpy as np
 
 log = np.log
@@ -9,7 +9,7 @@ def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, 
                        H_CO2_mix, Cl_MEA_true):
 
     # Hold Up
-    h_L = np.exp(log(11.4474) + 0.6471 * (log(3.185966) + log(ul) + 1 / 3 * (log(mul_mix) - log(rho_mass_l))))
+    h_L = 11.4474 * (ul*ϵ/(g**(2/3)*S**2*a_p)*(mul_mix/rho_mass_l)**(1/3)) ** .6471
     h_V = ϵ - h_L
 
     if h_V < 0:
@@ -21,28 +21,14 @@ def solve_masstransfer(rho_mass_l, rho_mass_v, mul_mix, muv_mix, sigma, Dl_CO2, 
 
     # Compute interfacial area
 
-    a_e = np.exp(log(a_p) + log(1.42)
-                 + .116 * (log(rho_mass_l) - log(sigma)
-                           + (1 / 3) * log(g)
-                           + (4 / 3) * (log(ul) + log(A) - log(Lp))
-                           )
-                 )
+    a_e = a_p * 1.42 * (rho_mass_l / sigma * (g**(1/3)) * ((ul/a_p)**(4/3)))**.116
 
     def f_kl(Dl):
-        kl = exp(log(Clp)
-                 + (1 / 6) * log(12)
-                 + .5 * (log(ul) + log(Dl) - log(h_L) - log(d_h))
-                 )
+        kl = Clp*(12**(1/6))*((ul/h_L)**.5)*((Dl/d_h)**.5) # m/s
         return kl
 
     def f_kv(Dv):
-        kv = exp(log(Cvp) - log(R) - log(Tv)
-                 - 0.5 * log(h_V)
-                 + 0.5 * (log(a_p) - log(d_h))
-                 + (2 / 3) * log(Dv)
-                 + (1 / 3) * (log(muv_mix) - log(rho_mass_v))
-                 + (3 / 4) * (log(uv) + log(rho_mass_v) - log(a_p) - log(muv_mix))
-                 )
+        kv = Cvp/R/Tv*np.sqrt(a_p/d_h/h_V)*Dv**(2/3)*(muv_mix/rho_mass_v)**(1/3)*(uv*rho_mass_v/a_p/muv_mix)**(3/4) # m/s
         return kv
 
     kl_CO2 = f_kl(Dl_CO2)

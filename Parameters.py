@@ -12,6 +12,7 @@ Clp = .5  # Packing Coefficient
 Chp = .554  # Packing Coefficient
 Cvp = .357  # Packing Coefficient
 ϵ = .970  # Packing Void Fraction
+S = .017 # Channel Side (m)
 
 # Other Constants
 g = 9.81  # Gravitational Constant

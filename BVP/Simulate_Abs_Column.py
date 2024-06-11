@@ -1,4 +1,4 @@
-from scipy.integrate import solve_ivp, odeint
+from scipy.integrate import solve_ivp
 from BVP.ABS_Column import abs_column
 from BVP.Solve_BCs import solve_bcs
 
