@@ -10,7 +10,7 @@ from collections import defaultdict
 np.set_printoptions(suppress=True)
 
 
-def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=True):
+def run_model(df, run=0, show_info=True, save_run_results=True):
 
     X = df.iloc[run, :8].to_numpy()
     X = [314, 320, 29.0, 3.52, 0.279, 0.325, 0.013, 0.100]
@@ -46,7 +46,7 @@ def run_model(df, run=0, show_info=True, show_residuals=False, save_run_results=
 
     # Simulate the Absorption Column from start to finish given the inlet concentrations of the top liquid and bottom vapor streams
     # This function simulates either with solving for BC's or assuming them
-    Y, shooter_message, success, message = simulate_abs_column(inputs, df_param, scales, show_residuals)
+    Y, shooter_message, success, message = simulate_abs_column(inputs, df_param, scales)
 
     if not success:
         print('Integration Failed:', message)

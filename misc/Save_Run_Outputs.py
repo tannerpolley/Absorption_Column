@@ -1,9 +1,30 @@
-from Parameters import make_dfs_dict
 import numpy as np
+import pandas as pd
 from BVP.ABS_Column import abs_column
 import xlwings as xw
 
 # Put outputs into dictionary and dataframe
+
+
+def make_dfs_dict(output_dict, keys_dict, stages):
+
+    sheetnames = list(keys_dict.keys())
+
+    dfs_dict = {}
+    for k1 in sheetnames:
+
+        d = {}
+        keys = keys_dict[k1]
+        array = output_dict[k1]
+
+        for k2, v in zip(keys, array.T):
+            d[k2] = v[::-1]
+
+        df = pd.DataFrame(d, index=stages[::-1])
+        df.index.name = 'Position'
+        dfs_dict[k1] = df
+
+    return dfs_dict
 
 
 def save_run_outputs(Y, Fl_MEA, Fv_N2, Fv_O2, z, A, P, df_param, n):

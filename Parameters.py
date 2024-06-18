@@ -20,23 +20,3 @@ R = 8.314462618  # J/mol-K
 
 # Integration Parameters
 n = 51  # Number of points to evaluate for the integral
-
-def make_dfs_dict(output_dict, keys_dict, stages):
-
-    sheetnames = list(keys_dict.keys())
-
-    dfs_dict = {}
-    for k1 in sheetnames:
-
-        d = {}
-        keys = keys_dict[k1]
-        array = output_dict[k1]
-
-        for k2, v in zip(keys, array.T):
-            d[k2] = v[::-1]
-
-        df = pd.DataFrame(d, index=stages[::-1])
-        df.index.name = 'Position'
-        dfs_dict[k1] = df
-
-    return dfs_dict

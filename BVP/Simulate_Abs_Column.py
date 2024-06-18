@@ -3,8 +3,8 @@ from BVP.ABS_Column import abs_column
 from BVP.Solve_BCs import solve_bcs
 
 
-def simulate_abs_column(inputs, df_param, scales, show_residuals):
-    Y_0, shooter_message = solve_bcs(inputs, df_param, scales, show_residuals)
+def simulate_abs_column(inputs, df_param, scales):
+    Y_0, shooter_message = solve_bcs(inputs, df_param, scales)
 
     run_type = 'simulating'
 

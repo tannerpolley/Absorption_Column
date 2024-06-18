@@ -16,13 +16,13 @@ def shooter(X, inputs, df_param, scales):
 
     run_type = 'shooting'
 
-    Y = solve_ivp(abs_column,
+    result = solve_ivp(abs_column,
                   [z[0], z[-1]],
                   Y_0,
                   args=(Fl_MEA_z, Fv_N2_0, Fv_O2_0, P, A, df_param, run_type),
-                  method='Radau', t_eval=z).y
+                  method='Radau', t_eval=z)
 
-    # print(Y[4])
+    Y = result.y
 
     Fl_CO2_z_sim, Fl_H2O_z_sim, Tl_z_sim = Y[0, -1], Y[1, -1], Y[4, -2]
 
@@ -31,8 +31,5 @@ def shooter(X, inputs, df_param, scales):
     eq3 = Tl_z_sim/scales[2] - Tl_z/scales[2]
 
     eqs = [eq1, eq2, eq3]
-
-    # plt.plot(z, Y[4])
-    # plt.show()
 
     return eqs
